@@ -1,4 +1,4 @@
-# CLAUDE.md — {{Your Name}}'s Second Brain
+# CLAUDE.md — Fabien's Second Brain
 
 > Entry point. Keep this file lean: identity + rules + glossary + folder map.
 > Anything data-like (team roster, concepts, projects) lives in `wiki/`.
@@ -7,13 +7,11 @@
 
 ## 👤 About Me
 
-- **{{Your Full Name}}** — {{Your Role}} at **Agicap** (Lyon fintech, treasury SaaS)
-- Based in {{City}}, {{native language}} / {{fluent languages}}
-- Scope: **{{Product Lines you own — e.g., AP · AR · PAY}}**
-- Manager: **{{Manager Name}}** ({{Their Role}})
-- Style: {{adjust — e.g., concise, evidence-driven, pragmatic}}
+- **Fabien Riou** — Product Manager at **Agicap** (Lyon fintech, treasury SaaS), full-time
+- Also running **Ouch! / FixMyLife** as an independent side project (~20h/week), and a consulting activity through his own **SASU**
+- Style: concise, evidence-driven, pragmatic
 
-> Full team roster, Slack IDs, and PM scope → [`wiki/entities/Product_Team.md`](wiki/entities/Product_Team.md) *(create this page as you onboard people)*
+> Team roster / squad context for the Agicap job → `wiki/entities/` (e.g. [Ludovic Lelievre](wiki/entities/Ludovic_Lelievre.md), [Audric Podmilsak](wiki/entities/Audric_Podmilsak.md), [Paul Sorrentino](wiki/entities/Paul_Sorrentino.md))
 
 ---
 
@@ -27,22 +25,23 @@
 **Wiki sub-areas** (all indexed in `wiki/index.md`):
 `entities/` · `concepts/` · `patterns/` · `syntheses/` · `mocs/` · `log.md`
 
-*Optional additions (add if relevant to your scope):*
-- `Code/` — repos you touch often, with a nested `CLAUDE.md`
-- `reporting/` — weekly 1-1s, quarterly objectives
-- `Payment/` (or domain folder) — spec-heavy reference material
+This wiki holds knowledge from **two distinct contexts** — always keep them cross-linked but never merged:
+- **Agicap** (day job, PM scope): e-invoicing / e-reporting, squad decisions, team entities.
+- **Ouch! / FixMyLife** (side project, `fix-it-karma` on Lovable, public name "Ouch!"/"FixMyLife"): product, growth, legal/moderation, data model. See [`MOC_Ouch_FixMyLife`](wiki/mocs/MOC_Ouch_FixMyLife.md).
 
 ---
 
 ## 📌 Glossary
 
-**Product lines at Agicap**: AP = Accounts Payable · AR = Accounts Receivable · PAY = Payments · TRY = Treasury · DI = Data Integration
+**Agicap product lines**: AP = Accounts Payable · AR = Accounts Receivable · PAY = Payments · TRY = Treasury · DI = Data Integration
+**Agicap squads / systems**: SIM = Supplier Invoice Management · P2P = Purchase-to-Pay · PA = "Plateforme Agréée" (French e-invoicing portal)
 
-**Squads / systems you encounter** (fill in what's relevant to your scope):
-- SIM = Supplier Invoice Management
-- P2P = Purchase-to-Pay
-- PA = "Plateforme Agréée" (French e-invoicing portal)
-- *(add your own — acronyms you use daily)*
+**Ouch! / FixMyLife**:
+- **Score de Douleur** = pain score ranking problems for makers (45% positive-vote volume, 35% conversion rate, 20% opt-in emails)
+- **Terminal Maker** = the maker-facing dashboard, ranks problems by Score de Douleur
+- **Type A / Type B** (`resolutionType`) = "tiers" (a third-party maker can fix it without the named entity) vs "entite" (only the named entity can fix it) — drives which disclaimer is shown
+- **Entité** = an organisation only, never a physical person (hard rule — see `wiki/concepts/` once created)
+- **Cercle 1/2/3** = launch-targeting rings: freelances/creators (current) → PME (signal-gated) → grand public
 
 ---
 
@@ -66,3 +65,11 @@
 	2. Read matching pages in `wiki/syntheses/`, `wiki/entities/`, `wiki/concepts/`, `wiki/patterns/`
 	3. **Only open `raw/` if the wiki is missing a specific piece of information**
 	→ Going directly to `raw/transcripts/` for shareable content is **FORBIDDEN**
+6. **Ouch! / FixMyLife hard rules** (see [`MOC_Ouch_FixMyLife`](wiki/mocs/MOC_Ouch_FixMyLife.md) for full detail) — never violate these when producing content, code, or copy for this project:
+	- An *entité* is always an organisation, never a named physical person
+	- No divisive public-policy takes; civic/administrative friction only, factual and specific
+	- Cards state a lived fact, never a value judgment on the entity ("j'attends mon remboursement depuis 3 semaines", not "cette entreprise est malhonnête")
+	- No content deletion ever (legal obligation aside); emails alone follow GDPR retention/erasure
+	- No reply threads — maker updates and "voix des concernés" are one-way
+	- No special account status or active outreach for entities that appear on cards
+	- Tone: always fun/playful on the victim-facing side, even for civic/institutional topics; factual/dark register stays confined to the Terminal Maker

@@ -11,8 +11,8 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 
 | Map | Scope |
 |---|---|
-| *(add your first MOC once you have 3+ related pages — e.g., Payments, E-invoicing, Your_Key_Project)* | — |
 | [E-Reporting Rectificatif](mocs/MOC_E-Reporting_Rectificatif.md) | Corrective VAT e-reporting on purchase invoices — object model, rollout sequencing, target-vision answer to the cross-period duplicate-declaration risk |
+| [Ouch! / FixMyLife](mocs/MOC_Ouch_FixMyLife.md) | Side-project context — concept, business model, hard product rules, data model, build status |
 
 ---
 
@@ -55,6 +55,8 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 | [Public API Invoice Ingestion](concepts/Public_API_Invoice_Ingestion.md) | AP-client channel pushing invoice create/update/delete directly to Agicap |
 | [B2C Manual Entries](concepts/B2C_Manual_Entries.md) | Manually-entered B2C transactions/payments — third source channel for e-reporting |
 | [Period-Correction Bundling](concepts/Period-Correction_Bundling.md) | Transmitting every rectificatif born from the same period correction as one action, to avoid a DGFiP duplicate-declaration risk |
+| [Score de Douleur](concepts/Score_de_Douleur.md) | Weighted pain-score formula (45% votes · 35% conversion · 20% opt-in emails) ranking problems in the Ouch! Terminal Maker |
+| [Resolution Type A/B](concepts/Resolution_Type_AB.md) | Ouch! field distinguishing problems fixable by a third-party maker ("tiers") from ones only the named entity can fix ("entite") |
 
 ---
 
@@ -87,6 +89,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 |---|---|
 | [Rectification-achats-v2 — implementation progress](syntheses/projects/2026-08-21_rectification-achats-v2-implementation-progress.md) | Prototype now builds the 2026-08-20 squad sync's object model, Historique redesign, and read-only lock — manual rectificatif cancellation and achats/ventes visual consistency still open |
 | [Rectification-achats-v2 — period-correction bundling](syntheses/projects/2026-08-26_rectification-achats-v2-period-correction-bundling.md) | Transmis/Accepté status split, UX fix batch, and the target-vision bundled-transmission design/prototype for the cross-period duplicate-declaration risk |
+| [Ouch!/FixMyLife — full project context](syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) | Context-recovery snapshot: concept, business model, hard product rules, data model, build status, and open next steps |
 
 ### 🔬 Research (`research/`)
 | Page | Summary |

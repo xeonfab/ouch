@@ -46,3 +46,15 @@
   - `wiki/index.md` (MOC, Concepts, Projects synthesis tables)
 - Patterns: none created — the "squad blocks unresolved edge cases in V1, revisits later as target-vision" proto-pattern (first noted 2026-08-20) has a second occurrence here (period correction specifically), but stays in the synthesis prose for now rather than becoming a full pattern page — same underlying topic evolving, not yet two independent sources.
 - Ran `wiki/backlinks.py` after writing to refresh all "Referenced by" blocks.
+
+## [2026-09-10] ingest | Ouch!/FixMyLife — full project context (spec, 2026-09-10)
+
+- Source: `raw/specs/2026-09-10_ouch-fixmylife-contexte-complet.md`
+- Created:
+  - Synthesis: `wiki/syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md`
+  - Concepts: `wiki/concepts/Score_de_Douleur.md`, `wiki/concepts/Resolution_Type_AB.md`
+  - MOC: `wiki/mocs/MOC_Ouch_FixMyLife.md` (new topic cluster, distinct from the Agicap-scoped knowledge already in this wiki)
+- Updated: `wiki/index.md` (MOC, Concepts, Projects synthesis tables), `CLAUDE.md` (About Me, Folder Map two-context note, Glossary, and a new "Ouch!/FixMyLife hard rules" section under Rules for Claude)
+- No new entity pages — the 13-16 real-world entities named in the product (SNCF, Doctolib, Qonto, ...) are in-product content, not people/orgs Fabien interacts with; noted explicitly in the MOC instead.
+- Patterns: none — single source so far for this topic, no recurring cross-source signal yet.
+- Ran `wiki/backlinks.py` after writing to refresh all "Referenced by" blocks.

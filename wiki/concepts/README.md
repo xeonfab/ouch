@@ -37,7 +37,7 @@ Copy [`_template.md`](_template.md) to start. Every concept page should have:
 
 - **Front-matter** with `last_reviewed: YYYY-MM-DD`
 - **Definition** — what is this, in 1-3 lines
-- **Why it matters at Agicap** — connect to your product lines
+- **Why it matters for Ouch!/FixMyLife** — connect to the product, growth, or legal scope
 - **Current status** — is this in production / planned / deprecated
 - **Related** — cross-links to adjacent concepts and entities
 - **Sources** — raw files that fed this page

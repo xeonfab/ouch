@@ -10,7 +10,7 @@ last_reviewed: YYYY-MM-DD
 
 Clear, factual definition. 3-5 lines max. Prefer concrete examples over abstract prose.
 
-## Why it matters at Agicap
+## Why it matters for Ouch!/FixMyLife
 
 Connect to your product lines (AP / AR / PAY / TRY / DI). Which squads touch it? Which clients care? What is our current coverage?
 

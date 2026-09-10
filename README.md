@@ -1,6 +1,6 @@
 # 🧠 PM LLM Wiki — Starter Pack
 
-> A second-brain setup for Agicap PMs, following Andrej Karpathy's [LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
+> A second-brain setup for the Ouch!/FixMyLife project, following Andrej Karpathy's [LLM Wiki pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f).
 > **Goal**: compound your knowledge so Claude becomes an actual workplace collaborator, not just a one-shot assistant.
 
 ---
@@ -134,7 +134,7 @@ Each folder has a `README.md` explaining the schema + a `_template.md` to copy w
 No. Obsidian gives you a nice graph view and free backlinks rendering, but everything here works the same in VS Code / Cursor / Vim. The two Python scripts replicate backlink generation without any IDE-specific feature.
 
 **Can I version-control this with git?**
-Yes — recommended. The `.gitignore` already excludes binary blobs from `raw/screenshots/` and Python cache files. Usage of Github between Agicap is under discussion.
+Yes — recommended. The `.gitignore` already excludes binary blobs from `raw/screenshots/` and Python cache files.
 
 **What if my wiki gets too big?**
 That's the point — it compounds. The `wiki-clean` skill keeps it tidy. If one concept page gets too long, split it. If two concepts keep being mentioned together, consider a MOC.

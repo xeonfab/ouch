@@ -9,7 +9,7 @@ last_reviewed: 2026-04-21
 ## Identity
 
 - **Role**: PM Example Squad
-- **Org / team**: Agicap — Example squad
+- **Org / team**: Ouch! — Example collaborator
 - **Slack**: @example.person
 
 ## Relevance to me

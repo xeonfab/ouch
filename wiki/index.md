@@ -11,7 +11,6 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 
 | Map | Scope |
 |---|---|
-| [E-Reporting Rectificatif](mocs/MOC_E-Reporting_Rectificatif.md) | Corrective VAT e-reporting on purchase invoices — object model, rollout sequencing, target-vision answer to the cross-period duplicate-declaration risk |
 | [Ouch! / FixMyLife](mocs/MOC_Ouch_FixMyLife.md) | Side-project context — concept, business model, hard product rules, data model, build status |
 
 ---
@@ -21,21 +20,17 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### People — Leadership
 | Page | Summary |
 |---|---|
-| *(e.g., your manager, your CEO)* | — |
+| *(e.g., a co-founder, an investor)* | — |
 
-### People — Your squad(s)
+### People — Team / collaborators
 | Page | Summary |
 |---|---|
-| *(e.g., PMs, devs, designers you work with)* | — |
-| [Ludovic Lelievre](entities/Ludovic_Lelievre.md) | Functional lead on e-reporting rectificatif — delivery sequencing |
-| [Audric Podmilsak](entities/Audric_Podmilsak.md) | Engineering perspective on e-reporting rectificatif — technical cost, AP-first strategy |
-| [Paul Sorrentino](entities/Paul_Sorrentino.md) | UX/product sanity-check on e-reporting rectificatif — consistency with initial reporting |
+| *(e.g., devs, designers you work with on Ouch!)* | — |
 
-### Organisations & banks
+### Organisations & partners
 | Page | Summary |
 |---|---|
-| *(e.g., competitors, partners, clients)* | — |
-| [Cegedim](entities/Cegedim.md) | PDP/intermediary partner platform between Agicap and DGFIP/PPF |
+| *(e.g., competitors, partners, real entities that become paying makers)* | — |
 
 ### Clients
 | Page | Summary |
@@ -47,14 +42,6 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 
 | Page | Summary |
 |---|---|
-| *(e.g., EBICS, pain.001, SEPA — technical or business concepts in your scope)* | — |
-| [E-Reporting Rectificatif](concepts/E-Reporting_Rectificatif.md) | Corrective VAT e-reporting that replaces a previously-transmitted period once accepted |
-| [Reporting Period](concepts/Reporting_Period.md) | The SIREN + date-range unit a rectificatif always targets |
-| [FRR Flow](concepts/FRR_Flow.md) | The e-reporting file generated and sent to Cegedim per period |
-| [DGFIP / PPF](concepts/DGFIP_PPF.md) | French tax administration and its public invoicing portal — final destination of e-reporting |
-| [Public API Invoice Ingestion](concepts/Public_API_Invoice_Ingestion.md) | AP-client channel pushing invoice create/update/delete directly to Agicap |
-| [B2C Manual Entries](concepts/B2C_Manual_Entries.md) | Manually-entered B2C transactions/payments — third source channel for e-reporting |
-| [Period-Correction Bundling](concepts/Period-Correction_Bundling.md) | Transmitting every rectificatif born from the same period correction as one action, to avoid a DGFiP duplicate-declaration risk |
 | [Score de Douleur](concepts/Score_de_Douleur.md) | Weighted pain-score formula (45% votes · 35% conversion · 20% opt-in emails) ranking problems in the Ouch! Terminal Maker |
 | [Resolution Type A/B](concepts/Resolution_Type_AB.md) | Ouch! field distinguishing problems fixable by a third-party maker ("tiers") from ones only the named entity can fix ("entite") |
 
@@ -64,7 +51,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 
 | Page | Confidence | Scope | Summary |
 |---|---|---|---|
-| [Example Pattern](patterns/Example_Pattern.md) | 🟡 moderate | AP · France · Enterprise | Example pattern page — delete once comfortable |
+| [Example Pattern](patterns/Example_Pattern.md) | 🟡 moderate | — | Example pattern page — delete once comfortable |
 
 ---
 
@@ -73,8 +60,6 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### 🗓️ Meetings & calls (`meetings/`)
 | Page | Date | Summary |
 |---|---|---|
-| *(e.g., `meetings/2026-04-15_weekly-pa.md`)* | — | — |
-| [E-reporting rectificatif — squad sync](syntheses/meetings/2026-08-20_e-reporting-rectificatif-squad-sync.md) | 2026-08-20 | Object model, UX, and phased delivery plan for corrective e-reporting on purchase invoices |
 
 ### 🏢 Competitors (`competitors/`)
 | Page | Summary |
@@ -87,8 +72,6 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### 🚀 Projects (`projects/`)
 | Page | Summary |
 |---|---|
-| [Rectification-achats-v2 — implementation progress](syntheses/projects/2026-08-21_rectification-achats-v2-implementation-progress.md) | Prototype now builds the 2026-08-20 squad sync's object model, Historique redesign, and read-only lock — manual rectificatif cancellation and achats/ventes visual consistency still open |
-| [Rectification-achats-v2 — period-correction bundling](syntheses/projects/2026-08-26_rectification-achats-v2-period-correction-bundling.md) | Transmis/Accepté status split, UX fix batch, and the target-vision bundled-transmission design/prototype for the cross-period duplicate-declaration risk |
 | [Ouch!/FixMyLife — full project context](syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) | Context-recovery snapshot: concept, business model, hard product rules, data model, build status, and open next steps |
 
 ### 🔬 Research (`research/`)

@@ -17,7 +17,7 @@ last_reviewed: 2026-09-10
 
 ## Context
 
-Fabien runs Ouch!/FixMyLife (Lovable project `fix-it-karma`) as a side project alongside his full-time PM role at Agicap and a consulting SASU, with ~20h/week available. This document is a context-recovery dump generated from the full history of product decisions, meant to let Claude resume work on the project without re-litigating settled calls.
+Fabien runs Ouch!/FixMyLife (Lovable project `fix-it-karma`) as an independent project, with ~20h/week available alongside other professional commitments. This document is a context-recovery dump generated from the full history of product decisions, meant to let Claude resume work on the project without re-litigating settled calls.
 
 ## Key points
 

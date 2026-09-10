@@ -10,7 +10,7 @@ last_reviewed: 2026-04-21
 
 A placeholder concept to illustrate how cross-linking works. In practice, this page would define something concrete like `pain.001`, `EBICS`, or `3-way matching`.
 
-## Why it matters at Agicap
+## Why it matters for Ouch!/FixMyLife
 
 This page is owned by [Example Person](../entities/Example_Person.md) and relates to PAY product line work.
 

@@ -72,3 +72,11 @@
 - Created: `skills/ouch-ceo/SKILL.md`, `skills/ouch-growth-hacker/SKILL.md`, `skills/ouch-cto/SKILL.md`, `skills/ouch-ux-designer/SKILL.md`, `skills/ouch-cfo/SKILL.md`, `skills/ouch-legal/SKILL.md`, `skills/ouch-persona-victime/SKILL.md`, `skills/ouch-persona-maker/SKILL.md`, `skills/panel-ouch-double-face/SKILL.md`
 - Updated: `CLAUDE.md` — new "Ouch! Agent Team (skills)" section listing all 9 with role summaries
 - Not a wiki-ingest (no new entity/concept/synthesis) — this is skill installation, tracked here for traceability since it changes how future sessions operate on this repo
+
+## [2026-09-10] ingest | Test de concept — communauté freelances (message + landing page)
+
+- Source: conception en conversation (agent `ouch-growth-hacker`), ancrée sur l'action ouverte "Run the long-planned public validation test" de la synthèse projet
+- Created: `wiki/syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md`
+- Updated: `wiki/index.md` (Strategy table), `wiki/mocs/MOC_Ouch_FixMyLife.md` (Syntheses & strategy)
+- No new entity/concept pages — pure growth-experiment synthesis, single source
+- Patterns: none — one-off decision, no recurring cross-source signal yet

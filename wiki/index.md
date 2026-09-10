@@ -68,6 +68,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### 🎯 Strategy (`strategy/`)
 | Page | Summary |
 |---|---|
+| [Test de concept — communauté freelances](syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md) | Message + structure de landing page pour exécuter le test de validation publique, ciblé sur un groupe fermé de freelances |
 
 ### 🚀 Projects (`projects/`)
 | Page | Summary |

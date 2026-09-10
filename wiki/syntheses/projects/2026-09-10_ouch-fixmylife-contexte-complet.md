@@ -130,6 +130,10 @@ Located in `/mnt/skills/user/`: `ouch-ceo` (Karim, vision/roadmap), `ouch-growth
 <!-- BACKLINKS:START -->
 ## Referenced by
 
+**Syntheses**
+
+- [2026-09-10 test-concept-communaute-freelances](../strategy/2026-09-10_test-concept-communaute-freelances.md)
+
 **Other**
 
 - [📇 Wiki Index](../../index.md)

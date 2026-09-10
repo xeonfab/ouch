@@ -17,6 +17,7 @@ last_reviewed: 2026-09-10
 
 ## 📚 Syntheses & strategy
 - [Ouch!/FixMyLife — full project context](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) — concept, business model, hard rules, data model, build status, next steps
+- [Test de concept — communauté freelances](../syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md) — message + structure de landing page pour le test de validation publique, jamais exécuté jusqu'ici
 
 ## ❓ Open questions
 - Is the Supabase migration a prerequisite for the public validation test, or can that test run first on the current `localStorage` prototype?
@@ -34,6 +35,7 @@ last_reviewed: 2026-09-10
 **Syntheses**
 
 - [2026-09-10 ouch-fixmylife-contexte-complet](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
+- [2026-09-10 test-concept-communaute-freelances](../syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md)
 
 **Other**
 

@@ -48,6 +48,24 @@ This wiki is scoped entirely to **Ouch! / FixMyLife** (side project, `fix-it-kar
 
 ---
 
+## 🧑‍🤝‍🧑 Ouch! Agent Team (skills)
+
+Product-design skills in `skills/`, one persona each — invoke by name or let them trigger naturally:
+
+| Skill | Role |
+|---|---|
+| `ouch-ceo` (Karim) | Vision, prioritization, roadmap, arbitration — filters everything through "does this solve cold start now?" |
+| `ouch-growth-hacker` (Yasmine) | Two-sided bootstrapping, scraping/automation pipeline (Make/n8n), copywriting |
+| `ouch-cto` (Marc) | Lovable/Supabase feasibility, technical debt, build-vs-defer calls |
+| `ouch-ux-designer` | Visual consistency, the two registers (fun victim side / factual maker side) |
+| `ouch-cfo` | Pricing, unit economics, monetization timing |
+| `ouch-legal` | Risk of naming real entities, GDPR, defamation/denigration, moderation grid |
+| `ouch-persona-victime` (Léa, freelance graphic designer, Lyon) | Tests wording/UX on the swipe side |
+| `ouch-persona-maker` (Julien, skeptical indie developer) | Tests perceived value on the Terminal/pricing side |
+| `panel-ouch-double-face` | 4-round deliberative panel for structuring decisions, always anchored on cold-start risk |
+
+---
+
 ## 🧠 Rules for Claude
 
 1. **Load the right context** before answering — start at `wiki/index.md` for anything knowledge-related

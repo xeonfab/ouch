@@ -65,3 +65,10 @@
 - Updated: `wiki/index.md` (dropped all Agicap rows/MOC), `CLAUDE.md` (removed Agicap from About Me, dropped the two-context note, Glossary now Ouch!-only), `README.md` (genericized two Agicap-specific lines), scaffolding templates (`wiki/concepts/_template.md`, `wiki/concepts/README.md`, `wiki/entities/Example_Person.md`, `wiki/concepts/Example_Concept.md`) reworded from "Agicap" to "Ouch!/FixMyLife"
 - Kept as-is (immutable raw source, historical record): `raw/specs/2026-09-10_ouch-fixmylife-contexte-complet.md` still mentions the day job in passing
 - Ran `wiki/backlinks.py` after removal to clear stale "Referenced by" blocks
+
+## [2026-09-10] install | Ouch! agent team — 9 product-design skills
+
+- Source: uploaded bundle `ouchequipeskillscomplete.md` (9 SKILL.md files concatenated)
+- Created: `skills/ouch-ceo/SKILL.md`, `skills/ouch-growth-hacker/SKILL.md`, `skills/ouch-cto/SKILL.md`, `skills/ouch-ux-designer/SKILL.md`, `skills/ouch-cfo/SKILL.md`, `skills/ouch-legal/SKILL.md`, `skills/ouch-persona-victime/SKILL.md`, `skills/ouch-persona-maker/SKILL.md`, `skills/panel-ouch-double-face/SKILL.md`
+- Updated: `CLAUDE.md` — new "Ouch! Agent Team (skills)" section listing all 9 with role summaries
+- Not a wiki-ingest (no new entity/concept/synthesis) — this is skill installation, tracked here for traceability since it changes how future sessions operate on this repo

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Raw screenshots (heavy binary) — uncomment if you want to exclude from git
+# raw/screenshots/*
+
+# Local notes / scratch
+scratch/
+*.local.md

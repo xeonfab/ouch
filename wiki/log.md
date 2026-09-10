@@ -80,3 +80,11 @@
 - Updated: `wiki/index.md` (Strategy table), `wiki/mocs/MOC_Ouch_FixMyLife.md` (Syntheses & strategy)
 - No new entity/concept pages — pure growth-experiment synthesis, single source
 - Patterns: none — one-off decision, no recurring cross-source signal yet
+
+## [2026-09-10] ingest | Test freelances — build status, bugs corrigés, décisions de design
+
+- Source: session de build itératif sur Lovable (`fix-it-karma`) — page `/communaute/independants` + `/communaute/independants/catalogue` construites et en ligne
+- Updated: `wiki/syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md` (section "Build status" ajoutée : fonctionnalités livrées au-delà du plan initial — SSO Google, grille de rappel votable, page catalogue filtrable/triable ; bugs de débordement de carte et de routing TanStack Router corrigés ; décisions de design actées : séparation stricte des registres victime/maker, coexistence score de douleur + votes bruts, hiérarchie des badges allégée)
+- Next steps table mise à jour : 2 items marqués faits (brief Lovable, sélection des cartes), reste ouvert : choix du groupe précis et envoi du message
+- No new entity/concept pages
+- Patterns: none — mise à jour d'une synthèse existante, pas de nouveau signal cross-source

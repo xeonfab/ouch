@@ -63,13 +63,36 @@ Une entrée dédiée (pas `/terminal`, pas la home générale), réutilisant les
 - Nombre de problèmes ajoutés spontanément via le flow `qualifyProblem`
 - Réponses ouvertes du micro-questionnaire (signal qualitatif sur le wording)
 
+## Build status (Lovable, `fix-it-karma`)
+
+La page est construite et en ligne, au-delà du plan initial — trois niveaux d'engagement au lieu d'un deck isolé :
+
+**`/communaute/independants`** (swipe) :
+- Header dédié + CTA "Déposer ma frustration" (flow `qualifyProblem` existant) à parité visuelle avec le swipe, comme décidé
+- Deck curaté sur 10 problèmes freelance (`FREELANCE_PROBLEM_IDS` = ids 1, 3, 9, 10, 13, 29, 34, 36, 37, 38 — facturation, Qonto, Malt, Stripe, admin/URSSAF)
+- Connexion Google SSO en alternative au formulaire email dans la modale post-swipe : capture instantanée si déjà connecté, sinon redirection + reprise automatique du lead via `sessionStorage` au retour
+- Modale de capture email plafonnée à 1 affichage par session de swipe (au lieu d'une interruption à chaque swipe positif) — au-delà de la première fois, juste confetti + toast
+- Grille de rappel "🔥 Tout ce qui remonte déjà côté indépendants" sous le deck : les mêmes 10 problèmes, votables en un clic (bouton like réutilisable, sans re-swiper)
+- Lien de sortie vers le catalogue complet
+
+**`/communaute/independants/catalogue`** (nouveau, ajouté en cours de session) : recherche + filtres secteur (Fintech/B2B/Lifestyle pré-sélectionnés) + tri (Plus récents par défaut, Score de douleur, Emails collectés) sur ~27 problèmes du catalogue, présentés en tableau clair (desktop) / liste (mobile) — conçu à la demande de Fabien pour "montrer la consistance des problèmes de la communauté" au-delà des 10 curatés.
+
+**Bugs corrigés en route** :
+- Débordement de carte (voix des concernés + note maker qui recouvraient les boutons de swipe) → carte compacte allégée, `overflow-hidden` structurel ajouté pour empêcher toute récidive
+- Bug de routing TanStack Router : `communaute.independants.tsx` interceptait sans `<Outlet/>` les sous-routes → converti en layout, contenu déplacé vers `communaute.independants.index.tsx`
+
+**Décisions de design actées pendant le build** :
+- **Les deux registres visuels restent séparés** : le catalogue réutilise le principe filtres+tableau du Terminal Maker mais jamais ses composants ni sa palette sombre (`term-*`) — le Terminal reste strictement maker-side
+- **Score de douleur ET votes bruts (🔥) coexistent** sur les cartes : le score seul semblait "fake" sans transparence du calcul, le compteur brut reste plus immédiatement crédible pour l'utilisateur
+- **Hiérarchie des badges allégée** : un seul niveau de bordure forte par carte (le conteneur), badges/tags secondaires en traitement discret ; un seul emoji "libre" par carte (celui du problème) ; distinction tag-catégorie (texte plat, non cliquable) vs tag-entité (pilule + `↗`, cliquable) codée par la forme, pas seulement la couleur
+
 ## Decisions & next steps
 
 | Owner | Action | Due | Status |
 |---|---|---|---|
 | Fabien | Choisir/valider le groupe fermé précis à cibler | — | open |
-| Fabien | Brief Lovable pour la page filtrée (6-10 cartes freelance + CTA soumission à parité + micro-questionnaire fin de deck) | — | open |
-| Fabien | Sélectionner les 6-10 meilleures cartes freelance du catalogue existant | — | open |
+| Fabien | Brief Lovable pour la page filtrée (6-10 cartes freelance + CTA soumission à parité + micro-questionnaire fin de deck) | — | ✅ fait — voir Build status |
+| Fabien | Sélectionner les 6-10 meilleures cartes freelance du catalogue existant | — | ✅ fait (10 ids retenus, voir Build status) |
 | Fabien | Poster le message dans le groupe et suivre les métriques ci-dessus | — | open |
 
 ## Related wiki pages

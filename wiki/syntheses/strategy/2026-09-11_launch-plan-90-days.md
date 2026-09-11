@@ -159,7 +159,8 @@ Weekly sheet (one row per week, filled Sunday):
 | Fabien | Create the weekly metrics sheet | 2026-09-14 | open |
 | Claude Code | Implement the spec from the app repo | 2026-10-01 | **done 2026-09-11** on branch `claude/persistence-spec` (migration applied, 38 cards seeded at zero, client migrated, lint/typecheck/build green) |
 | Fabien | Open the PR, merge to `main` (Lovable sync), then run the two-device test on the Lovable preview and the 5-friend smoke test (spec §7 steps 5-6) | 2026-10-01 | open — blocked in the build sandbox (Supabase host not reachable there) |
-| Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | open |
+| Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | **deck done 2026-09-11** → [freelance deck v1](../projects/2026-09-11_freelance-deck-v1.md) (54 cards, top 10 selected); channel playbook done → [communication plan](2026-09-11_freelance-channel-communication-plan.md); channel map (actual groups) still open |
+| Claude Code (`ouch-cto`) | Structure fixes before the first wave: `communities` tag, retire placeholder entities, submission-funnel events, cross-topic dedup | 2026-10-01 | open → [structure & dedup spec](../projects/2026-09-11_problem-structure-dedup-spec.md) |
 
 ## Open questions
 
@@ -186,6 +187,9 @@ Weekly sheet (one row per week, filled Sunday):
 **Syntheses**
 
 - [2026-09-11 community-rollout-playbook](2026-09-11_community-rollout-playbook.md)
+- [2026-09-11 freelance-channel-communication-plan](2026-09-11_freelance-channel-communication-plan.md)
+- [2026-09-11 freelance-deck-v1](../projects/2026-09-11_freelance-deck-v1.md)
+- [2026-09-11 problem-structure-dedup-spec](../projects/2026-09-11_problem-structure-dedup-spec.md)
 
 **Other**
 

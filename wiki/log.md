@@ -113,3 +113,14 @@
 - Settled: the organisations that collect problems are the entités (companies, local authorities, public names). A problem tied to an entity must appear publicly on the dedicated entity page/listing. Makers = entrepreneurs and intrapreneurs: inside the entity (Type B) or independent people/collectives (Type A). Hard rules 4–5 (no special status, no outreach) unchanged.
 - Updated: rollout playbook (both-sides section, open question struck through, next-steps table), MOC (open question settled), `wiki/index.md` (row summary)
 - Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] deliverables | Freelance push — deck, channel plan, structure/dedup spec
+
+- Trigger: Fabien asked the whole team to advance on Cercle 1 (freelances) on three fronts: quality problem cards collected from the channels, a communication strategy per channel to get problems submitted, and platform design for clean presentation and a duplicate-free, unambiguous database.
+- Source: live read of `xeonfab/fix-it-karma` (qualify prompt, duplicate detection, entities, problems, submit flow, community page, persistence spec) and of the Lovable Cloud database (7 tables, 38 seed rows). No new raw file: facts are recorded in the pages.
+- Created: `wiki/syntheses/projects/2026-09-11_freelance-deck-v1.md` (+ `.csv` export, 54 rows), `wiki/syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md`, `wiki/syntheses/projects/2026-09-11_problem-structure-dedup-spec.md`
+- Updated: `wiki/index.md` (3 rows), MOC (new "Freelance push" section, 2 open questions), launch plan (next-steps table)
+- Key audit findings: community deck hard-coded by ids (submitted freelance cards never reach the freelance page); 18 of 31 entities are placeholders linked by 24 seed cards; duplicate check limited to one sector·topic and 40 rows; `topic_hashtag` null on all seeds; seed id 1 title/statement mismatch; submitting requires Google login and the wall is unmeasured.
+- Decisions proposed (not yet settled by Fabien): retire placeholder entities; add `communities` tag; measure the login wall before any anonymous-publication decision; canonical merge instead of deletion.
+- Patterns: none.
+- Ran `wiki/backlinks.py` after writing.

@@ -69,11 +69,14 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 | Page | Summary |
 |---|---|
 | [Community rollout playbook (founder)](syntheses/strategy/2026-09-11_community-rollout-playbook.md) | Long-run strategy as a repeatable loop: ship → one community → channel map → problem submission → store/structure → makers → automate → replay; channel-type table for FR freelances, automation ladder, replay kit; entity pages as the public listing, two maker profiles (intrapreneur = Type B, independent = Type A) |
+| [Freelance channel communication plan](syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md) | Funnel and its leaks (login wall to submit), fun register, per-channel playbook with French copy (LinkedIn, Facebook groups, Slack/Discord, Reddit/forums), weekly harvest protocol, proxy submission, objections, metrics by `?c=` |
 | [90-day launch plan (CEO)](syntheses/strategy/2026-09-11_launch-plan-90-days.md) | Active launch plan: live build audit (votes still `localStorage`), 6 settled decisions, 3 phases with hard gates (persistence → first freelance audience → first maker signal), weekly 20h rhythm, metrics, day-90 decision |
 
 ### 🚀 Projects (`projects/`)
 | Page | Summary |
 |---|---|
+| [Freelance deck v1 (54 cards)](syntheses/projects/2026-09-11_freelance-deck-v1.md) | Card standard (8 checks), audit of the 10 hard-coded deck cards, 54 freelance cards in French checked against the legal grid, 10-card launch deck, insertion procedure; CSV export alongside |
+| [Problem structure & dedup spec](syntheses/projects/2026-09-11_problem-structure-dedup-spec.md) | Audit of the live code (hard-coded deck, 18 placeholder entities, one-topic duplicate check), `communities` tag, real-entities-only registry, 3-layer dedup with canonical merge (no deletion), presentation rules, sequencing under the feature freeze |
 | [Ouch!/FixMyLife — full project context](syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) | Context-recovery snapshot: concept, business model, hard product rules, data model, build status, and open next steps |
 
 ### 🔬 Research (`research/`)

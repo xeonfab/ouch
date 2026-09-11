@@ -88,3 +88,12 @@
 - Next steps table mise à jour : 2 items marqués faits (brief Lovable, sélection des cartes), reste ouvert : choix du groupe précis et envoi du message
 - No new entity/concept pages
 - Patterns: none — mise à jour d'une synthèse existante, pas de nouveau signal cross-source
+
+## [2026-09-11] ingest | Dépôt d'un problème — décision du panel double-face
+
+- Source: brief brut de Fabien adressé à "toute l'équipe" + délibération `panel-ouch-double-face` (Karim/Yasmine/Marc/Léa/Julien) + lecture du code existant (`submit-flow.tsx`, `qualify.functions.ts`, `duplicate.functions.ts`)
+- Created: `wiki/syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md`
+- Updated: `wiki/index.md` (Strategy table), `wiki/mocs/MOC_Ouch_FixMyLife.md` (Syntheses & strategy)
+- Découverte clé documentée : la majorité du brief (concision/description, mutualisation via `detectDuplicate`, reformulation, liaison entité) était déjà construite avant la délibération — le panel a resserré le scope au seul vrai manque, le partage social, livré dans la foulée (bouton "Partager ma carte" sur le toast de succès, `navigator.share` mobile / intent X desktop)
+- No new entity/concept pages
+- Patterns: none — décision ponctuelle, pas de signal cross-source récurrent

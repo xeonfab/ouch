@@ -69,6 +69,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 | Page | Summary |
 |---|---|
 | [Test de concept — communauté freelances](syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md) | Message + structure de landing page pour exécuter le test de validation publique, ciblé sur un groupe fermé de freelances |
+| [Dépôt d'un problème — décision du panel double-face](syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md) | Refonte du flow de dépôt de problème : la plupart du brief était déjà construite, le panel a resserré le scope au partage social |
 
 ### 🚀 Projects (`projects/`)
 | Page | Summary |

@@ -105,6 +105,10 @@ La page est construite et en ligne, au-delà du plan initial — trois niveaux d
 <!-- BACKLINKS:START -->
 ## Referenced by
 
+**Syntheses**
+
+- [2026-09-11 depot-probleme-panel-decision](2026-09-11_depot-probleme-panel-decision.md)
+
 **Other**
 
 - [📇 Wiki Index](../../index.md)

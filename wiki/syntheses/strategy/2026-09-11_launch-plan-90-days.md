@@ -30,7 +30,7 @@ The product surface is essentially built (swipe, Terminal Maker, entity pages, A
 | Social share after publishing a problem | Built 2026-09-11 | Good: free distribution loop. Keep. |
 | Lovable `roadmap.md` | All 12 items checked | Feature backlog is empty by design. Nothing else is "missing" for launch. |
 | Demo counters in the catalog | `seedRight` up to 512, `seedLeads` up to 214, fake statuses, fake maker updates, fake verbatims, synthetic growth curve, hero "+12 480 problèmes" | **All zeroed or removed before any public share** (spec §1b). A maker must never see an invented number. |
-| Code repository | Lovable now synced two-way with `xeonfab/fix-it-karma` (`main`) | Claude Code works from the repo on branches; Lovable keeps preview, hosting and AI gateway. One driver on the code at a time. |
+| Code repository | `xeonfab/fix-it-karma`, **leaving Lovable** (decision reaffirmed by Fabien 2026-09-11): own Supabase project, Vercel hosting, Claude API. Lovable is disconnected after the first Vercel deploy is verified. | Cheapest moment to move: the database is empty. Full exit implemented the same day. |
 | Vocabulary | Still "concerné(e)s" + 🔥 | Settled below (D2). |
 | Legal pages `/mentions-legales`, `/confidentialite`, `/cgu` | Routes exist | Content to proofread once in Sprint 0, not rebuilt. |
 
@@ -158,7 +158,9 @@ Weekly sheet (one row per week, filled Sunday):
 | Fabien + `ouch-legal` | Proofread the three legal pages; final legal pass on the seed catalog | 2026-09-17 | open |
 | Fabien | Create the weekly metrics sheet | 2026-09-14 | open |
 | Claude Code | Implement the spec from the app repo | 2026-10-01 | **done 2026-09-11** on branch `claude/persistence-spec` (migration applied, 38 cards seeded at zero, client migrated, lint/typecheck/build green) |
-| Fabien | Open the PR, merge to `main` (Lovable sync), then run the two-device test on the Lovable preview and the 5-friend smoke test (spec §7 steps 5-6) | 2026-10-01 | open — blocked in the build sandbox (Supabase host not reachable there) |
+| Claude Code | Leave Lovable: own Supabase project `ouch` (eu-west-3) migrated and seeded, Lovable packages/auth broker/AI gateway removed, Anthropic SDK, Vercel build target, `docs/deploy.md` | — | **done 2026-09-11**, same branch |
+| Fabien | Follow `docs/deploy.md` §1: Anthropic API key, Google OAuth client, Vercel import + env vars (≈30 min) | 2026-09-18 | open |
+| Fabien | Merge the PR, run the two-device test and the 5-friend smoke test on the Vercel URL (`docs/deploy.md` §2), then disconnect Lovable (§3) | 2026-10-01 | open |
 | Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | open |
 
 ## Open questions

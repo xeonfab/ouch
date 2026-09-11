@@ -24,7 +24,7 @@ last_reviewed: 2026-09-11
 - New since the snapshot: `/communaute/independants` + `/catalogue` (Cercle 1 landing with a 2-question survey, answers also `localStorage`), Google SSO offered after a positive swipe, social share after publishing a problem, duplicate detection on submission.
 - Lovable `roadmap.md`: all 12 items checked. Feature backlog is empty by design (feature freeze, decision D5).
 - The catalog ships demo counters and fake statuses; they are zeroed at migration (spec §1b).
-- Code lives in [`xeonfab/fix-it-karma`](https://github.com/xeonfab/fix-it-karma) (two-way Lovable sync on `main`). Phase 1 spec: [`docs/persistence-spec.md`](https://github.com/xeonfab/fix-it-karma/blob/claude/persistence-spec/docs/persistence-spec.md).
+- Code lives in [`xeonfab/fix-it-karma`](https://github.com/xeonfab/fix-it-karma). **Off Lovable since 2026-09-11**: Supabase project `ouch` (`mywbvjaitfqclenrvsdn`, Paris) on Fabien's own account, Vercel hosting, Claude API for qualification/duplicates. Phase 1 spec: [`docs/persistence-spec.md`](https://github.com/xeonfab/fix-it-karma/blob/claude/persistence-spec/docs/persistence-spec.md); deployment: [`docs/deploy.md`](https://github.com/xeonfab/fix-it-karma/blob/claude/persistence-spec/docs/deploy.md).
 
 ## ❓ Open questions
 - ~~Is the Supabase migration a prerequisite for the public validation test?~~ **Settled 2026-09-11 (D1): yes**, minimal schema, two-week cap — see launch plan.

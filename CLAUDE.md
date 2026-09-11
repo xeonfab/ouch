@@ -50,7 +50,7 @@ This wiki is scoped entirely to **Ouch! / FixMyLife** (side project, `fix-it-kar
 
 ## 🧑‍🤝‍🧑 Ouch! Agent Team (skills)
 
-Product-design skills in `skills/`, one persona each — invoke by name or let them trigger naturally:
+Product-design skills in `skills/`, one persona each — invoke by name or let them trigger naturally. Team audit and roles per workstream: [`2026-09-11_team-skills-audit`](wiki/syntheses/strategy/2026-09-11_team-skills-audit.md).
 
 | Skill | Role |
 |---|---|
@@ -60,9 +60,12 @@ Product-design skills in `skills/`, one persona each — invoke by name or let t
 | `ouch-ux-designer` | Visual consistency, the two registers (fun victim side / factual maker side) |
 | `ouch-cfo` | Pricing, unit economics, monetization timing |
 | `ouch-legal` | Risk of naming real entities, GDPR, defamation/denigration, moderation grid |
-| `ouch-persona-victime` (Léa, freelance graphic designer, Lyon) | Tests wording/UX on the swipe side |
-| `ouch-persona-maker` (Julien, skeptical indie developer) | Tests perceived value on the Terminal/pricing side |
-| `panel-ouch-double-face` | 4-round deliberative panel for structuring decisions, always anchored on cold-start risk |
+| `ouch-editeur-cartes` | Chief card editor & moderator — owns the 8-check card standard, rewrites harvested complaints, decides duplicates (canonical card, never deletion), composes decks |
+| `ouch-expert-independants` | French freelance domain expert (statuts, URSSAF, TVA, CFE, e-invoicing, protection sociale, freelance communities) — fact-checks every freelance card |
+| `ouch-data-analyst` | Growth analytics on the real Supabase schema — weekly sheet, SQL on events, channel ranking by `?c=`, plan thresholds, sample honesty |
+| `ouch-persona-victime` (Léa, freelance graphic designer, Lyon · Sami, dev freelance in SASU, Nantes) | Tests wording/UX on the swipe side |
+| `ouch-persona-maker` (Julien, skeptical indie developer · Nadia, intrapreneur PM inside a named entity) | Tests perceived value on the Terminal/pricing side and on entity pages |
+| `panel-ouch-double-face` | 4-round deliberative panel for structuring decisions, always anchored on cold-start risk; may invite one domain seat |
 
 ---
 

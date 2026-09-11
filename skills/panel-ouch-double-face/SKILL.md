@@ -1,16 +1,6 @@
 ---
 name: panel-ouch-double-face
-description: >
-  Panel délibératif de 5 experts pour le projet Ouch! / FixMyLife ("Tinder des problèmes") —
-  marketplace à deux faces où des "victimes" swipent des frustrations et des "makers" les
-  exploitent via un Score de Douleur. Contrairement à un avis simple, ce panel FAIT DÉLIBÉRER
-  les experts en 4 tours pour co-construire UNE décision finale, simple et actionnable avec un
-  temps disponible limité (~20h/semaine). Utilise ce skill SYSTÉMATIQUEMENT pour toute décision
-  structurante sur Ouch! : pivot, nouvelle fonctionnalité majeure, choix de cible de lancement,
-  activation de la monétisation, stratégie de contenu de démarrage. Déclenche pour "panel Ouch",
-  "jury sur cette décision Ouch/FixMyLife", "stress-test cette idée pour Ouch", "que pense le
-  jury de ça", "co-construis une solution pour [décision Ouch]", ou toute demande de délibération
-  collective sur une décision structurante du projet Ouch!/FixMyLife/Tinder des problèmes.
+description: "Panel délibératif de 5 experts pour le projet Ouch! / FixMyLife (\"Tinder des problèmes\") — marketplace à deux faces où des \"victimes\" swipent des frustrations et des \"makers\" les exploitent via un Score de Douleur. Contrairement à un avis simple, ce panel FAIT DÉLIBÉRER les experts en 4 tours pour co-construire UNE décision finale, simple et actionnable avec un temps disponible limité (~20h/semaine). Utilise ce skill SYSTÉMATIQUEMENT pour toute décision structurante sur Ouch! : pivot, nouvelle fonctionnalité majeure, choix de cible de lancement, activation de la monétisation, stratégie de contenu de démarrage. Déclenche pour \"panel Ouch\", \"jury sur cette décision Ouch/FixMyLife\", \"stress-test cette idée pour Ouch\", \"que pense le jury de ça\", \"co-construis une solution pour [décision Ouch]\", ou toute demande de délibération collective sur une décision structurante du projet Ouch!/FixMyLife/Tinder des problèmes."
 ---
 
 # Panel Ouch! / FixMyLife — Marketplace à Double Face
@@ -86,8 +76,15 @@ TOUR 4 — Synthèse finale (Président)
     Si elle s'en écarte, le dire explicitement dans le champ "COHÉRENCE RISQUE → DÉCISION"
 ```
 
-Le Président du jury est un 6e rôle (pas un persona métier) : facilitateur qui n'a pas d'avis
+Le Président du jury est un rôle à part (pas un persona métier) : facilitateur qui n'a pas d'avis
 propre, seulement le mandat de faire converger.
+
+**Siège invité (ajouté le 2026-09-11)** : quand la décision touche un domaine que les cinq
+experts ne couvrent pas, le Président invite UN siège supplémentaire au Tour 1 et au Tour 3, jamais
+plus : `ouch-legal` (une entité nommée, un consentement, une modération), `ouch-editeur-cartes`
+(qualité ou dédoublonnage du contenu), `ouch-expert-independants` (exactitude du statut freelance,
+choix d'un canal communautaire), `ouch-data-analyst` (lecture d'une métrique, seuil de décision),
+`ouch-cfo` (prix, monétisation). Le siège invité répond aux mêmes questions que les autres.
 
 ---
 

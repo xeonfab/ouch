@@ -25,6 +25,9 @@ last_reviewed: 2026-09-11
 - [Freelance channel communication plan](../syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md) — **distribution**: per-channel playbook and copy, harvest protocol, proxy submission, metrics by channel
 - [Problem structure & dedup spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md) — **platform**: community tag, real-entities-only registry (retire 18 placeholders), 3-layer dedup with canonical merge, presentation rules
 
+## 🧑‍🤝‍🧑 Team
+- [Team skills audit & upgrade](../syntheses/strategy/2026-09-11_team-skills-audit.md) — twelve seats, who leads which workstream, what was fixed (auto-trigger defect, obsolete CTO/CEO context) and created (`ouch-expert-independants`, `ouch-editeur-cartes`, `ouch-data-analyst`)
+
 ## 🚦 Build state delta (2026-09-11 live audit vs 2026-09-10 snapshot)
 - Persistence is **still `localStorage` only** (`src/lib/engagement.tsx`); Supabase holds only a `profiles` table for Google SSO. Shared persistence is Phase 1 of the launch plan and a hard prerequisite before any external share.
 - New since the snapshot: `/communaute/independants` + `/catalogue` (Cercle 1 landing with a 2-question survey, answers also `localStorage`), Google SSO offered after a positive swipe, social share after publishing a problem, duplicate detection on submission.
@@ -57,6 +60,7 @@ last_reviewed: 2026-09-11
 - [2026-09-11 freelance-deck-v1](../syntheses/projects/2026-09-11_freelance-deck-v1.md)
 - [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
+- [2026-09-11 team-skills-audit](../syntheses/strategy/2026-09-11_team-skills-audit.md)
 
 **Other**
 

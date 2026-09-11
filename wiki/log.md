@@ -124,3 +124,12 @@
 - Decisions proposed (not yet settled by Fabien): retire placeholder entities; add `communities` tag; measure the login wall before any anonymous-publication decision; canonical merge instead of deletion.
 - Patterns: none.
 - Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] team | Skills audit — 9 updated, 3 created, auto-trigger defect fixed
+
+- Trigger: Fabien asked whether the team is the most expert one for the freelance objective and to update/create skills where not.
+- Defect: all 9 Ouch! skills (and `wiki-clean`) declared `description: >` folded blocks that the loader does not surface, so no natural-language trigger could fire. Rewritten as single-line quoted descriptions, content unchanged.
+- Updated: `ouch-ceo` (D1–D6, rollout loop, gates, Sunday rule, experts to convene; former-employer reference removed), `ouch-cto` (real stack: Supabase live, GitHub sync, one driver; fragile list; dedup and registry doctrine), `ouch-growth-hacker` (Cercle 1 playbook: waves, etiquette, login wall, proxy submission, harvest), `ouch-legal` (registry rules, sourcing sheet, harvest rewriting, hashtag, entity-page nevers), `ouch-ux-designer` (community/entity page rules), `ouch-persona-victime` (+Sami), `ouch-persona-maker` (+Nadia), `panel-ouch-double-face` (guest seat), `ouch-cfo` (front-matter only)
+- Created: `skills/ouch-expert-independants/SKILL.md`, `skills/ouch-editeur-cartes/SKILL.md`, `skills/ouch-data-analyst/SKILL.md`
+- Wiki: `wiki/syntheses/strategy/2026-09-11_team-skills-audit.md` (coverage matrix, what was not created and why), `CLAUDE.md` team table (12 rows), index, MOC
+- Ran `wiki/backlinks.py` after writing.

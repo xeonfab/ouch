@@ -1,15 +1,6 @@
 ---
 name: wiki-clean
-description: >
-  Run a health check on the personal wiki following the Karpathy LLM Wiki pattern.
-  Detects contradictions between pages, stale claims, orphan pages without inbound links,
-  concepts mentioned but missing their own page, and cross-reference gaps.
-  Use this skill whenever the user says "clean the wiki", "wiki health check", "check my wiki",
-  "are there gaps in the wiki", "what's missing in the wiki", "wiki audit", "wiki cleanup",
-  or any variation asking about wiki quality, consistency, or completeness.
-  Also trigger when the user asks "what should I ingest next" or "where are the gaps" —
-  these are cleanup questions even if the user doesn't use the word "clean".
-  Can be scheduled to run weekly for proactive maintenance.
+description: "Run a health check on the personal wiki following the Karpathy LLM Wiki pattern. Detects contradictions between pages, stale claims, orphan pages without inbound links, concepts mentioned but missing their own page, and cross-reference gaps. Use this skill whenever the user says \"clean the wiki\", \"wiki health check\", \"check my wiki\", \"are there gaps in the wiki\", \"what's missing in the wiki\", \"wiki audit\", \"wiki cleanup\", or any variation asking about wiki quality, consistency, or completeness. Also trigger when the user asks \"what should I ingest next\" or \"where are the gaps\" — these are cleanup questions even if the user doesn't use the word \"clean\". Can be scheduled to run weekly for proactive maintenance."
 ---
 
 # Wiki Clean — Health Check

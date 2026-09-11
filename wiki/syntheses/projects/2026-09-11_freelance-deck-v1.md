@@ -217,6 +217,7 @@ A CSV export of the 54 rows sits next to this page: [`2026-09-11_freelance-deck-
 - [2026-09-11 freelance-channel-communication-plan](../strategy/2026-09-11_freelance-channel-communication-plan.md)
 - [2026-09-11 launch-plan-90-days](../strategy/2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](2026-09-11_problem-structure-dedup-spec.md)
+- [2026-09-11 team-skills-audit](../strategy/2026-09-11_team-skills-audit.md)
 
 **Other**
 

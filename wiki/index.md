@@ -69,6 +69,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 | Page | Summary |
 |---|---|
 | [Community rollout playbook (founder)](syntheses/strategy/2026-09-11_community-rollout-playbook.md) | Long-run strategy as a repeatable loop: ship → one community → channel map → problem submission → store/structure → makers → automate → replay; channel-type table for FR freelances, automation ladder, replay kit; entity pages as the public listing, two maker profiles (intrapreneur = Type B, independent = Type A) |
+| [Team skills audit & upgrade](syntheses/strategy/2026-09-11_team-skills-audit.md) | Audit of the 9 Ouch! skills against the freelance push: auto-trigger defect fixed on all, CEO/CTO/growth/legal/UX updated, second voices for both personas, 3 new experts (freelance domain, card editor, data analyst); coverage matrix by workstream |
 | [Freelance channel communication plan](syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md) | Funnel and its leaks (login wall to submit), fun register, per-channel playbook with French copy (LinkedIn, Facebook groups, Slack/Discord, Reddit/forums), weekly harvest protocol, proxy submission, objections, metrics by `?c=` |
 | [90-day launch plan (CEO)](syntheses/strategy/2026-09-11_launch-plan-90-days.md) | Active launch plan: live build audit (votes still `localStorage`), 6 settled decisions, 3 phases with hard gates (persistence → first freelance audience → first maker signal), weekly 20h rhythm, metrics, day-90 decision |
 

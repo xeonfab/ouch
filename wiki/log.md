@@ -161,3 +161,8 @@
 
 - With the Lovable registry gone (npm lockfile), dependencies install from the public registry: `npm ci` ok, `npx tsc --noEmit` exit 0, `npm run build` exit 0 (`.vercel/output` generated, Nitro preset vercel). `npm run lint`: 66 prettier formatting errors on files untouched by both PRs (pre-existing), no logic error.
 - Not runnable here: the browser two-device test (the sandbox's network policy blocks `*.supabase.co` and the Vercel/Lovable hosts). Left to Fabien on the Vercel deployment.
+
+## [2026-09-11] ci | Guard rail on `fix-it-karma` main (branch `claude/ci-and-format`)
+
+- Fabien asked whether everything could be done without him. Honest split: Anthropic key, Google OAuth client, Vercel project and the Lovable disconnect need his accounts (no connector exists for them in this session; `ListConnectors` confirms). Everything else done.
+- Added `.github/workflows/ci.yml` (npm ci, tsc, lint, build on pushes to main and on pull requests), formatted the tree with the project's prettier (formatting only, lint now exits 0), ignored `.vercel`/`.output`. Typecheck, lint and build green; branch pushed, to merge.

@@ -20,21 +20,25 @@ menace vraiment la stabilité de l'existant.
 
 ## Le Contexte Technique Ouch!
 
-**Stack (état au 2026-09-11)** : Lovable (React + TanStack Start + Tailwind + shadcn/ui) pour la
-preview, l'hébergement et la passerelle IA ; **Supabase (Lovable Cloud) pour la persistance
-partagée, livrée** : tables `problems`, `votes`, `leads`, `voices`, `confirmation_votes`,
-`survey_answers`, `events`, vues `problem_stats`, `problem_daily_votes`, `public_voices`, RLS
-insert-only pour les anonymes (aucune lecture brute des emails côté client), identité anonyme par
-`device_id` (`ouch.device.v1`), écritures optimistes via react-query dans `engagement.tsx`
-(contrat `useEngagement()` inchangé). Le catalogue est en base (38 cartes seed à 0), plus en dur.
-Entités encore en code (`entities.ts`, liste fermée). Instrumentation : 6 événements + `props.utm`
-depuis `?c=`. Requêtes hebdo dans `docs/metrics.sql`. Spec de référence : `docs/persistence-spec.md`.
+**Stack (état au 2026-09-11, soir)** : **Lovable est sorti du circuit** (commit « Leave Lovable », PR #2).
+React + TanStack Start, build Vite/Nitro avec preset **Vercel** (`vite.config.ts`), auth Google via
+`supabase.auth.signInWithOAuth` (plus de broker Lovable), qualification et détection de doublons sur
+l'**API Claude** (`@anthropic-ai/sdk`, modèle `claude-opus-5`, sorties structurées, prompt système
+en cache), lockfile **npm** (`package-lock.json`), plus aucune dépendance au registre privé Lovable.
+Base = projet Supabase **`ouch` (`mywbvjaitfqclenrvsdn`, Paris)** sur le compte de Fabien :
+tables `problems` (+ `communities`, `channel`, `deck_rank`, `norm_text`), `votes`, `leads`, `voices`,
+`confirmation_votes`, `survey_answers`, `events`, vues `problem_stats`, `problem_daily_votes`,
+`public_voices`, fonction `similar_problems`, RLS insert-only pour les anonymes, identité anonyme par
+`device_id`, écritures optimistes via react-query dans `engagement.tsx`. Catalogue en base : 84 cartes
+(82 publiées), 54 taguées `independants`, entités réelles uniquement. Instrumentation : 10 événements
++ `props.utm` depuis `?c=`. Requêtes hebdo dans `docs/metrics.sql`. Déploiement : `docs/deploy.md`.
 
-**Flux de code** : le repo GitHub `xeonfab/fix-it-karma` est synchronisé deux sens avec Lovable
-sur `main`. Claude Code travaille sur des branches `claude/*`, PR vers `main` ; **un seul pilote
-sur le code à la fois** (aucun message à l'agent Lovable pendant qu'une PR est ouverte). L'hôte
-Supabase n'est pas joignable depuis le sandbox de build : les tests navigateur se font sur la
-preview Lovable.
+**Flux de code** : branches `claude/*` → PR vers `main` → déploiement Vercel (chaque PR a son URL de
+preview). Secrets côté serveur (`ANTHROPIC_API_KEY`, `SUPABASE_SERVICE_ROLE_KEY`) uniquement dans
+Vercel, jamais dans `.env` versionné. L'ancienne base Lovable Cloud (`gjiqtcimoeilaooqxfrz`) ne
+contient que 38 seeds : rien à migrer. Tant que Vercel n'est pas configuré, l'URL
+`fix-it-karma.lovable.app` sert l'ancien build sur l'ancienne base : aucun lien à partager.
+Validation locale : `npm ci && npx tsc --noEmit && npm run lint && npm run build`.
 
 **Modèle de données** : `problems` (statement, title, sector, topic, topic_hashtag, status,
 resolution_type tiers/entite, entity_slugs[], synthesis, source seed/user, published, device_id,
@@ -109,8 +113,10 @@ jamais sacrifier le temps de chargement d'une fiche au profit de fonctionnalité
 
 ## Tes Points de Vigilance
 
-- **Un seul pilote sur le code** : jamais un message Lovable pendant qu'une PR Claude Code est
-  ouverte, et inversement ; la synchro deux sens ne résout pas les conflits à ta place.
+- **Deux sessions sur la même base de code** : le 2026-09-11, deux branches ont réparé le même fichier
+  (`swipe-deck.tsx`) et modifié les mêmes modules ; le merge a tenu, mais toute PR doit être rebasée
+  sur `main` et re-typecheckée avant merge. Une PR à la fois sur les fichiers de données
+  (`problems.ts`, `engagement.tsx`, `entities.ts`).
 
 ---
 

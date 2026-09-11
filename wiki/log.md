@@ -89,3 +89,11 @@
 - Audit addition: the catalog carries demo counters/statuses/updates/verbatims and a synthetic growth curve; all removed at migration so makers never see an invented number.
 - Created (app repo, branch `claude/persistence-spec`): `docs/persistence-spec.md` — schema (7 tables, 3 aggregate views), insert-only RLS for anonymous visitors, device-id identity without login, unchanged `useEngagement` contract, events + `?c=` channel tag, seed procedure, rollout order, acceptance criteria, ~21h estimate.
 - Updated: launch plan (audit table, next-steps table), MOC (build-state delta).
+
+## [2026-09-11] build | Phase 1 persistence implemented on `xeonfab/fix-it-karma` (branch `claude/persistence-spec`)
+
+- Applied migration `20260911150000_shared_persistence.sql` on the Lovable Cloud database: 7 tables (`problems`, `votes`, `leads`, `voices`, `confirmation_votes`, `survey_answers`, `events`), 3 aggregate views, insert-only RLS for anonymous visitors, explicit revokes (Supabase default privileges had granted ALL to `anon`; verified as role `anon` that raw leads are now unreadable and duplicate votes are rejected).
+- Seeded the 38 catalog cards with zero counters, status `incubation`; two syntheses with invented figures (ids 1 and 8) rewritten as neutral editorial notes.
+- Client: `engagement.tsx` rewritten on react-query (optimistic writes, local mirror of ids only, unchanged hook contract), demo catalog moved to `src/lib/seed-catalog.ts` (seed script only), fake hero badge/statuses/maker updates/verbatims/seed voices/synthetic growth curve removed, live feed on real data, survey and duplicate detection on Supabase, `events` instrumentation with `?c=` channel tag, `docs/metrics.sql` for the Sunday review.
+- Verification: typecheck and production build green, changed files prettier/eslint clean (main itself has 322 pre-existing prettier errors). The two-device browser test could not run in the sandbox: the Supabase host is denied by the session's network policy. Left for Fabien on the Lovable preview after merge.
+- Updated: launch plan next-steps table.

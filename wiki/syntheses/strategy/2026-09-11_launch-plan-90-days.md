@@ -157,7 +157,8 @@ Weekly sheet (one row per week, filled Sunday):
 | Fabien + `ouch-cto` | Write the persistence spec (schema, policies, device id, aggregated view) | 2026-09-17 | **done 2026-09-11** → [`docs/persistence-spec.md`](https://github.com/xeonfab/fix-it-karma/blob/claude/persistence-spec/docs/persistence-spec.md) on branch `claude/persistence-spec` of `xeonfab/fix-it-karma` |
 | Fabien + `ouch-legal` | Proofread the three legal pages; final legal pass on the seed catalog | 2026-09-17 | open |
 | Fabien | Create the weekly metrics sheet | 2026-09-14 | open |
-| Fabien | Implement the spec from the app repo (branch → PR → merge to `main` → Lovable sync); verify shared counters across two devices | 2026-10-01 | open |
+| Claude Code | Implement the spec from the app repo | 2026-10-01 | **done 2026-09-11** on branch `claude/persistence-spec` (migration applied, 38 cards seeded at zero, client migrated, lint/typecheck/build green) |
+| Fabien | Open the PR, merge to `main` (Lovable sync), then run the two-device test on the Lovable preview and the 5-friend smoke test (spec §7 steps 5-6) | 2026-10-01 | open — blocked in the build sandbox (Supabase host not reachable there) |
 | Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | open |
 
 ## Open questions

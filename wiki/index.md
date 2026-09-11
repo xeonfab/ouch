@@ -77,6 +77,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 | Page | Summary |
 |---|---|
 | [Freelance deck v1 (54 cards)](syntheses/projects/2026-09-11_freelance-deck-v1.md) | Card standard (8 checks), audit of the 10 hard-coded deck cards, 54 freelance cards in French checked against the legal grid, 10-card launch deck, insertion procedure; CSV export alongside |
+| [Freelance deck v1 — expert review](syntheses/projects/2026-09-11_freelance-deck-v1_expert-review.md) | `ouch-expert-independants` pass on the 54 cards: 4 corrected (payment term above legal cap, recovery cost is time, CGA not CGV, compte dédié vs pro), frequency ratings, launch deck confirmed |
 | [Problem structure & dedup spec](syntheses/projects/2026-09-11_problem-structure-dedup-spec.md) | Audit of the live code (hard-coded deck, 18 placeholder entities, one-topic duplicate check), `communities` tag, real-entities-only registry, 3-layer dedup with canonical merge (no deletion), presentation rules, sequencing under the feature freeze |
 | [Ouch!/FixMyLife — full project context](syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) | Context-recovery snapshot: concept, business model, hard product rules, data model, build status, and open next steps |
 

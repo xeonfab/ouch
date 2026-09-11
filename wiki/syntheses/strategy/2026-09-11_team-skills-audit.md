@@ -96,7 +96,7 @@ Every Ouch! skill declared its description as a folded YAML block (`description:
 |---|---|---|---|
 | Claude Code | Fix front-matters, update nine skills, create three | 2026-09-11 | **done** |
 | Fabien | Try three triggers in a fresh session (« que penserait Sami de cette carte ? », « vérifie la carte F18 », « feuille du dimanche ») and confirm the skills fire without being named | 2026-09-14 | open |
-| `ouch-expert-independants` | First pass on the 54 cards: mechanism, figures, entity, Type A/B, frequency | 2026-09-17 | open |
+| `ouch-expert-independants` | First pass on the 54 cards: mechanism, figures, entity, Type A/B, frequency | 2026-09-17 | **done 2026-09-11** → [expert review](../projects/2026-09-11_freelance-deck-v1_expert-review.md) |
 | `ouch-data-analyst` | Create the weekly sheet with the SQL of the skill; first empty row | 2026-09-14 | open |
 
 ## Open questions

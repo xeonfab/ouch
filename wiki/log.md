@@ -133,3 +133,11 @@
 - Created: `skills/ouch-expert-independants/SKILL.md`, `skills/ouch-editeur-cartes/SKILL.md`, `skills/ouch-data-analyst/SKILL.md`
 - Wiki: `wiki/syntheses/strategy/2026-09-11_team-skills-audit.md` (coverage matrix, what was not created and why), `CLAUDE.md` team table (12 rows), index, MOC
 - Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] review | Expert pass on the freelance deck (ouch-expert-independants)
+
+- Created: `wiki/syntheses/projects/2026-09-11_freelance-deck-v1_expert-review.md` — 54 cards checked (mechanism, figure, entity, Type A/B, frequency)
+- Corrected in the deck and CSV: F03 (60 jours fin de mois exceeded the legal cap → 60 jours), F08 (recovery cost is time, not money), F16 (client terms are conditions d'achat, hashtag `#ConditionsDAchat`), F35 (compte dédié vs compte pro); F22 title tightened
+- Launch deck confirmed: nine large frictions plus the Qonto entity-page test
+- Updated: deck page next steps, team audit next steps, index
+- Ran `wiki/backlinks.py` after writing.

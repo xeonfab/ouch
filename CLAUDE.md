@@ -31,9 +31,9 @@ This wiki is scoped entirely to **Ouch! / FixMyLife** (side project, `fix-it-kar
 ## 📌 Glossary
 
 **Ouch! / FixMyLife**:
-- **Score de Douleur** = pain score ranking problems for makers (45% positive-vote volume, 35% conversion rate, 20% opt-in emails)
-- **Terminal Maker** = the maker-facing dashboard, ranks problems by Score de Douleur
-- **Type A / Type B** (`resolutionType`) = "tiers" (a third-party maker can fix it without the named entity) vs "entite" (only the named entity can fix it) — drives which disclaimer is shown
+- **Score de Douleur** = pain score ranking problems for entrepreneurs (45% positive-vote volume, 35% conversion rate, 20% opt-in emails)
+- **Terminal Entrepreneur** = the entrepreneur-facing dashboard, ranks problems by Score de Douleur
+- **Type A / Type B** (`resolutionType`) = "tiers" (a third-party entrepreneur can fix it without the named entity) vs "entite" (only the named entity can fix it) — drives which disclaimer is shown
 - **Entité** = an organisation only, never a physical person (hard rule — see `wiki/concepts/` once created)
 - **Cercle 1/2/3** = launch-targeting rings: freelances/creators (current) → PME (signal-gated) → grand public
 
@@ -57,11 +57,11 @@ Product-design skills in `skills/`, one persona each — invoke by name or let t
 | `ouch-ceo` (Karim) | Vision, prioritization, roadmap, arbitration — filters everything through "does this solve cold start now?" |
 | `ouch-growth-hacker` (Yasmine) | Two-sided bootstrapping, scraping/automation pipeline (Make/n8n), copywriting |
 | `ouch-cto` (Marc) | Lovable/Supabase feasibility, technical debt, build-vs-defer calls |
-| `ouch-ux-designer` | Visual consistency, the two registers (fun victim side / factual maker side) |
+| `ouch-ux-designer` | Visual consistency, the two registers (fun victim side / factual entrepreneur side) |
 | `ouch-cfo` | Pricing, unit economics, monetization timing |
 | `ouch-legal` | Risk of naming real entities, GDPR, defamation/denigration, moderation grid |
 | `ouch-persona-victime` (Léa, freelance graphic designer, Lyon) | Tests wording/UX on the swipe side |
-| `ouch-persona-maker` (Julien, skeptical indie developer) | Tests perceived value on the Terminal/pricing side |
+| `ouch-persona-maker` (Julien, skeptical indie developer) | Tests perceived value on the Terminal Entrepreneur/pricing side |
 | `panel-ouch-double-face` | 4-round deliberative panel for structuring decisions, always anchored on cold-start risk |
 
 ---
@@ -82,6 +82,6 @@ Product-design skills in `skills/`, one persona each — invoke by name or let t
 	- No divisive public-policy takes; civic/administrative friction only, factual and specific
 	- Cards state a lived fact, never a value judgment on the entity ("j'attends mon remboursement depuis 3 semaines", not "cette entreprise est malhonnête")
 	- No content deletion ever (legal obligation aside); emails alone follow GDPR retention/erasure
-	- No reply threads — maker updates and "voix des concernés" are one-way
+	- No reply threads — entrepreneur updates and "voix des concernés" are one-way
 	- No special account status or active outreach for entities that appear on cards
-	- Tone: always fun/playful on the victim-facing side, even for civic/institutional topics; factual/dark register stays confined to the Terminal Maker
+	- Tone: always fun/playful on the victim-facing side, even for civic/institutional topics; factual/dark register stays confined to the Terminal Entrepreneur

@@ -30,7 +30,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### Organisations & partners
 | Page | Summary |
 |---|---|
-| *(e.g., competitors, partners, real entities that become paying makers)* | — |
+| *(e.g., competitors, partners, real entities that become paying entrepreneurs)* | — |
 
 ### Clients
 | Page | Summary |
@@ -42,8 +42,8 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 
 | Page | Summary |
 |---|---|
-| [Score de Douleur](concepts/Score_de_Douleur.md) | Weighted pain-score formula (45% votes · 35% conversion · 20% opt-in emails) ranking problems in the Ouch! Terminal Maker |
-| [Resolution Type A/B](concepts/Resolution_Type_AB.md) | Ouch! field distinguishing problems fixable by a third-party maker ("tiers") from ones only the named entity can fix ("entite") |
+| [Score de Douleur](concepts/Score_de_Douleur.md) | Weighted pain-score formula (45% votes · 35% conversion · 20% opt-in emails) ranking problems in the Ouch! Terminal Entrepreneur |
+| [Resolution Type A/B](concepts/Resolution_Type_AB.md) | Ouch! field distinguishing problems fixable by a third-party entrepreneur ("tiers") from ones only the named entity can fix ("entite") |
 
 ---
 

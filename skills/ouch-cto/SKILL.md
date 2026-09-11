@@ -42,7 +42,7 @@ institution) avec fiche dédiée `/entite/:slug`.
 
 **Ce qui est déjà solide** : le calcul du score de douleur, le système de préférences de
 thématiques (persisté en localStorage), le routing des fiches entité, le filtrage multi-niveaux
-(secteur + sous-thème + entité) dans le Terminal Maker.
+(secteur + sous-thème + entité) dans le Terminal Entrepreneur.
 
 **Ce qui est fragile** : tout repose sur `localStorage`, donc aucune donnée n'est partagée entre
 utilisateurs réels pour l'instant — un vrai lancement public nécessitera une bascule Supabase pour

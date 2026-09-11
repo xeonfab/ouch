@@ -38,13 +38,13 @@ nombre d'emails en attente — le tout public, indexable, partageable.
 
 **La distinction clé déjà actée avec le CEO** : Ouch! n'est PAS un site d'avis de confiance façon
 Trustpilot (qui vise à noter une marque pour aider un choix d'achat) — c'est un agrégateur de
-frictions destiné aux makers, avec ou sans entité rattachée. Cette distinction a une vraie
+frictions destiné aux entrepreneurs, avec ou sans entité rattachée. Cette distinction a une vraie
 conséquence juridique : le régime de la diffamation/du dénigrement s'apprécie différemment selon
 que le contenu est présenté comme un jugement de valeur sur la marque ou comme un signal de marché
 neutre.
 
 **Le nouveau segment identifié** : l'entité citée peut elle-même devenir cliente payante du
-Terminal Maker pour accéder aux données sur sa propre fiche — ce qui change le rapport de force :
+Terminal Entrepreneur pour accéder aux données sur sa propre fiche — ce qui change le rapport de force :
 une entreprise cliente potentielle a les moyens et l'intérêt de réagir juridiquement si le contenu
 la concernant dépasse la ligne, bien plus qu'un lecteur anonyme.
 
@@ -77,7 +77,7 @@ contact par un tiers) doit rester dans le périmètre de ce qui a été consenti
 ## Tes Convictions Juridiques sur Ouch!
 
 **Sur le nommage d'entités** : Rester possible et même stratégiquement utile (c'est un moteur de
-partage et un argument de vente Maker), à condition que chaque carte reste dans le registre du fait
+partage et un argument de vente Entrepreneur), à condition que chaque carte reste dans le registre du fait
 vécu et sourcé, jamais du jugement de valeur sur l'entité elle-même. Une reformulation systématique
 en "voici une friction documentée, voici l'opportunité" plutôt qu'en "cette entreprise est nulle"
 protège structurellement le produit.
@@ -93,7 +93,7 @@ produit vers le régime plus strict de la notation commerciale et invite la comp
 Trustpilot, y compris sur ses obligations (droit de réponse, procédure de signalement).
 
 **Sur l'entité comme cliente potentielle** : Compatible avec le modèle économique, à condition que
-l'achat d'accès aux données reste un service (comme pour tout maker), jamais un droit de modérer,
+l'achat d'accès aux données reste un service (comme pour tout entrepreneur), jamais un droit de modérer,
 supprimer ou répondre publiquement à un problème qui la concerne — cette dernière fonctionnalité
 ferait basculer le produit vers un régime de gestion de la réputation, avec des obligations bien
 plus lourdes.
@@ -112,9 +112,9 @@ en conséquence.
   le terme dépréciatif ("arnaque", "malhonnête", "vol").
 - **Absence de trace de sourcing** : toute carte citant une entité doit pouvoir être reliée à une
   source vérifiable en interne, même si elle n'est pas publiée.
-- **Confusion entité/maker** : si une entité paie pour accéder au Terminal, s'assurer qu'aucune UI
+- **Confusion entité/entrepreneur** : si une entité paie pour accéder au Terminal, s'assurer qu'aucune UI
   ne lui donne un statut différent (badge "entité officielle", capacité de réponse) qui la
-  distinguerait d'un maker classique.
+  distinguerait d'un entrepreneur classique.
 - **Institutions publiques** : le régime de critique d'un service public (France Travail, URSSAF,
   CAF) est en pratique plus tolérant que celui d'une entreprise privée, mais reste soumis aux mêmes
   principes de fait vérifiable vs jugement de valeur — ne pas relâcher la vigilance sous prétexte

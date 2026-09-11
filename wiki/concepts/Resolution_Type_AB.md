@@ -1,14 +1,14 @@
 ---
-last_reviewed: 2026-09-10
+last_reviewed: 2026-09-11
 ---
 
 # Resolution Type A/B
 
-> One-line TL;DR: the `resolutionType` field ("tiers" vs "entite") that determines whether a problem can be fixed by an outside maker or only by the named entity — and which disclaimer is shown.
+> One-line TL;DR: the `resolutionType` field ("tiers" vs "entite") that determines whether a problem can be fixed by an outside entrepreneur or only by the named entity — and which disclaimer is shown.
 
 ## What it is
 
-- **Type A "tiers"**: bypassable by an external maker without the entity (e.g. SNCF Connect refund, Doctolib cancelled appointment).
+- **Type A "tiers"**: bypassable by an external entrepreneur without the entity (e.g. SNCF Connect refund, Doctolib cancelled appointment).
 - **Type B "entite"**: unsolvable without the entity itself (e.g. Qonto blocked account, France Travail login bug).
 - Badges in clear language: "🛠️ Une solution externe est possible" (Type A) vs "🔒 Seule l'entité concernée peut résoudre ça" (Type B).
 - Drives the public-communication disclaimer, which must differ by type — a single blanket statement for the whole catalog was explicitly rejected.

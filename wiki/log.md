@@ -72,3 +72,28 @@
 - Created: `skills/ouch-ceo/SKILL.md`, `skills/ouch-growth-hacker/SKILL.md`, `skills/ouch-cto/SKILL.md`, `skills/ouch-ux-designer/SKILL.md`, `skills/ouch-cfo/SKILL.md`, `skills/ouch-legal/SKILL.md`, `skills/ouch-persona-victime/SKILL.md`, `skills/ouch-persona-maker/SKILL.md`, `skills/panel-ouch-double-face/SKILL.md`
 - Updated: `CLAUDE.md` — new "Ouch! Agent Team (skills)" section listing all 9 with role summaries
 - Not a wiki-ingest (no new entity/concept/synthesis) — this is skill installation, tracked here for traceability since it changes how future sessions operate on this repo
+
+## [2026-09-11] strategy | 90-day launch plan (CEO session)
+
+- Source: live audit of the Lovable project `fix-it-karma` (files, Supabase tables, message history 2026-09-10/11) + existing wiki context; no new raw file (audit facts are recorded in the synthesis itself)
+- Created: `wiki/syntheses/strategy/2026-09-11_launch-plan-90-days.md`
+- Updated: `wiki/mocs/MOC_Ouch_FixMyLife.md` (linked the plan, added a build-state delta section, settled two open questions, added one), `wiki/index.md` (Strategy table)
+- Key audit finding: all engagement data (votes, leads, voices, survey answers, submitted problems) is still `localStorage`; Supabase only has `profiles`. The `/communaute/independants` page must not be shared externally until shared persistence ships.
+- Decisions logged: D1 persistence first (2-week cap) · D2 "concerné(e)s" final for launch · D3 launch surface = `/communaute/independants` · D4 no paywall before Cercle 2 signal · D5 feature freeze · D6 curated seeding (60 cards), scraping feeds a manual queue only
+- Patterns: none — single planning session.
+- Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] decision | Lovable ↔ GitHub connected, persistence spec written
+
+- Decision: keep Lovable for preview/hosting/AI gateway, work on the code from GitHub (`xeonfab/fix-it-karma`, two-way sync on `main`). Full exit from Lovable deferred to after the day-90 decision (solves no cold-start, ~1 week of infra).
+- Audit addition: the catalog carries demo counters/statuses/updates/verbatims and a synthetic growth curve; all removed at migration so makers never see an invented number.
+- Created (app repo, branch `claude/persistence-spec`): `docs/persistence-spec.md` — schema (7 tables, 3 aggregate views), insert-only RLS for anonymous visitors, device-id identity without login, unchanged `useEngagement` contract, events + `?c=` channel tag, seed procedure, rollout order, acceptance criteria, ~21h estimate.
+- Updated: launch plan (audit table, next-steps table), MOC (build-state delta).
+
+## [2026-09-11] build | Phase 1 persistence implemented on `xeonfab/fix-it-karma` (branch `claude/persistence-spec`)
+
+- Applied migration `20260911150000_shared_persistence.sql` on the Lovable Cloud database: 7 tables (`problems`, `votes`, `leads`, `voices`, `confirmation_votes`, `survey_answers`, `events`), 3 aggregate views, insert-only RLS for anonymous visitors, explicit revokes (Supabase default privileges had granted ALL to `anon`; verified as role `anon` that raw leads are now unreadable and duplicate votes are rejected).
+- Seeded the 38 catalog cards with zero counters, status `incubation`; two syntheses with invented figures (ids 1 and 8) rewritten as neutral editorial notes.
+- Client: `engagement.tsx` rewritten on react-query (optimistic writes, local mirror of ids only, unchanged hook contract), demo catalog moved to `src/lib/seed-catalog.ts` (seed script only), fake hero badge/statuses/maker updates/verbatims/seed voices/synthetic growth curve removed, live feed on real data, survey and duplicate detection on Supabase, `events` instrumentation with `?c=` channel tag, `docs/metrics.sql` for the Sunday review.
+- Verification: typecheck and production build green, changed files prettier/eslint clean (main itself has 322 pre-existing prettier errors). The two-device browser test could not run in the sandbox: the Supabase host is denied by the session's network policy. Left for Fabien on the Lovable preview after merge.
+- Updated: launch plan next-steps table.

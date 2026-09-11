@@ -130,6 +130,10 @@ Located in `/mnt/skills/user/`: `ouch-ceo` (Karim, vision/roadmap), `ouch-growth
 <!-- BACKLINKS:START -->
 ## Referenced by
 
+**Syntheses**
+
+- [2026-09-11 launch-plan-90-days](../strategy/2026-09-11_launch-plan-90-days.md)
+
 **Other**
 
 - [📇 Wiki Index](../../index.md)

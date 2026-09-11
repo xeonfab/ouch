@@ -97,3 +97,13 @@
 - Découverte clé documentée : la majorité du brief (concision/description, mutualisation via `detectDuplicate`, reformulation, liaison entité) était déjà construite avant la délibération — le panel a resserré le scope au seul vrai manque, le partage social, livré dans la foulée (bouton "Partager ma carte" sur le toast de succès, `navigator.share` mobile / intent X desktop)
 - No new entity/concept pages
 - Patterns: none — décision ponctuelle, pas de signal cross-source récurrent
+
+## [2026-09-11] ingest | Refontes création + engagement — audit critique-ux
+
+- Source: demande de Fabien "la meilleure expérience de création d'un problème, et de lecture/compréhension/engagement" → audit `critique-ux` des deux parcours (scores initiaux 2,9/5 et 3,1/5), puis retour terrain de Fabien sur l'écran de preview qui empilait trois questions (note de reformulation + doublon + choix de formulation) → principe acté "une question par écran"
+- Updated:
+  - `wiki/syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md` — Build status : connexion déplacée au moment de publier (brouillon persisté en `sessionStorage` à travers l'OAuth), une carte directe au lieu du choix entre 3 variantes, étape "doublon" dédiée avant la carte, écran de succès en deux modes (créée / rejointe). Point ouvert : rejoindre un doublon sans connexion ne capture aucun email
+  - `wiki/syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md` — Build status : votes/leads idempotents, deck avec mémoire + mode relecture, carte retournable avec verso détaillé, popover d'explication du score de douleur ; `last_reviewed` bumped
+- Livré sur Lovable (`fix-it-karma`) commits `51b724a` (création) et `8abda3a` (engagement)
+- No new entity/concept pages
+- Patterns: none — deux itérations produit sur un même test, pas de signal cross-source

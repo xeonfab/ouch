@@ -61,6 +61,16 @@ En lisant le code existant (`src/components/ouch/submit-flow.tsx`, `src/lib/qual
 - Desktop : ouverture d'un intent de partage X pré-rempli (texte + lien), dans un nouvel onglet
 - Texte de partage généré à partir du `statement` publié : `"${text}" — je viens de le signaler sur Ouch! 💥`
 
+**Refonte "meilleure expérience de création" (audit `critique-ux`, score initial 2,9/5) — livrée le 2026-09-11, commit Lovable `51b724a`** :
+
+Fabien a ensuite demandé "la meilleure expérience de création d'un problème". L'audit UX a relevé trois frictions : la connexion Google exigée avant même d'écrire (valeur demandée avant d'être montrée), un choix imposé entre 3 variantes IA (Hick), et un simple toast à la publication (aucun moment "je suis écouté"). Puis, en test réel, Fabien a pointé l'écran de preview qui empilait trois questions à la fois (note de reformulation + carte de doublon + choix de formulation). Décision : **une question par écran**. Livré dans `submit-flow.tsx` (+ `submit-modal.tsx`) :
+- **Connexion au moment de publier, pas avant** : un visiteur écrit, lance l'analyse, voit et modifie sa carte sans compte. Le bloc "Connecte-toi pour publier" n'apparaît qu'à la place du bouton Publier. Le brouillon (récit, draft IA, formulation, entité) survit à la redirection OAuth via `sessionStorage` (`ouch.submitDraft`) et la modale se rouvre automatiquement sur la preview au retour de Google.
+- **Une carte directement** : la première variante IA est sélectionnée d'office et affichée comme carte ; "Autre formulation 🔁" fait défiler les variantes sans écran de liste. La note de reformulation (`flagReason`) est déplacée dans la carte, sous la formulation, en discret.
+- **Étape "doublon" dédiée, avant la carte** : `detectDuplicate` est désormais enchaîné pendant le chargement (5e étape "On vérifie si quelqu'un l'a déjà signalé…"). Si correspondance, écran à question unique "Quelqu'un a déjà signalé ça 👀" : carte existante rendue comme dans le produit, ligne de preuve sociale (🔥 concerné·es · douleur /100), rappel du récit de l'utilisateur, primaire "C'est le même — je rejoins cette carte 🔥", secondaire "Non, le mien est différent → continuer". Plus aucun bloc doublon empilé sur la preview.
+- **Écran de succès** (`step = "published"`, deux modes) : "Ta carte est en ligne 🎉" (création) ou "Ta voix est comptée 🔥" (rejoint un doublon), carte publiée telle qu'elle apparaîtra dans le swipe, promesse "On te prévient dès qu'un maker s'empare de cette carte", actions Partager 📣 / Voir dans le Swipe / Déposer un autre problème. La modale ne se ferme plus avant que l'utilisateur ait vu sa carte. "Valider" renommé "Créer ma carte ✨".
+
+Point ouvert : rejoindre un doublon sans être connecté enregistre le vote mais aucun email, alors que l'écran promet une notification — à traiter (proposer la connexion sur l'écran "Ta voix est comptée" si `!user`).
+
 ## Exemples de test fournis à Fabien
 
 Deux récits bruts à coller dans "Déposer ma frustration" pour valider le flow complet :
@@ -77,6 +87,10 @@ Deux récits bruts à coller dans "Déposer ma frustration" pour valider le flow
 
 <!-- BACKLINKS:START -->
 ## Referenced by
+
+**Syntheses**
+
+- [2026-09-10 test-concept-communaute-freelances](2026-09-10_test-concept-communaute-freelances.md)
 
 **Other**
 

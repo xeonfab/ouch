@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-10
+last_reviewed: 2026-09-11
 ---
 
 # Test de concept Ouch! — communauté freelances fermée
@@ -85,6 +85,16 @@ La page est construite et en ligne, au-delà du plan initial — trois niveaux d
 - **Les deux registres visuels restent séparés** : le catalogue réutilise le principe filtres+tableau du Terminal Maker mais jamais ses composants ni sa palette sombre (`term-*`) — le Terminal reste strictement maker-side
 - **Score de douleur ET votes bruts (🔥) coexistent** sur les cartes : le score seul semblait "fake" sans transparence du calcul, le compteur brut reste plus immédiatement crédible pour l'utilisateur
 - **Hiérarchie des badges allégée** : un seul niveau de bordure forte par carte (le conteneur), badges/tags secondaires en traitement discret ; un seul emoji "libre" par carte (celui du problème) ; distinction tag-catégorie (texte plat, non cliquable) vs tag-entité (pilule + `↗`, cliquable) codée par la forme, pas seulement la couleur
+
+**Refonte lecture / engagement (audit `critique-ux`, score initial 3,1/5) — livrée le 2026-09-11, commit Lovable `8abda3a`** :
+
+Suite à la demande "la meilleure expérience de lecture, compréhension et engagement", l'audit a relevé : votes empilés sans limite (un même utilisateur pouvait gonfler un score), un deck sans mémoire ("Refaire un tour" re-votait tout), une carte de swipe réduite à 4 éléments sans moyen d'en savoir plus, et un score de douleur affiché sans explication. Livré dans `engagement.tsx`, `swipe-deck.tsx`, `content-hub.tsx` :
+- **Un vote et un email par problème et par personne** : `addVote` / `addLead` remplacent l'entrée existante au lieu d'en ajouter une ; le store `localStorage` est dédoublonné au chargement. Changer d'avis ne crée plus de doublon.
+- **Un deck qui a de la mémoire** : les cartes déjà votées sont exclues du deck (y compris sur la page communauté). "Refaire un tour" passe en mode relecture : les cartes votées réapparaissent avec le badge "Tu as dit : ça me rend fou 🔥 / Passé 🙅", on peut changer d'avis, sans confetti ni modale email.
+- **Retourner la carte pour en savoir plus** : un tap (distinct d'un drag) retourne la carte (crossfade) vers un verso dans la même boîte (`absolute inset-0 overflow-hidden`, donc pas de débordement sur les boutons) : titre, statut, badge de résolution, tag entité, jusqu'à 2 voix des concernés, bouton "Retour ↺". Indice discret sur le recto "Appuie pour en savoir plus ↺".
+- **Score de douleur expliqué** : bouton ⓘ à côté de "douleur /100" sur `ProblemCard`, popover en une phrase (45 % votes · 35 % conversion · 20 % emails · "mesure une intention réelle, pas juste la popularité").
+
+La refonte jumelle du parcours de création (connexion au moment de publier, étape doublon dédiée, écran de succès) est documentée dans [Dépôt d'un problème — décision du panel](2026-09-11_depot-probleme-panel-decision.md).
 
 ## Decisions & next steps
 

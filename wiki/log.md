@@ -156,3 +156,8 @@
 - Fabien merged `claude/freelance-deck-structure` (PR #3, `8d5a717`). A parallel Claude session had pushed the Lovable exit on `claude/persistence-spec` (commit « Leave Lovable » `c1eac4c` + a second repair of the swipe card `98b0170`); merged as PR #2 (`ad33d7d`) on top, with a merge of `main` (`83368a9`). Verified on `main`: both sets of changes present (communities tag, similarity RPC, funnel events, entity aliases; Vite/Nitro Vercel preset, native Supabase auth, Claude API `claude-opus-5`, npm lockfile, `docs/deploy.md`). No placeholder slug left in code.
 - Consequence recorded: the public URL `fix-it-karma.lovable.app` still serves the old build on the old Lovable Cloud database (38 seeds, no new column). Nothing to share until Fabien configures Vercel (`docs/deploy.md` §1) and runs the two-device test there.
 - Updated: MOC (build-state delta), launch plan (audit row + next steps), `skills/ouch-cto/SKILL.md` (stack after the Lovable exit, two-sessions rule).
+
+## [2026-09-11] validate | Merged `main` of `fix-it-karma` builds
+
+- With the Lovable registry gone (npm lockfile), dependencies install from the public registry: `npm ci` ok, `npx tsc --noEmit` exit 0, `npm run build` exit 0 (`.vercel/output` generated, Nitro preset vercel). `npm run lint`: 66 prettier formatting errors on files untouched by both PRs (pre-existing), no logic error.
+- Not runnable here: the browser two-device test (the sandbox's network policy blocks `*.supabase.co` and the Vercel/Lovable hosts). Left to Fabien on the Vercel deployment.

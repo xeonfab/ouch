@@ -166,3 +166,10 @@
 
 - Fabien asked whether everything could be done without him. Honest split: Anthropic key, Google OAuth client, Vercel project and the Lovable disconnect need his accounts (no connector exists for them in this session; `ListConnectors` confirms). Everything else done.
 - Added `.github/workflows/ci.yml` (npm ci, tsc, lint, build on pushes to main and on pull requests), formatted the tree with the project's prettier (formatting only, lint now exits 0), ignored `.vercel`/`.output`. Typecheck, lint and build green; branch pushed, to merge.
+
+## [2026-09-12] deploy | Vercel live, first field check
+
+- Fabien deployed `fix-it-karma` on Vercel (Hobby, `fix-it-karma.vercel.app`, source `main` `ad33d7d`). Vercel runtime logs: every page 200 (`/`, `/communaute/independants`), zero errors; the « This page didn't load » thumbnail is not reproduced (the generated Vercel function rendered all pages locally, with and without env vars) and is treated as a stale first-request capture.
+- Field anomaly: after Fabien's visits, `events`, `votes`, `survey_answers` still count 0 in the `ouch` database, while the local headless-browser check shows the client does issue the Supabase requests (problems, stats, voices, `community_visit`). Verified: the publishable key embedded in the build matches the project's active key; the anon role can read problems/stats, call `similar_problems` and insert events. Cause not identifiable from the sandbox (browser side); asked Fabien for the browser console and a swipe.
+- Branch `claude/ci-and-format` (to merge) also adds an explicit loading state and a failure state with retry on the swipe deck (it previously showed « Tu as tout passé en revue ! » when the registry could not load), plus a migration pinning `search_path` on the two SQL functions (Supabase advisor), applied live.
+- Note for Fabien: the Vercel « Environments » page is not where env vars go; it is Settings → Environment Variables.

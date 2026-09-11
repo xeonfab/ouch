@@ -72,3 +72,13 @@
 - Created: `skills/ouch-ceo/SKILL.md`, `skills/ouch-growth-hacker/SKILL.md`, `skills/ouch-cto/SKILL.md`, `skills/ouch-ux-designer/SKILL.md`, `skills/ouch-cfo/SKILL.md`, `skills/ouch-legal/SKILL.md`, `skills/ouch-persona-victime/SKILL.md`, `skills/ouch-persona-maker/SKILL.md`, `skills/panel-ouch-double-face/SKILL.md`
 - Updated: `CLAUDE.md` — new "Ouch! Agent Team (skills)" section listing all 9 with role summaries
 - Not a wiki-ingest (no new entity/concept/synthesis) — this is skill installation, tracked here for traceability since it changes how future sessions operate on this repo
+
+## [2026-09-11] strategy | 90-day launch plan (CEO session)
+
+- Source: live audit of the Lovable project `fix-it-karma` (files, Supabase tables, message history 2026-09-10/11) + existing wiki context; no new raw file (audit facts are recorded in the synthesis itself)
+- Created: `wiki/syntheses/strategy/2026-09-11_launch-plan-90-days.md`
+- Updated: `wiki/mocs/MOC_Ouch_FixMyLife.md` (linked the plan, added a build-state delta section, settled two open questions, added one), `wiki/index.md` (Strategy table)
+- Key audit finding: all engagement data (votes, leads, voices, survey answers, submitted problems) is still `localStorage`; Supabase only has `profiles`. The `/communaute/independants` page must not be shared externally until shared persistence ships.
+- Decisions logged: D1 persistence first (2-week cap) · D2 "concerné(e)s" final for launch · D3 launch surface = `/communaute/independants` · D4 no paywall before Cercle 2 signal · D5 feature freeze · D6 curated seeding (60 cards), scraping feeds a manual queue only
+- Patterns: none — single planning session.
+- Ran `wiki/backlinks.py` after writing.

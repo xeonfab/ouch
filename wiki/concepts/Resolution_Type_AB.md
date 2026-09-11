@@ -46,6 +46,7 @@ _(none yet)_
 **Syntheses**
 
 - [2026-09-10 ouch-fixmylife-contexte-complet](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
+- [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
 
 **Other**
 

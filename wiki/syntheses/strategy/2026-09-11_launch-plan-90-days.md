@@ -160,7 +160,8 @@ Weekly sheet (one row per week, filled Sunday):
 | Claude Code | Implement the spec from the app repo | 2026-10-01 | **done 2026-09-11** on branch `claude/persistence-spec` (migration applied, 38 cards seeded at zero, client migrated, lint/typecheck/build green) |
 | Fabien | Open the PR, merge to `main` (Lovable sync), then run the two-device test on the Lovable preview and the 5-friend smoke test (spec §7 steps 5-6) | 2026-10-01 | open — blocked in the build sandbox (Supabase host not reachable there) |
 | Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | **deck done 2026-09-11** → [freelance deck v1](../projects/2026-09-11_freelance-deck-v1.md) (54 cards, top 10 selected); channel playbook done → [communication plan](2026-09-11_freelance-channel-communication-plan.md); channel map (actual groups) still open |
-| Claude Code (`ouch-cto`) | Structure fixes before the first wave: `communities` tag, retire placeholder entities, submission-funnel events, cross-topic dedup | 2026-10-01 | open → [structure & dedup spec](../projects/2026-09-11_problem-structure-dedup-spec.md) |
+| Claude Code (`ouch-cto`) | Structure fixes before the first wave: `communities` tag, retire placeholder entities, submission-funnel events, cross-topic dedup | 2026-10-01 | **done 2026-09-11** on branch `claude/freelance-deck-structure` of `xeonfab/fix-it-karma`; migrations applied on the live database (84 cards, 54 tagged, placeholders gone). Build could not run in the sandbox (Lovable's private npm registry is blocked); lint clean, typecheck clean apart from stubbed packages |
+| Fabien | Merge `claude/freelance-deck-structure` into `main` (it also repairs `main`, which does not typecheck since the persistence merge), then two-device test on the Lovable preview | 2026-09-14 | open |
 
 ## Open questions
 

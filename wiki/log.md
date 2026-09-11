@@ -141,3 +141,12 @@
 - Launch deck confirmed: nine large frictions plus the Qonto entity-page test
 - Updated: deck page next steps, team audit next steps, index
 - Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] build | Cercle 1 structure + freelance deck on `xeonfab/fix-it-karma` (branch `claude/freelance-deck-structure`)
+
+- Applied live on the Lovable Cloud database: `20260912090000_community_structure` (extensions `pg_trgm`/`unaccent`, columns `communities`, `channel`, `deck_rank`, generated `norm_text`, banned-word check constraint with a « nulle part » exception, `similar_problems` RPC) and `20260912090100_freelance_deck_v1` (19 placeholder entities unlinked from 24 rows, hashtags on the 30 remaining seeds, cards 1 and 34 rewritten, 46 new cards; F20/F22 unpublished pending their source). Verified: 84 cards, 82 published, 54 tagged `independants`, 10 with a deck rank, 12 real entities left, no published pair above 0.6 similarity.
+- Client: community page reads the tag via `communityDeck()` (pain → curated rank → recency, 48 h slot for fresh submissions), submit block below the deck, submissions carry `communities` + `channel`, four funnel events, share links to the community deck, `detectDuplicate` runs the trigram RPC across the whole table before the LLM judge, entity registry reduced to real organisations with aliases fed to the qualification prompt.
+- Found and repaired: `main` did not typecheck — the persistence merge (`e3fe6e7`) had mangled the flip card in `swipe-deck.tsx`. Rebuilt from Lovable's complete version, `voteFor` added to the engagement provider.
+- Not verified: `vite build` and the browser test. The sandbox's network policy blocks Lovable's private npm registry (`*.pkg.dev` 403), so `motion`, `@supabase/supabase-js` and `@lovable.dev/cloud-auth-js` could not be installed; a registry switch was refused by the permission classifier. ESLint clean on changed files; typecheck clean once those three packages are stubbed.
+- Next: Fabien merges the branch (Lovable only sees `main`), runs the two-device test, logs the source for F20/F22.
+- Updated: launch plan, MOC, spec, deck page.

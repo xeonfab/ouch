@@ -156,6 +156,8 @@ Total before the first wave: ~10 h, inside the Phase 1–2 build budget (8 h →
 
 ## 10. Acceptance criteria
 
+Status 2026-09-11: database side verified live (no placeholder slug left, all hashtags set, no published pair above 0.6 similarity, L1 function returns F01 for a paraphrase of it). Client side implemented on branch `claude/freelance-deck-structure`, to verify on the Lovable preview after merge.
+
 - [ ] A problem submitted from `/communaute/independants` appears in that page's listing within one reload, with no deploy.
 - [ ] No entity page exists for a placeholder; `select distinct unnest(entity_slugs) from problems` returns only real organisations.
 - [ ] All published problems have a non-null `topic_hashtag` that contains no entity name.
@@ -168,9 +170,9 @@ Total before the first wave: ~10 h, inside the Phase 1–2 build budget (8 h →
 
 | Owner | Action | Due | Status |
 |---|---|---|---|
-| Claude Code (`ouch-cto`) | Migration: `communities`, `channel`, banned-word check; unlink placeholders; events; community page on the tag | 2026-10-01 | open |
+| Claude Code (`ouch-cto`) | Migration: `communities`, `channel`, banned-word check; unlink placeholders; events; community page on the tag | 2026-10-01 | **done 2026-09-11** (migrations `20260912090000_community_structure`, `20260912090100_freelance_deck_v1`, applied live) |
 | Fabien | Confirm the retirement of the 18 placeholder entities (their pages disappear) | 2026-09-14 | open |
-| Claude Code (`ouch-cto`) | `pg_trgm` layer + L1 in `detectDuplicate` + weekly query in `docs/metrics.sql` | 2026-10-08 | open |
+| Claude Code (`ouch-cto`) | `pg_trgm` layer + L1 in `detectDuplicate` + weekly query in `docs/metrics.sql` | 2026-10-08 | **done 2026-09-11** (same branch) |
 | Fabien | Weekly: run the similarity query on Sunday, decide merges | from 2026-10-12 | open |
 
 ## Open questions
@@ -200,7 +202,6 @@ Total before the first wave: ~10 h, inside the Phase 1–2 build budget (8 h →
 - [2026-09-11 freelance-channel-communication-plan](../strategy/2026-09-11_freelance-channel-communication-plan.md)
 - [2026-09-11 freelance-deck-v1](2026-09-11_freelance-deck-v1.md)
 - [2026-09-11 freelance-deck-v1 expert-review](2026-09-11_freelance-deck-v1_expert-review.md)
-- [2026-09-11 launch-plan-90-days](../strategy/2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 team-skills-audit](../strategy/2026-09-11_team-skills-audit.md)
 
 **Other**

@@ -189,8 +189,8 @@ A CSV export of the 54 rows sits next to this page: [`2026-09-11_freelance-deck-
 | Fabien | Read the 54 cards once as Léa; strike any that fails the two-second test | 2026-09-14 | open |
 | `ouch-expert-independants` | Factual review of the 54 cards (mechanism, figures, entity, Type A/B, frequency) | 2026-09-17 | **done 2026-09-11** → [expert review](2026-09-11_freelance-deck-v1_expert-review.md); 4 cards corrected in place (F03, F08, F16, F35), 1 title tightened (F22) |
 | Fabien + `ouch-legal` | Source trace for the seven entity-named cards | 2026-09-17 | open |
-| Claude Code (`ouch-cto`) | Insert the deck on `fix-it-karma` (seed script, hashtags, deck ids) after the Phase 1 two-device test | 2026-10-01 | open |
-| Fabien | Swap the launch deck on `/communaute/independants` to the 10 cards above | 2026-10-01 | open |
+| Claude Code (`ouch-cto`) | Insert the deck on `fix-it-karma` (seed script, hashtags, deck ids) after the Phase 1 two-device test | 2026-10-01 | **done 2026-09-11** — inserted live by migration; F20 and F22 unpublished until their source is logged (`update problems set published = true where topic_hashtag in ('#DeclarationMixte','#AttestationVigilance')`) |
+| Fabien | Swap the launch deck on `/communaute/independants` to the 10 cards above | 2026-10-01 | **done** — the page now reads the `communities` tag and `deck_rank` (branch `claude/freelance-deck-structure`) |
 
 ## Open questions
 

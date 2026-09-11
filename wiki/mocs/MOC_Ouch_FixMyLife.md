@@ -33,6 +33,7 @@ last_reviewed: 2026-09-11
 - New since the snapshot: `/communaute/independants` + `/catalogue` (Cercle 1 landing with a 2-question survey, answers also `localStorage`), Google SSO offered after a positive swipe, social share after publishing a problem, duplicate detection on submission.
 - Lovable `roadmap.md`: all 12 items checked. Feature backlog is empty by design (feature freeze, decision D5).
 - The catalog ships demo counters and fake statuses; they are zeroed at migration (spec §1b).
+- **2026-09-11 evening**: `main` of `fix-it-karma` does not typecheck (the persistence merge mangled `swipe-deck.tsx`'s flip card); repaired on branch `claude/freelance-deck-structure`, which also carries the Cercle 1 structure (communities tag, channel, deck_rank, banned-word check, trigram similarity, funnel events) and the freelance deck. Database already migrated: 84 cards, 82 published (F20/F22 wait for their source), only real entities linked.
 - Code lives in [`xeonfab/fix-it-karma`](https://github.com/xeonfab/fix-it-karma) (two-way Lovable sync on `main`). Phase 1 spec: [`docs/persistence-spec.md`](https://github.com/xeonfab/fix-it-karma/blob/claude/persistence-spec/docs/persistence-spec.md).
 
 ## ❓ Open questions

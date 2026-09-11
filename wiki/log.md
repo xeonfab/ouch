@@ -104,6 +104,6 @@
 - Updated:
   - `wiki/syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md` — Build status : connexion déplacée au moment de publier (brouillon persisté en `sessionStorage` à travers l'OAuth), une carte directe au lieu du choix entre 3 variantes, étape "doublon" dédiée avant la carte, écran de succès en deux modes (créée / rejointe). Point ouvert : rejoindre un doublon sans connexion ne capture aucun email
   - `wiki/syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md` — Build status : votes/leads idempotents, deck avec mémoire + mode relecture, carte retournable avec verso détaillé, popover d'explication du score de douleur ; `last_reviewed` bumped
-- Livré sur Lovable (`fix-it-karma`) commits `51b724a` (création) et `8abda3a` (engagement)
+- Livré sur Lovable (`fix-it-karma`) commits `51b724a` (création), `8abda3a` (engagement) et `81a51e5` (capture email via Google quand on rejoint un doublon sans être connecté — point ouvert refermé le jour même)
 - No new entity/concept pages
 - Patterns: none — deux itérations produit sur un même test, pas de signal cross-source

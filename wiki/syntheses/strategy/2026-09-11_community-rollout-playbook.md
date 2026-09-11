@@ -11,13 +11,13 @@ last_reviewed: 2026-09-11
 | **Date** | 2026-09-11 |
 | **Type** | strategy |
 | **Participants** | Fabien (founder, dictated voice note) |
-| **Source(s)** | [raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md](../../../raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md) |
+| **Source(s)** | [raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md](../../../raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md), [raw/transcripts/2026-09-11_strategie-entites-et-makers.md](../../../raw/transcripts/2026-09-11_strategie-entites-et-makers.md) |
 
 ---
 
 ## Context
 
-Fabien restated the overall strategy in a voice note the same day the 90-day plan was written. The plan is tactical (13 weeks, one priority per phase); this note is the **long-run shape** the plan serves. Nothing here contradicts the plan or its six settled decisions. It adds a framing (a repeatable loop), two emphases (problem *submission* as the tested behaviour; channel multiplicity inside one community) and one new, still-ambiguous element (organisations that *collect* problems).
+Fabien restated the overall strategy in a voice note the same day the 90-day plan was written. The plan is tactical (13 weeks, one priority per phase); this note is the **long-run shape** the plan serves. Nothing here contradicts the plan or its six settled decisions. It adds a framing (a repeatable loop), two emphases (problem *submission* as the tested behaviour; channel multiplicity inside one community) and one element clarified the same day: the organisations that *collect* problems are the product's entités, whose public pages are the listing where problems land.
 
 ## Key points
 
@@ -38,7 +38,12 @@ Fabien restated the overall strategy in a voice note the same day the 90-day pla
 
 - **Volume of problems** — more communities, more channels, more submissions.
 - **Structure** — the more problems, the more sectors/topics/entities are needed to keep them offerable. Structure follows volume; it is not designed upfront (consistent with "no new sectors or filters before day 90").
-- **Both sides of the market** — on the supply side, *organisations able to collect problems*; on the demand side, *makers/entrepreneurs able to build a solution*. See the open question below on what "collecting organisations" means.
+- **Both sides of the market** — entities on one side, makers on the other. Clarified by Fabien on 2026-09-11 (second voice note):
+  - **Entities = the product's entités** (companies, local authorities, public bodies — always an organisation, never a person). A problem is usually tied to an entity (e.g. Qonto), so every submitted problem must also appear publicly in the **dedicated entity page** (`/entite/:slug`, already built). The entity page is the public identity of the problem set: a listing per entity, not just a feed. It stays a *passive* surface — hard rules 4 and 5 unchanged: no outreach to the entity, no official account, an entity that subscribes is a maker like any other.
+  - **Makers = entrepreneurs and intrapreneurs**, two profiles that map onto [Resolution Type A/B](../../concepts/Resolution_Type_AB.md):
+    - *Intrapreneurs inside the named entity* — the entity itself collects its problems from its page and fixes them (Type B, "entite").
+    - *Independent people or collectives* — build their own solution from the problems, without the entity (Type A, "tiers").
+  - Consequence for the loop: each community iteration adds entities (new pages, new listings) as much as it adds problems. Entity pages are also the SEO surface the growth skill counts on once counters are real.
 
 ### Answer to "is the freelance community on several channels?"
 
@@ -80,14 +85,14 @@ No new decision. The six decisions of the launch plan stand. Additions:
 
 | Owner | Action | Due | Status |
 |---|---|---|---|
-| Fabien | Clarify "organisations that collect problems" (see open question) before any partner contact | 2026-10-08 | open |
+| Fabien | Clarify "organisations that collect problems" | 2026-09-11 | **done** — the product's entités (see open questions) |
 | Fabien + `ouch-growth-hacker` | Fill the channel map with actual freelance groups/collectives and pick 3 for the Phase 2 waves | 2026-10-08 | open (already in the launch plan) |
-| Fabien + `ouch-legal` | If relay organisations are pursued: write the rule separating a *relay partner* from an *entity named on cards* | before first partner contact | open |
+| Fabien + `ouch-cto` | Check on the Phase 1 build that a user-submitted problem tied to an entity shows up on that entity's page with its real counter (not only in the feed) | 2026-10-01 | open |
 | Fabien | At day 90, produce the replay kit from the freelance iteration before opening Cercle 2 | 2026-12-10 | open |
 
 ## Open questions
 
-- **"Organisations capables de recueillir ces problèmes"** — two readings. (a) *Relay partners*: freelance collectives, coworkings, platforms, federations that gather problems from their members and pass them on — a new supply channel, not in the plan. (b) The product's *entités* named on cards. Reading (a) is the useful one, but it must respect hard rule 5 (no active outreach to entities named on cards): a relay partner must not be an entity that appears on the cards it relays. Default until clarified: reading (a), no partner contact before Phase 2 data exists.
+- ~~**"Organisations capables de recueillir ces problèmes"** — relay partners or the product's entités?~~ **Settled 2026-09-11 by Fabien: the product's entités.** No relay-partner channel; entity pages are the public listing where problems are collected, and the entity may itself become a maker (Type B) without any special status.
 - Submission vs swipe as the tested behaviour: the plan measures both, with swipe as the cheaper first action. Keep swipe as the primary metric and submissions as the second gate, unless Fabien wants submission to be the headline metric.
 - Which French freelance communities allow member posts about side projects? (Unchanged from the plan, week 4.)
 
@@ -100,6 +105,7 @@ No new decision. The six decisions of the launch plan stand. Additions:
 ## Sources
 
 - [raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md](../../../raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md)
+- [raw/transcripts/2026-09-11_strategie-entites-et-makers.md](../../../raw/transcripts/2026-09-11_strategie-entites-et-makers.md) — clarification: entities and the two maker profiles
 
 ---
 

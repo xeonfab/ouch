@@ -106,3 +106,10 @@
 - No new decision: the six launch-plan decisions stand. New open question: whether "organisations capables de recueillir les problèmes" means relay partners (collectives, coworkings, platforms) or the product's entités — default relay partners, bounded by hard rule 5
 - Patterns: none (single source)
 - Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] clarify | "Collecting organisations" = the product's entités; two maker profiles
+
+- Source: `raw/transcripts/2026-09-11_strategie-entites-et-makers.md` (second dictated voice note, saved verbatim)
+- Settled: the organisations that collect problems are the entités (companies, local authorities, public names). A problem tied to an entity must appear publicly on the dedicated entity page/listing. Makers = entrepreneurs and intrapreneurs: inside the entity (Type B) or independent people/collectives (Type A). Hard rules 4–5 (no special status, no outreach) unchanged.
+- Updated: rollout playbook (both-sides section, open question struck through, next-steps table), MOC (open question settled), `wiki/index.md` (row summary)
+- Ran `wiki/backlinks.py` after writing.

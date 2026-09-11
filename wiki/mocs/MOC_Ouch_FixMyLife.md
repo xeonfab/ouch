@@ -31,7 +31,7 @@ last_reviewed: 2026-09-11
 - ~~Is the Supabase migration a prerequisite for the public validation test?~~ **Settled 2026-09-11 (D1): yes**, minimal schema, two-week cap — see launch plan.
 - ~~Will "signer/signatures" be adopted before launch?~~ **Settled 2026-09-11 (D2): "concerné(e)s" is final for launch**; "signer" parked until ≥1,000 positive swipes.
 - When does the Cercle 1 → Cercle 2 (PME) traction signal trigger? Unchanged (3 freelance problems >70 + 1 returning maker); it is the Phase 3 exit gate, evaluated at day 90 (week of 4 Dec 2026).
-- What are the "organisations able to collect problems" in the founder's strategy — relay partners (collectives, coworkings, platforms) or the product's entités? Default: relay partners, no contact before Phase 2 data, and a relay partner must never be an entity named on the cards it relays (hard rule 5). See the [rollout playbook](../syntheses/strategy/2026-09-11_community-rollout-playbook.md).
+- ~~What are the "organisations able to collect problems" in the founder's strategy?~~ **Settled 2026-09-11: the product's entités.** Every problem tied to an entity must appear on that entity's public page; makers are either intrapreneurs inside the entity (Type B) or independents/collectives (Type A). Hard rules 4–5 unchanged. See the [rollout playbook](../syntheses/strategy/2026-09-11_community-rollout-playbook.md).
 - Anonymous voter identity: device id only, or upgraded to the Google profile on sign-in? (Spec week, default = device id + link on sign-in.)
 
 ## 📥 Raw sources worth re-reading

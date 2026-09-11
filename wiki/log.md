@@ -82,3 +82,10 @@
 - Decisions logged: D1 persistence first (2-week cap) · D2 "concerné(e)s" final for launch · D3 launch surface = `/communaute/independants` · D4 no paywall before Cercle 2 signal · D5 feature freeze · D6 curated seeding (60 cards), scraping feeds a manual queue only
 - Patterns: none — single planning session.
 - Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] decision | Lovable ↔ GitHub connected, persistence spec written
+
+- Decision: keep Lovable for preview/hosting/AI gateway, work on the code from GitHub (`xeonfab/fix-it-karma`, two-way sync on `main`). Full exit from Lovable deferred to after the day-90 decision (solves no cold-start, ~1 week of infra).
+- Audit addition: the catalog carries demo counters/statuses/updates/verbatims and a synthetic growth curve; all removed at migration so makers never see an invented number.
+- Created (app repo, branch `claude/persistence-spec`): `docs/persistence-spec.md` — schema (7 tables, 3 aggregate views), insert-only RLS for anonymous visitors, device-id identity without login, unchanged `useEngagement` contract, events + `?c=` channel tag, seed procedure, rollout order, acceptance criteria, ~21h estimate.
+- Updated: launch plan (audit table, next-steps table), MOC (build-state delta).

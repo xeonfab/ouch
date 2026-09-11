@@ -29,6 +29,8 @@ The product surface is essentially built (swipe, Terminal Maker, entity pages, A
 | Google SSO after a positive swipe | Built | Good: cheaper opt-in than typed email. Keep. |
 | Social share after publishing a problem | Built 2026-09-11 | Good: free distribution loop. Keep. |
 | Lovable `roadmap.md` | All 12 items checked | Feature backlog is empty by design. Nothing else is "missing" for launch. |
+| Demo counters in the catalog | `seedRight` up to 512, `seedLeads` up to 214, fake statuses, fake maker updates, fake verbatims, synthetic growth curve, hero "+12 480 problèmes" | **All zeroed or removed before any public share** (spec §1b). A maker must never see an invented number. |
+| Code repository | Lovable now synced two-way with `xeonfab/fix-it-karma` (`main`) | Claude Code works from the repo on branches; Lovable keeps preview, hosting and AI gateway. One driver on the code at a time. |
 | Vocabulary | Still "concerné(e)s" + 🔥 | Settled below (D2). |
 | Legal pages `/mentions-legales`, `/confidentialite`, `/cgu` | Routes exist | Content to proofread once in Sprint 0, not rebuilt. |
 
@@ -152,10 +154,10 @@ Weekly sheet (one row per week, filled Sunday):
 | Owner | Action | Due | Status |
 |---|---|---|---|
 | Fabien | Do **not** share `/communaute/independants` externally until Phase 1 ships | now | open |
-| Fabien + `ouch-cto` | Write the persistence spec (schema, policies, device id, aggregated view) | 2026-09-17 | open |
+| Fabien + `ouch-cto` | Write the persistence spec (schema, policies, device id, aggregated view) | 2026-09-17 | **done 2026-09-11** → [`docs/persistence-spec.md`](https://github.com/xeonfab/fix-it-karma/blob/claude/persistence-spec/docs/persistence-spec.md) on branch `claude/persistence-spec` of `xeonfab/fix-it-karma` |
 | Fabien + `ouch-legal` | Proofread the three legal pages; final legal pass on the seed catalog | 2026-09-17 | open |
 | Fabien | Create the weekly metrics sheet | 2026-09-14 | open |
-| Fabien | Send the migration to Lovable in one scoped message; verify shared counters across two devices | 2026-10-01 | open |
+| Fabien | Implement the spec from the app repo (branch → PR → merge to `main` → Lovable sync); verify shared counters across two devices | 2026-10-01 | open |
 | Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | open |
 
 ## Open questions

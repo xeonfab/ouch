@@ -43,6 +43,7 @@ _(none yet — no external vendor/expert tied to this mechanism)_
 **Syntheses**
 
 - [2026-09-10 ouch-fixmylife-contexte-complet](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
+- [2026-09-11 community-rollout-playbook](../syntheses/strategy/2026-09-11_community-rollout-playbook.md)
 - [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
 
 **Other**

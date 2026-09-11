@@ -97,3 +97,12 @@
 - Client: `engagement.tsx` rewritten on react-query (optimistic writes, local mirror of ids only, unchanged hook contract), demo catalog moved to `src/lib/seed-catalog.ts` (seed script only), fake hero badge/statuses/maker updates/verbatims/seed voices/synthetic growth curve removed, live feed on real data, survey and duplicate detection on Supabase, `events` instrumentation with `?c=` channel tag, `docs/metrics.sql` for the Sunday review.
 - Verification: typecheck and production build green, changed files prettier/eslint clean (main itself has 322 pre-existing prettier errors). The two-device browser test could not run in the sandbox: the Supabase host is denied by the session's network policy. Left for Fabien on the Lovable preview after merge.
 - Updated: launch plan next-steps table.
+
+## [2026-09-11] ingest | Founder's strategy voice note → community-by-community rollout playbook
+
+- Source: `raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md` (dictated voice note, saved verbatim)
+- Created: `wiki/syntheses/strategy/2026-09-11_community-rollout-playbook.md` — the long-run loop (ship → one community → channel map → problem submission → store/structure → makers → automate → replay), channel-type table for French freelances, automation ladder (levels 0–3, never auto-publish), replay kit checklist
+- Updated: `wiki/mocs/MOC_Ouch_FixMyLife.md` (linked the playbook, new open question on "collecting organisations"), `wiki/index.md` (Strategy table), launch plan (Related pages)
+- No new decision: the six launch-plan decisions stand. New open question: whether "organisations capables de recueillir les problèmes" means relay partners (collectives, coworkings, platforms) or the product's entités — default relay partners, bounded by hard rule 5
+- Patterns: none (single source)
+- Ran `wiki/backlinks.py` after writing.

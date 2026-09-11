@@ -170,7 +170,7 @@ Weekly sheet (one row per week, filled Sunday):
 ## Related wiki pages
 
 - Concepts: [Score de Douleur](../../concepts/Score_de_Douleur.md), [Resolution Type A/B](../../concepts/Resolution_Type_AB.md)
-- Syntheses: [Ouch!/FixMyLife — full project context](../projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
+- Syntheses: [Community-by-community rollout playbook](2026-09-11_community-rollout-playbook.md) — this plan is iteration #1 of that loop; [Ouch!/FixMyLife — full project context](../projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
 - MOC: [Ouch! / FixMyLife](../../mocs/MOC_Ouch_FixMyLife.md)
 
 ## Sources
@@ -182,6 +182,10 @@ Weekly sheet (one row per week, filled Sunday):
 
 <!-- BACKLINKS:START -->
 ## Referenced by
+
+**Syntheses**
+
+- [2026-09-11 community-rollout-playbook](2026-09-11_community-rollout-playbook.md)
 
 **Other**
 

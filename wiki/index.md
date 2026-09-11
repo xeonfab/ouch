@@ -68,6 +68,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### 🎯 Strategy (`strategy/`)
 | Page | Summary |
 |---|---|
+| [Community rollout playbook (founder)](syntheses/strategy/2026-09-11_community-rollout-playbook.md) | Long-run strategy as a repeatable loop: ship → one community → channel map → problem submission → store/structure → makers → automate → replay; channel-type table for FR freelances, automation ladder, replay kit, open question on "collecting organisations" |
 | [90-day launch plan (CEO)](syntheses/strategy/2026-09-11_launch-plan-90-days.md) | Active launch plan: live build audit (votes still `localStorage`), 6 settled decisions, 3 phases with hard gates (persistence → first freelance audience → first maker signal), weekly 20h rhythm, metrics, day-90 decision |
 
 ### 🚀 Projects (`projects/`)

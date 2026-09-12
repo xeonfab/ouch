@@ -316,3 +316,8 @@
 
 - Fabien on the phone: « Moi aussi » did not ask for his email (prompt already shown once in the tab), and he wants to choose card by card. [PR #20](https://github.com/xeonfab/fix-it-karma/pull/20) (`claude/notify-me-per-card`): first positive vote of a visit → skippable prompt; every vote after → toast « Ajouté ✨ » with a one-tap « Préviens-moi 🔔 » (no form when the email is known); bell on voted rows and home cards to ask later; silent registration of every vote for known emails (PR #16) removed, so « en attente d'une solution » counts explicit requests only.
 - Rule replaces the PR #16 line in the spec: voting and being notified are two intents; the opt-in is offered after every positive vote, chosen per card in one tap, never applied silently.
+
+## [2026-09-12] merge | PR #20 merged: being notified is a per-card choice
+
+- Merged at 07:59 UTC, CI green. Live: skippable prompt on the first vote of a visit, then « Ajouté ✨ » toast with a one-tap « Préviens-moi 🔔 » per card, bell on voted rows and home cards, no silent registration.
+- Morning total on Fabien's phone feedback: PRs #19 and #20 merged. Open on Fabien's side: SMTP Resend, contact address, friends wave `?c=amis`. Sunday: week 1 line.

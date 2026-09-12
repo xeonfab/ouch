@@ -247,3 +247,7 @@
 
 - PR #15 went « dirty » after PR #13 (legal pages, queries 13–14) and PR #16 (opt-in prompt after every vote) merged on `main`. Fabien merged `main` into the branch from GitHub at 02:12 UTC while Claude Code did the same locally; his resolution of `docs/metrics.sql` dropped queries 13 and 14. Reconciled: the file now carries 11–14 from `main` and the entity queries renumbered **15** (candidate queue), **15b** (promotion), **16** (entity page visits, Terminal from a page). Pushed as `6d50531`; local render with mocked data still fine after PR #16's lead prompt.
 - Lesson for the CTO rule: while a `claude/*` PR is open, avoid « Update branch » from the GitHub UI when the same file is being resolved in a session; one merge per conflict.
+
+## [2026-09-12] merge | PR #18 merged: metrics.sql complete again on `main`
+
+- CI green, merged by Fabien at 02:15 UTC. `docs/metrics.sql` on `main` now carries queries 1–14 plus 15 (entity candidates queue), 15b (promotion) and 16 (entity page visits, Terminal visits from a page). The panel's ~4 h of works are fully on `main` (PR #15 + #18). Check-in trigger cancelled; nothing left open on the app side for this decision. Remaining for Fabien: look at `/entite/qonto` in production.

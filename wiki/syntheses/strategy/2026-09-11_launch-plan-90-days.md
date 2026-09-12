@@ -167,7 +167,7 @@ Weekly sheet (one row per week, filled Sunday):
 
 ## Open questions
 
-- Sign-in providers beyond Google: recommendation 2026-09-12 is an email magic link (Supabase OTP) as the fallback for the submission wall, LinkedIn only if the freelance field asks for it, no Facebook / Apple / Microsoft / GitHub. Decide after the first `submit_login_wall` reading (friends wave).
+- Sign-in providers: settled 2026-09-12, Google + email magic link (PR #17). LinkedIn only if the freelance field asks for it; no Facebook / Apple / Microsoft / GitHub. Fabien sets custom SMTP (Resend) on the Supabase project before the friends wave, see `docs/deploy.md` b bis.
 
 - Generic `/swipe` served the whole registry in id order and the second test device swiped there instead of the curated deck. Settled 2026-09-12 for community routes: header and footer « Swiper » point to the community deck (PR #14). Still open: rank the generic `/swipe` by Score de Douleur, or keep it as the topic-picker exploration deck? (`ouch-ceo` + `ouch-ux-designer`, after the friends wave.)
 

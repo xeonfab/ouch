@@ -292,3 +292,8 @@
 
 - Merged at 02:09 UTC, CI green. Live: « Moi aussi » in the list and on the home cards opens the same Google / email prompt as the swipe (once per visit), Google users and visitors who gave an email are registered silently on the cards they vote for.
 - Question from Fabien: other SSO besides Google? Answer given: none before the friends wave; next is an email magic link (Supabase OTP), not another provider; LinkedIn only on a field signal; Facebook, Apple, Microsoft, GitHub set aside. Decision pending the `submit_login_wall` reading on Sunday.
+
+## [2026-09-12] pr | PR #17 opened: email magic link next to Google
+
+- Fabien: « ok lien magique ». [PR #17](https://github.com/xeonfab/fix-it-karma/pull/17) (`claude/magic-link`): `signInWithMagicLink` (Supabase OTP, return to the current page), `SignInOptions` = Google then « ou par email », on the submission wall, the « joined » screen and behind « Rejoindre » in the header (now a dialog). Event `login_magic_link_sent` with source. Deploy doc: Supabase's default sender is development-only, custom SMTP via Resend + rate limit + French template required before the friends wave (Fabien, dashboard).
+- Decision settled in the plan: sign-in = Google + magic link; LinkedIn only on a field signal; no Facebook / Apple / Microsoft / GitHub.

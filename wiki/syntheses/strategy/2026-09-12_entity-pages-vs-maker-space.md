@@ -254,6 +254,10 @@ Fabien challenged the manual step: the thresholds are mechanical, why click? Set
 <!-- BACKLINKS:START -->
 ## Referenced by
 
+**Syntheses**
+
+- [2026-09-11 problem-structure-dedup-spec](../projects/2026-09-11_problem-structure-dedup-spec.md)
+
 **Other**
 
 - [📇 Wiki Index](../../index.md)

@@ -83,7 +83,7 @@ alter table public.problems add constraint problems_no_judgment check (
 
 Rules (from the founder's 2026-09-11 clarification and the legal grid):
 1. An entity is a **real organisation with a public name** (company, public body, local authority, platform). Never a person; never a category (« une banque en ligne »); never a placeholder.
-2. The registry stays in code (`entities.ts`) with a **closed list**; new entities enter only through a manual queue after a legal look (is the name public, is the friction attributable, is there a source).
+2. ~~The registry stays in code (`entities.ts`) with a **closed list**; new entities enter only through a manual queue after a legal look.~~ **Superseded 2026-09-13**: the registry is the `entities` table (`entities.ts` keeps the seed as offline fallback); new entities enter through the auto-prepared path (candidates over the threshold drafted by the model, non-public « ready » state, one-click publish or 48 h veto). See [entity pages vs Maker space](../strategy/2026-09-12_entity-pages-vs-maker-space.md), follow-up decision.
 3. Each entry carries `aliases` for matching voice-to-text and typos (« compteux », « q o n t o » → `qonto`), used by `qualifyProblem` and by the harvest step.
 4. An entity page is created **only when at least one published card links to it** (already the behaviour of `usedEntities`).
 5. An entity may become a maker; it never gets a badge, a reply, or a moderation right (hard rules 4–5, legal skill).

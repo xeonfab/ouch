@@ -175,12 +175,14 @@ Ce qui se vend (Terminal Pro, après le signal Cercle 2) : compteurs d'opt-in pa
 aux emails (après mise à jour du consentement), tendance, démographie, export, alertes, comme un
 service à tout maker, l'entité comprise, sans statut.
 
-**Création d'une fiche entité : éditoriale, jamais revendiquée, jamais automatique.** Aucun flux
+**Création d'une fiche entité : jamais revendiquée, jamais publiée sans fenêtre de veto.** Aucun flux
 « officialiser / revendiquer cette page » : c'est un compte officiel (règle dure 4) et il crée
-l'attente d'un droit de réponse et de modération (régime Trustpilot). Aucune création automatique
-par le qualifieur : une fiche pour une organisation mal orthographiée, hallucinée ou non publique
-viole la règle du registre. Le qualifieur remplit un champ privé `entity_candidate` ; Fabien promeut
-après ton regard (nom public ? friction attribuable ? source consignée ?).
+l'attente d'un droit de réponse et de modération (régime Trustpilot). Depuis le 2026-09-13 (chemin
+auto-préparé, PR #22) : le qualifieur remplit la file privée `entity_candidates` ; au seuil (2 cartes
+ou 1 carte ≥10 🔥) le modèle prépare une fiche **non publique** (graphies regroupées, jamais une
+personne ni une catégorie, refus mémorisé), Fabien la publie en un clic ou elle se publie seule après
+48 h. Ton regard porte sur les fiches prêtes : nom public ? friction attribuable ? source consignée ?
+Une fiche douteuse se refuse avant la fin du veto ; une fiche refusée reste en base (jamais supprimée).
 
 **Deux obligations à tenir quelle que soit la décision** : un lien « signaler cette carte » sur
 chaque carte (obligation d'hébergeur, à sens unique, jamais une réponse publique) avant le test de

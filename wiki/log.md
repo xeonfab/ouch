@@ -267,3 +267,7 @@
 ## [2026-09-12] pr | PR #14 opened: « Swiper » keeps a community visitor on the community deck
 
 - CEO call on the open question raised by the metrics sheet: during the friends wave, a visitor sent to `/communaute/independants` must stay on the curated deck. [PR #14](https://github.com/xeonfab/fix-it-karma/pull/14) (`claude/community-swipe-links`): header « Le Swipe » and footer « Swiper 👉 » point to the community page on community routes (`useSwipeTarget`), `/swipe` elsewhere; `community_visit` carries user agent and viewport width. Ranking the generic `/swipe` by Score de Douleur stays open.
+
+## [2026-09-12] merge | PR #14 merged: « Swiper » keeps a community visitor on the community deck
+
+- Merged at 01:44 UTC, CI green. Live: header and footer « Swiper » point to `/communaute/independants` on community routes; `community_visit` events carry user agent and viewport width.

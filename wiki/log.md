@@ -297,3 +297,8 @@
 
 - Fabien: « ok lien magique ». [PR #17](https://github.com/xeonfab/fix-it-karma/pull/17) (`claude/magic-link`): `signInWithMagicLink` (Supabase OTP, return to the current page), `SignInOptions` = Google then « ou par email », on the submission wall, the « joined » screen and behind « Rejoindre » in the header (now a dialog). Event `login_magic_link_sent` with source. Deploy doc: Supabase's default sender is development-only, custom SMTP via Resend + rate limit + French template required before the friends wave (Fabien, dashboard).
 - Decision settled in the plan: sign-in = Google + magic link; LinkedIn only on a field signal; no Facebook / Apple / Microsoft / GitHub.
+
+## [2026-09-12] merge | PR #17 merged: email magic link next to Google
+
+- Merged at 02:15 UTC, CI green. Live: « Rejoindre », the submission wall and the « joined » screen offer Google then « ou par email ». The email itself only reaches visitors once Fabien sets custom SMTP (Resend) on the Supabase project, `docs/deploy.md` b bis.
+- Evening total: PRs #7, #8, #10, #11, #12, #13, #14, #16, #17 merged on field feedback. Open on Fabien's side: SMTP setup, real contact address on the legal pages, friends wave `?c=amis`. Sunday: week 1 line of the metrics sheet.

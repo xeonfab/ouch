@@ -271,3 +271,8 @@
 ## [2026-09-12] merge | PR #14 merged: « Swiper » keeps a community visitor on the community deck
 
 - Merged at 01:44 UTC, CI green. Live: header and footer « Swiper » point to `/communaute/independants` on community routes; `community_visit` events carry user agent and viewport width.
+
+## [2026-09-12] merge | PR #13 merged: legal pages reviewed, metrics queries 13–14
+
+- Merged at 01:44 UTC, CI green. Live: mentions légales name the host and use the LCEN non-professional clause; confidentialité lists the device id, usage events, the Anthropic processor and transfer, legal bases, retention, rights and the CNIL; CGU state correction / merge / unpublication, vote retraction, entities without status. Placeholders left for Fabien: contact address, publisher identity.
+- All PRs of the evening merged (#7, #8, #10, #11, #12, #13, #14). Nothing open in the app repo. Next: Fabien's contact address, card 86 and `?c=test` purge decisions, friends wave `?c=amis`; the Sunday metrics line.

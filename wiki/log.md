@@ -231,3 +231,9 @@
 
 - Merged at 01:16 UTC, CI green. Live: the community listing and the home « Tendances » keep their order while the visitor votes; card votes carry `source = card` in `swipe_right` events, so query 9 of `docs/metrics.sql` can split card votes from swipe votes from this deployment on.
 - Open UX question from Fabien: list view instead of the card grid for reading the ranked problems. Verdict given with a mock (list on the community listing and the catalogue, cards kept on the swipe and on the home showcase); waiting for his call before building `ProblemRow`.
+
+## [2026-09-12] pr | PR #10 and PR #11 opened: stale-chunk reload, list view for reading
+
+- Fabien hit « Failed to fetch dynamically imported module » on a tab open across the PR #8 deployment. [PR #10](https://github.com/xeonfab/fix-it-karma/pull/10) (`claude/stale-chunk-reload`): the root error boundary recognises the stale-chunk error family and reloads once per URL (sessionStorage guard), Vite's `vite:preloadError` handled the same way, no `client_error` event for these.
+- Fabien said « oui go sur liste ». [PR #11](https://github.com/xeonfab/fix-it-karma/pull/11) (`claude/problem-list`): `ProblemRow`/`ProblemList` on the community listing and the catalogue; sector chip and topic leave the rows; catalogue drops the maker-style table and the leads sort; `useFrozenOrder` takes a reset key so a chosen sort or filter re-ranks while a vote does not; list votes carry `source = list`. Cards stay on the swipe and the home showcase.
+- Rule for the spec: the victim side has two objects, the card (decision, one at a time) and the row (reading, ranked); the Terminal keeps its table.

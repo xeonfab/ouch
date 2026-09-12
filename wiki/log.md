@@ -241,3 +241,8 @@
 ## [2026-09-12] merge | PR #10 merged: stale-chunk reload
 
 - Merged at 01:21 UTC, CI green. A tab open across a deployment now reloads itself once instead of showing « Failed to fetch dynamically imported module ».
+
+## [2026-09-12] merge | PR #11 merged: list view on the community listing and the catalogue
+
+- Merged at 01:22 UTC, CI green. Live: « Déjà signalé par la commu » and the catalogue read as one line per problem with the vote button in the right column; cards remain on the swipe and the home showcase. Votes from the list carry `source = list`, from the home cards `source = card`, from the deck `source = swipe`.
+- State of the day: PRs #7, #8, #10, #11 merged in one evening on Fabien's field feedback (vote CTA, frozen ranking, stale-chunk reload, list view). Next on Fabien's side: phone test, friends wave `?c=amis`, decision on purging `?c=test`. Next on mine: weekly metrics sheet (`ouch-data-analyst`), card 86 moderation.

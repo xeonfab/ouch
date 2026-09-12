@@ -256,3 +256,10 @@
 
 - Fabien challenged the manual promotion of entity candidates (« the criteria are mechanical, why click? »). Explained: the threshold measures popularity, not legitimacy (real public organisation, canonical name, attributable friction), and a wrong entity page is public, indexed and never deleted. Alias grouping explained (« Shine » / « shine.fr » / « Shine banque » = one entity, spellings stored as `aliases`).
 - **Validated**: manual until the queue exceeds 5 candidates a week on two consecutive Sundays; then the auto-prepared path (candidate prepared by the model with grouped aliases, non-public ready state, one-click validation or self-publication after a 48 h veto window). Registry moves to a table at that point (after day 90). Recorded in the entity-pages synthesis (follow-up decision + actions).
+
+## [2026-09-13] build | Auto-prepared entity registry built (PR on fix-it-karma)
+
+- Fabien: « crée déjà le chemin auto-préparé, comme ça ça sera fait ». Built on branch `claude/entity-auto-prepare` and opened as a PR (D5 feature freeze overridden by the founder's explicit ask).
+- Registry moved to the `entities` table (migration applied live: 12 seed entities published; `link_entity_cards` function). Client and qualifier read published entities from the database, `entities.ts` keeps the seed as offline fallback; a « ready » entity never exists publicly (page loader goes through a server function, RLS hides non-published rows).
+- Daily job (`/api/entites/cron`, Vercel Cron 06:00 UTC, `CRON_SECRET` required): publish entities whose 48 h veto has passed, then prepare candidates over the threshold (2 cards or 1 card ≥10 🔥) with the model: alias grouping, `existing_slug` for spellings of a known entity, persons/categories refused and remembered. Notification by Resend email and/or webhook (Make). `/admin/entites`: Google login, `ADMIN_EMAILS`, Publier / Refuser / Lancer la préparation.
+- For Fabien after merge: set `CRON_SECRET` and `ADMIN_EMAILS` in Vercel (optional notification variables in `docs/deploy.md` §1.d). Not tested end to end: the model preparation on a real queue (no candidate over the threshold today) and the Resend send.

@@ -156,8 +156,8 @@ création à la volée.
 seulement si un maker le demande (D5) ; porte Terminal Pro + table de plans + consentement au
 signal Cercle 2 (1 jour). Jamais de flux de revendication d'entité, jamais de création automatique.
 
-**Création d'entité, décision du 2026-09-12 (soir)** : manuelle tant que la file reste sous 5 candidats
-par semaine ; au-delà sur deux dimanches d'affilée, construire le chemin « auto-préparé » : registre
+**Création d'entité, décision du 2026-09-12 (soir), construite le 2026-09-13 à la demande de Fabien** (PR
+`claude/entity-auto-prepare`) : le chemin « auto-préparé » est en place : registre
 en table, candidat préparé par le modèle (slug, alias regroupés proposés, type, secteur, description,
 sources), état « prêt » non public, notification, validation en un clic ou publication après un veto
 de 48 h. Jamais de publication automatique sans cette fenêtre.

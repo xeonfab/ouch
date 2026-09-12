@@ -184,3 +184,8 @@
 
 - Fabien's screen showed « Missing Supabase environment variable(s): SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY ». The Vercel build did not embed the public Supabase values (the committed `.env` was not picked up, and the six variables were not yet set in Vercel), so the browser client threw at start.
 - Fix on `claude/ci-and-format`: the public URL and publishable key now fall back to their public values in the client, the auth middleware and the server client; the two secrets keep no fallback. `docs/deploy.md` records the incident. Setting the variables in Vercel (Settings → Environment Variables) remains required for the secrets.
+
+## [2026-09-12] deploy | PR #4 merged without the fallback; PR #5 opened
+
+- Fabien merged `claude/ci-and-format` as PR #4 (`4181f44`) before the fallback commit landed on the branch; the deployed error page now prints the exact message (« Missing Supabase environment variable(s): SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY »), confirming the diagnosis. `client_error` events cannot land in that state (the Supabase client itself fails to build).
+- Opened [PR #5](https://github.com/xeonfab/fix-it-karma/pull/5) (`claude/supabase-public-fallback`, cherry-pick of the fallback commit on top of main); subscribed to its activity to drive CI to green.

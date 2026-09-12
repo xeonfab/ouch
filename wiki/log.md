@@ -268,3 +268,8 @@
 
 - While the PR was open, `main` received PR #20 (per-card « préviens-moi » button) and PR #21 (entity page declutter: one number, one list, one maker banner) from another session. Both merged into the branch: the notify button and the registry hook coexist on the rows; the redesigned entity page is kept as is, only its loader now reads the entity through `getEntity` (registry in the database). Typecheck, lint, build green; CI green on `0119bb9`; local render of the new page with mocked data OK (6 rows, Terminal link, no console error).
 - [PR #22](https://github.com/xeonfab/fix-it-karma/pull/22) waits for Fabien's merge, then the two Vercel variables (`CRON_SECRET`, `ADMIN_EMAILS`).
+
+## [2026-09-12] merge | PR #22 merged: auto-prepared entity registry on `main`
+
+- Merged by Fabien at 08:28 UTC. Production now serves the registry from the `entities` table, the daily cron route and `/admin/entites`. Check-in trigger cancelled.
+- The cron and the admin page stay inert until the two Vercel variables exist: `CRON_SECRET` (the cron answers 503 without it) and `ADMIN_EMAILS` (nobody is admin without it). First real test of the model preparation: the « Lancer la préparation maintenant » button once a candidate passes the threshold.

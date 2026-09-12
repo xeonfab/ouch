@@ -237,3 +237,7 @@
 - Fabien hit « Failed to fetch dynamically imported module » on a tab open across the PR #8 deployment. [PR #10](https://github.com/xeonfab/fix-it-karma/pull/10) (`claude/stale-chunk-reload`): the root error boundary recognises the stale-chunk error family and reloads once per URL (sessionStorage guard), Vite's `vite:preloadError` handled the same way, no `client_error` event for these.
 - Fabien said « oui go sur liste ». [PR #11](https://github.com/xeonfab/fix-it-karma/pull/11) (`claude/problem-list`): `ProblemRow`/`ProblemList` on the community listing and the catalogue; sector chip and topic leave the rows; catalogue drops the maker-style table and the leads sort; `useFrozenOrder` takes a reset key so a chosen sort or filter re-ranks while a vote does not; list votes carry `source = list`. Cards stay on the swipe and the home showcase.
 - Rule for the spec: the victim side has two objects, the card (decision, one at a time) and the row (reading, ranked); the Terminal keeps its table.
+
+## [2026-09-12] merge | PR #10 merged: stale-chunk reload
+
+- Merged at 01:21 UTC, CI green. A tab open across a deployment now reloads itself once instead of showing « Failed to fetch dynamically imported module ».

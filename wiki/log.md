@@ -282,3 +282,8 @@
 - Fabien: « garder la 36 canonique, dépublier la 86 avec la purge ». Executed live at 02:05 UTC: card 86 set `published = false` (row kept, no deletion); all engagement rows deleted since every row came from the evening's field test (3 devices: the Mac on `?c=test`, the phone direct at 01:00, and a third device on `?c=amis` at 02:01 identified as Fabien's Mac again by identical user agent, viewport and timing). Deleted: 54 votes, 8 leads, 124 events; confirmations and survey answers were empty. 85 → 84 published cards.
 - Week 0 of the metrics sheet keeps the numbers as the record of the test; from now on the counters start at zero for the friends wave.
 - Side effect: Fabien's browsers still hold the local vote mirror, so his cards show « Toi aussi » without a server row; clearing the site data (or retracting, which deletes nothing) resets them. Not an issue for new visitors.
+
+## [2026-09-12] pr | PR #16 opened: the opt-in prompt follows every positive vote
+
+- Fabien: « Moi aussi » in the list did not offer the email / Google opt-in, unlike the swipe. [PR #16](https://github.com/xeonfab/fix-it-karma/pull/16) (`claude/lead-prompt-everywhere`): shared `LeadPromptProvider` at the root; rows, home cards and the deck apply the same rules (Google user → silent lead; email given during the visit → reused; else one prompt per visit, then « Ajouté »). The deck loses its duplicated modal. Behaviour change: an email typed once now registers the visitor on the cards voted afterwards in the visit, as Google already did.
+- Rule for the spec: every positive vote, wherever it happens, is followed by the same opt-in path; a vote surface without it is a leak.

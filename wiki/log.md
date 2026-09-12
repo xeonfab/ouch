@@ -326,3 +326,8 @@
 
 - Fabien on `/entite/urssaf-auto-entrepreneur`: still too much noise. Note: another session had merged a folded entity page this morning (three detailed cards, two stat tiles, `entity_page_visit` event). [PR #21](https://github.com/xeonfab/fix-it-karma/pull/21) (`claude/entity-page-declutter`): header = emoji, `#Name`, one muted line; capturable number only (card count with a vote nudge when no vote yet, never a big zero; leads as one small line above zero); every card as a `ProblemList` row, ten visible then folded; no status / resolution / score / author / voices on the rows; « Swiper d'autres problèmes » gone (footer has it); maker banner kept.
 - Rule confirmed in the spec's entity page section: one number, one list of rows, one maker banner; the Terminal keeps the details.
+
+## [2026-09-12] merge | PR #21 merged: entity page reduced to number + list + maker banner
+
+- Merged at 08:15 UTC, CI green. Live on every `/entite/:slug`: header, capturable number (never a big zero), list rows, maker banner. Nothing else.
+- Morning total on Fabien's phone feedback: PRs #19, #20, #21 merged. Open on Fabien's side: SMTP Resend, contact address, friends wave `?c=amis`. Sunday: week 1 line.

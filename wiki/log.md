@@ -205,3 +205,7 @@
 ## [2026-09-12] pr | PR #6 opened: community tag survives the Google sign-in
 
 - [PR #6](https://github.com/xeonfab/fix-it-karma/pull/6) (`claude/submit-community-persist`), subscribed for CI. Once merged, cards submitted from `/communaute/independants` carry `communities = {independants}` even when the visitor signs in with Google mid-flow.
+
+## [2026-09-12] merge | PR #6 merged: community tag survives the sign-in round-trip
+
+- CI green, merged at 00:50 UTC. From this deployment on, a card submitted from `/communaute/independants` carries `communities = {independants}` even after the Google redirect. Card 86 (Fabien's test) keeps its empty tag; purge or tag it manually if it is kept.

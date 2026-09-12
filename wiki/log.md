@@ -107,3 +107,138 @@
 - Livré sur Lovable (`fix-it-karma`) commits `51b724a` (création), `8abda3a` (engagement) et `81a51e5` (capture email via Google quand on rejoint un doublon sans être connecté — point ouvert refermé le jour même)
 - No new entity/concept pages
 - Patterns: none — deux itérations produit sur un même test, pas de signal cross-source
+
+## [2026-09-11] strategy | 90-day launch plan (CEO session)
+
+- Source: live audit of the Lovable project `fix-it-karma` (files, Supabase tables, message history 2026-09-10/11) + existing wiki context; no new raw file (audit facts are recorded in the synthesis itself)
+- Created: `wiki/syntheses/strategy/2026-09-11_launch-plan-90-days.md`
+- Updated: `wiki/mocs/MOC_Ouch_FixMyLife.md` (linked the plan, added a build-state delta section, settled two open questions, added one), `wiki/index.md` (Strategy table)
+- Key audit finding: all engagement data (votes, leads, voices, survey answers, submitted problems) is still `localStorage`; Supabase only has `profiles`. The `/communaute/independants` page must not be shared externally until shared persistence ships.
+- Decisions logged: D1 persistence first (2-week cap) · D2 "concerné(e)s" final for launch · D3 launch surface = `/communaute/independants` · D4 no paywall before Cercle 2 signal · D5 feature freeze · D6 curated seeding (60 cards), scraping feeds a manual queue only
+- Patterns: none — single planning session.
+- Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] decision | Lovable ↔ GitHub connected, persistence spec written
+
+- Decision: keep Lovable for preview/hosting/AI gateway, work on the code from GitHub (`xeonfab/fix-it-karma`, two-way sync on `main`). Full exit from Lovable deferred to after the day-90 decision (solves no cold-start, ~1 week of infra).
+- Audit addition: the catalog carries demo counters/statuses/updates/verbatims and a synthetic growth curve; all removed at migration so makers never see an invented number.
+- Created (app repo, branch `claude/persistence-spec`): `docs/persistence-spec.md` — schema (7 tables, 3 aggregate views), insert-only RLS for anonymous visitors, device-id identity without login, unchanged `useEngagement` contract, events + `?c=` channel tag, seed procedure, rollout order, acceptance criteria, ~21h estimate.
+- Updated: launch plan (audit table, next-steps table), MOC (build-state delta).
+
+## [2026-09-11] build | Phase 1 persistence implemented on `xeonfab/fix-it-karma` (branch `claude/persistence-spec`)
+
+- Applied migration `20260911150000_shared_persistence.sql` on the Lovable Cloud database: 7 tables (`problems`, `votes`, `leads`, `voices`, `confirmation_votes`, `survey_answers`, `events`), 3 aggregate views, insert-only RLS for anonymous visitors, explicit revokes (Supabase default privileges had granted ALL to `anon`; verified as role `anon` that raw leads are now unreadable and duplicate votes are rejected).
+- Seeded the 38 catalog cards with zero counters, status `incubation`; two syntheses with invented figures (ids 1 and 8) rewritten as neutral editorial notes.
+- Client: `engagement.tsx` rewritten on react-query (optimistic writes, local mirror of ids only, unchanged hook contract), demo catalog moved to `src/lib/seed-catalog.ts` (seed script only), fake hero badge/statuses/maker updates/verbatims/seed voices/synthetic growth curve removed, live feed on real data, survey and duplicate detection on Supabase, `events` instrumentation with `?c=` channel tag, `docs/metrics.sql` for the Sunday review.
+- Verification: typecheck and production build green, changed files prettier/eslint clean (main itself has 322 pre-existing prettier errors). The two-device browser test could not run in the sandbox: the Supabase host is denied by the session's network policy. Left for Fabien on the Lovable preview after merge.
+- Updated: launch plan next-steps table.
+
+## [2026-09-11] ingest | Founder's strategy voice note → community-by-community rollout playbook
+
+- Source: `raw/transcripts/2026-09-11_strategie-deploiement-par-communaute.md` (dictated voice note, saved verbatim)
+- Created: `wiki/syntheses/strategy/2026-09-11_community-rollout-playbook.md` — the long-run loop (ship → one community → channel map → problem submission → store/structure → makers → automate → replay), channel-type table for French freelances, automation ladder (levels 0–3, never auto-publish), replay kit checklist
+- Updated: `wiki/mocs/MOC_Ouch_FixMyLife.md` (linked the playbook, new open question on "collecting organisations"), `wiki/index.md` (Strategy table), launch plan (Related pages)
+- No new decision: the six launch-plan decisions stand. New open question: whether "organisations capables de recueillir les problèmes" means relay partners (collectives, coworkings, platforms) or the product's entités — default relay partners, bounded by hard rule 5
+- Patterns: none (single source)
+- Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] clarify | "Collecting organisations" = the product's entités; two maker profiles
+
+- Source: `raw/transcripts/2026-09-11_strategie-entites-et-makers.md` (second dictated voice note, saved verbatim)
+- Settled: the organisations that collect problems are the entités (companies, local authorities, public names). A problem tied to an entity must appear publicly on the dedicated entity page/listing. Makers = entrepreneurs and intrapreneurs: inside the entity (Type B) or independent people/collectives (Type A). Hard rules 4–5 (no special status, no outreach) unchanged.
+- Updated: rollout playbook (both-sides section, open question struck through, next-steps table), MOC (open question settled), `wiki/index.md` (row summary)
+- Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] deliverables | Freelance push — deck, channel plan, structure/dedup spec
+
+- Trigger: Fabien asked the whole team to advance on Cercle 1 (freelances) on three fronts: quality problem cards collected from the channels, a communication strategy per channel to get problems submitted, and platform design for clean presentation and a duplicate-free, unambiguous database.
+- Source: live read of `xeonfab/fix-it-karma` (qualify prompt, duplicate detection, entities, problems, submit flow, community page, persistence spec) and of the Lovable Cloud database (7 tables, 38 seed rows). No new raw file: facts are recorded in the pages.
+- Created: `wiki/syntheses/projects/2026-09-11_freelance-deck-v1.md` (+ `.csv` export, 54 rows), `wiki/syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md`, `wiki/syntheses/projects/2026-09-11_problem-structure-dedup-spec.md`
+- Updated: `wiki/index.md` (3 rows), MOC (new "Freelance push" section, 2 open questions), launch plan (next-steps table)
+- Key audit findings: community deck hard-coded by ids (submitted freelance cards never reach the freelance page); 18 of 31 entities are placeholders linked by 24 seed cards; duplicate check limited to one sector·topic and 40 rows; `topic_hashtag` null on all seeds; seed id 1 title/statement mismatch; submitting requires Google login and the wall is unmeasured.
+- Decisions proposed (not yet settled by Fabien): retire placeholder entities; add `communities` tag; measure the login wall before any anonymous-publication decision; canonical merge instead of deletion.
+- Patterns: none.
+- Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] team | Skills audit — 9 updated, 3 created, auto-trigger defect fixed
+
+- Trigger: Fabien asked whether the team is the most expert one for the freelance objective and to update/create skills where not.
+- Defect: all 9 Ouch! skills (and `wiki-clean`) declared `description: >` folded blocks that the loader does not surface, so no natural-language trigger could fire. Rewritten as single-line quoted descriptions, content unchanged.
+- Updated: `ouch-ceo` (D1–D6, rollout loop, gates, Sunday rule, experts to convene; former-employer reference removed), `ouch-cto` (real stack: Supabase live, GitHub sync, one driver; fragile list; dedup and registry doctrine), `ouch-growth-hacker` (Cercle 1 playbook: waves, etiquette, login wall, proxy submission, harvest), `ouch-legal` (registry rules, sourcing sheet, harvest rewriting, hashtag, entity-page nevers), `ouch-ux-designer` (community/entity page rules), `ouch-persona-victime` (+Sami), `ouch-persona-maker` (+Nadia), `panel-ouch-double-face` (guest seat), `ouch-cfo` (front-matter only)
+- Created: `skills/ouch-expert-independants/SKILL.md`, `skills/ouch-editeur-cartes/SKILL.md`, `skills/ouch-data-analyst/SKILL.md`
+- Wiki: `wiki/syntheses/strategy/2026-09-11_team-skills-audit.md` (coverage matrix, what was not created and why), `CLAUDE.md` team table (12 rows), index, MOC
+- Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] review | Expert pass on the freelance deck (ouch-expert-independants)
+
+- Created: `wiki/syntheses/projects/2026-09-11_freelance-deck-v1_expert-review.md` — 54 cards checked (mechanism, figure, entity, Type A/B, frequency)
+- Corrected in the deck and CSV: F03 (60 jours fin de mois exceeded the legal cap → 60 jours), F08 (recovery cost is time, not money), F16 (client terms are conditions d'achat, hashtag `#ConditionsDAchat`), F35 (compte dédié vs compte pro); F22 title tightened
+- Launch deck confirmed: nine large frictions plus the Qonto entity-page test
+- Updated: deck page next steps, team audit next steps, index
+- Ran `wiki/backlinks.py` after writing.
+
+## [2026-09-11] build | Cercle 1 structure + freelance deck on `xeonfab/fix-it-karma` (branch `claude/freelance-deck-structure`)
+
+- Applied live on the Lovable Cloud database: `20260912090000_community_structure` (extensions `pg_trgm`/`unaccent`, columns `communities`, `channel`, `deck_rank`, generated `norm_text`, banned-word check constraint with a « nulle part » exception, `similar_problems` RPC) and `20260912090100_freelance_deck_v1` (19 placeholder entities unlinked from 24 rows, hashtags on the 30 remaining seeds, cards 1 and 34 rewritten, 46 new cards; F20/F22 unpublished pending their source). Verified: 84 cards, 82 published, 54 tagged `independants`, 10 with a deck rank, 12 real entities left, no published pair above 0.6 similarity.
+- Client: community page reads the tag via `communityDeck()` (pain → curated rank → recency, 48 h slot for fresh submissions), submit block below the deck, submissions carry `communities` + `channel`, four funnel events, share links to the community deck, `detectDuplicate` runs the trigram RPC across the whole table before the LLM judge, entity registry reduced to real organisations with aliases fed to the qualification prompt.
+- Found and repaired: `main` did not typecheck — the persistence merge (`e3fe6e7`) had mangled the flip card in `swipe-deck.tsx`. Rebuilt from Lovable's complete version, `voteFor` added to the engagement provider.
+- Not verified: `vite build` and the browser test. The sandbox's network policy blocks Lovable's private npm registry (`*.pkg.dev` 403), so `motion`, `@supabase/supabase-js` and `@lovable.dev/cloud-auth-js` could not be installed; a registry switch was refused by the permission classifier. ESLint clean on changed files; typecheck clean once those three packages are stubbed.
+- Next: Fabien merges the branch (Lovable only sees `main`), runs the two-device test, logs the source for F20/F22.
+- Updated: launch plan, MOC, spec, deck page.
+
+## [2026-09-11] merge | PR #3 (deck + structure) and PR #2 (Lovable exit) both on `main` of `fix-it-karma`
+
+- Fabien merged `claude/freelance-deck-structure` (PR #3, `8d5a717`). A parallel Claude session had pushed the Lovable exit on `claude/persistence-spec` (commit « Leave Lovable » `c1eac4c` + a second repair of the swipe card `98b0170`); merged as PR #2 (`ad33d7d`) on top, with a merge of `main` (`83368a9`). Verified on `main`: both sets of changes present (communities tag, similarity RPC, funnel events, entity aliases; Vite/Nitro Vercel preset, native Supabase auth, Claude API `claude-opus-5`, npm lockfile, `docs/deploy.md`). No placeholder slug left in code.
+- Consequence recorded: the public URL `fix-it-karma.lovable.app` still serves the old build on the old Lovable Cloud database (38 seeds, no new column). Nothing to share until Fabien configures Vercel (`docs/deploy.md` §1) and runs the two-device test there.
+- Updated: MOC (build-state delta), launch plan (audit row + next steps), `skills/ouch-cto/SKILL.md` (stack after the Lovable exit, two-sessions rule).
+
+## [2026-09-11] validate | Merged `main` of `fix-it-karma` builds
+
+- With the Lovable registry gone (npm lockfile), dependencies install from the public registry: `npm ci` ok, `npx tsc --noEmit` exit 0, `npm run build` exit 0 (`.vercel/output` generated, Nitro preset vercel). `npm run lint`: 66 prettier formatting errors on files untouched by both PRs (pre-existing), no logic error.
+- Not runnable here: the browser two-device test (the sandbox's network policy blocks `*.supabase.co` and the Vercel/Lovable hosts). Left to Fabien on the Vercel deployment.
+
+## [2026-09-11] ci | Guard rail on `fix-it-karma` main (branch `claude/ci-and-format`)
+
+- Fabien asked whether everything could be done without him. Honest split: Anthropic key, Google OAuth client, Vercel project and the Lovable disconnect need his accounts (no connector exists for them in this session; `ListConnectors` confirms). Everything else done.
+- Added `.github/workflows/ci.yml` (npm ci, tsc, lint, build on pushes to main and on pull requests), formatted the tree with the project's prettier (formatting only, lint now exits 0), ignored `.vercel`/`.output`. Typecheck, lint and build green; branch pushed, to merge.
+
+## [2026-09-12] deploy | Vercel live, first field check
+
+- Fabien deployed `fix-it-karma` on Vercel (Hobby, `fix-it-karma.vercel.app`, source `main` `ad33d7d`). Vercel runtime logs: every page 200 (`/`, `/communaute/independants`), zero errors; the « This page didn't load » thumbnail is not reproduced (the generated Vercel function rendered all pages locally, with and without env vars) and is treated as a stale first-request capture.
+- Field anomaly: after Fabien's visits, `events`, `votes`, `survey_answers` still count 0 in the `ouch` database, while the local headless-browser check shows the client does issue the Supabase requests (problems, stats, voices, `community_visit`). Verified: the publishable key embedded in the build matches the project's active key; the anon role can read problems/stats, call `similar_problems` and insert events. Cause not identifiable from the sandbox (browser side); asked Fabien for the browser console and a swipe.
+- Branch `claude/ci-and-format` (to merge) also adds an explicit loading state and a failure state with retry on the swipe deck (it previously showed « Tu as tout passé en revue ! » when the registry could not load), plus a migration pinning `search_path` on the two SQL functions (Supabase advisor), applied live.
+- Note for Fabien: the Vercel « Environments » page is not where env vars go; it is Settings → Environment Variables.
+
+## [2026-09-12] debug | Error page on the Vercel deployment, cause not yet identified
+
+- Fabien sees « This page didn't load » on `/communaute/independants?c=test` while Vercel logs the request as 200: the crash is client-side. Reproduced neither with blocked network nor with the real 82 rows injected into headless Chromium (page renders, deck 1/10). Suspects: browser-specific (Mac user agent, Safari?) or the auth call path, which the sandbox cannot exercise.
+- Branch `claude/ci-and-format` now makes the error page print the error message and record a `client_error` event (message, stack, path, user agent) so the next reload gives the exact cause in the database. Same branch: swipe deck honours the curated id order (it followed registry order before).
+- Next: Fabien merges the branch, reloads; I read `events where name = 'client_error'`.
+
+## [2026-09-12] fix | Root cause of the Vercel error page: no environment variables in the build
+
+- Fabien's screen showed « Missing Supabase environment variable(s): SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY ». The Vercel build did not embed the public Supabase values (the committed `.env` was not picked up, and the six variables were not yet set in Vercel), so the browser client threw at start.
+- Fix on `claude/ci-and-format`: the public URL and publishable key now fall back to their public values in the client, the auth middleware and the server client; the two secrets keep no fallback. `docs/deploy.md` records the incident. Setting the variables in Vercel (Settings → Environment Variables) remains required for the secrets.
+
+## [2026-09-12] deploy | PR #4 merged without the fallback; PR #5 opened
+
+- Fabien merged `claude/ci-and-format` as PR #4 (`4181f44`) before the fallback commit landed on the branch; the deployed error page now prints the exact message (« Missing Supabase environment variable(s): SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY »), confirming the diagnosis. `client_error` events cannot land in that state (the Supabase client itself fails to build).
+- Opened [PR #5](https://github.com/xeonfab/fix-it-karma/pull/5) (`claude/supabase-public-fallback`, cherry-pick of the fallback commit on top of main); subscribed to its activity to drive CI to green.
+
+## [2026-09-12] merge | PR #5 merged: Supabase public fallback on `main`
+
+- CI green (first run of the new workflow), Vercel preview ready, merged by Fabien at 00:23 UTC. Production redeploys from `main`; the error page cannot recur for missing public values. Remaining for Fabien: the two server secrets in Vercel (problem submission, duplicate detection), then the two-device test.
+
+## [2026-09-12] field | Production works end to end; sourcing sheet; channel map v0; one bug found
+
+- Fabien confirmed the site works after PR #5. Database at 00:40 UTC: 31 events on `?c=test` from one device (14 right swipes, 2 left, 7 Google opt-ins, 3 `submit_started`, 1 `submit_login_wall`, 1 problem published through the Claude qualifier). Leads, votes and events all land; the login wall was hit once then passed.
+- Bug found in the field: the submitted card (id 86) has an empty `communities` tag. After the Google redirect the submit modal reopens from the saved draft without the open event, so the community prop is lost. Fixed on branch `claude/submit-community-persist` (draft carries the community). Also noted: the qualifier filed a blocked-account card under « Paiements partagés » (taxonomy v2 case) and did not tag Qonto (chip not confirmed); similarity to card 36 is 0.35, so L1 surfaced it; the judge or Fabien kept it separate.
+- Sourcing sheet written (`wiki/syntheses/research/sourcing-sheet-entity-cards.md`) for the seven entity-named cards from public sources; F20 and F22 published in the database.
+- Channel map v0 written (`wiki/syntheses/strategy/2026-09-12_freelance-channel-map.md`): named Facebook groups, two Slack communities, Free-Work forum, Services Publics+ as harvest source; sizes and rules unverified (community pages unreachable from the sandbox), proposal for the three waves.
+- Open for Fabien: second-device test; decide whether the `?c=test` rows (his own votes, leads and card 86) are purged before the first wave (proposed SQL in the plan is not run without his say).
+
+## [2026-09-12] repair | Merge 8c5e1ec had dropped 18 log entries and 5 index rows
+
+- Cause: the merge of `claude/install-data-backup-gixofy` into `claude/concept-test-messages-v4my66` kept the older branch's `wiki/log.md` and `wiki/index.md`, erasing the 2026-09-11/12 entries (launch plan, rollout playbook, deck, channel plan, skills audit, Vercel deploy, field check, channel map) and the 5 Strategy index rows pointing to those pages
+- Restored: `wiki/log.md` as the union of both branches (28 entries), `wiki/index.md` Strategy table (rollout playbook, skills audit, channel map v0, channel communication plan, 90-day plan), backlinks regenerated
+- Trigger: Fabien asked "how do we launch to the freelance community, on which channel, what is the strategy?" — answered from the wiki (no new page: the [90-day plan](syntheses/strategy/2026-09-11_launch-plan-90-days.md), [rollout playbook](syntheses/strategy/2026-09-11_community-rollout-playbook.md), [channel plan](syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md) and [channel map](syntheses/strategy/2026-09-12_freelance-channel-map.md) already cover it)

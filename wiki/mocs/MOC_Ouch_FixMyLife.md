@@ -60,7 +60,13 @@ last_reviewed: 2026-09-11
 
 - [2026-09-10 ouch-fixmylife-contexte-complet](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
 - [2026-09-10 test-concept-communaute-freelances](../syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md)
+- [2026-09-11 community-rollout-playbook](../syntheses/strategy/2026-09-11_community-rollout-playbook.md)
 - [2026-09-11 depot-probleme-panel-decision](../syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md)
+- [2026-09-11 freelance-channel-communication-plan](../syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md)
+- [2026-09-11 freelance-deck-v1](../syntheses/projects/2026-09-11_freelance-deck-v1.md)
+- [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
+- [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
+- [2026-09-11 team-skills-audit](../syntheses/strategy/2026-09-11_team-skills-audit.md)
 
 **Other**
 

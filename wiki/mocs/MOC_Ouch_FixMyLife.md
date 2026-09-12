@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-12
 ---
 
 # 🗺️ MOC: Ouch! / FixMyLife
@@ -16,6 +16,7 @@ last_reviewed: 2026-09-11
 <!-- No people/org entity pages yet for this project — the 13-16 named real-world entities (SNCF, Doctolib, Qonto, ...) are in-product content, not wiki entities. Add a wiki entity page here only if a real maker/partner relationship starts (e.g. an investor, a co-founder). -->
 
 ## 📚 Syntheses & strategy
+- [Entity pages vs the Maker space](../syntheses/strategy/2026-09-12_entity-pages-vs-maker-space.md) — **the two non-victim surfaces settled** (panel, 2026-09-12): cards are public, intent data is sold; entity page = complete free listing with a fold, Terminal = maker workspace; editorial entity creation only (no claim flow, no auto-creation), `entity_candidate` as the bridge; surface map + build sequence under D5
 - [Community-by-community rollout playbook](../syntheses/strategy/2026-09-11_community-rollout-playbook.md) — **the long-run shape**: ship → one community → map its channels → test problem submission → store/structure → offer to makers → automate → replay on the next community; the 90-day plan is iteration #1
 - [90-day launch plan (CEO)](../syntheses/strategy/2026-09-11_launch-plan-90-days.md) — **the active plan**: audit of the real build state, 6 settled decisions, 3 phases with hard gates, weekly rhythm, metrics, kill criteria
 - [Ouch!/FixMyLife — full project context](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) — concept, business model, hard rules, data model, build status, next steps
@@ -35,6 +36,7 @@ last_reviewed: 2026-09-11
 - The catalog ships demo counters and fake statuses; they are zeroed at migration (spec §1b).
 - **2026-09-11 evening**: `main` of `fix-it-karma` does not typecheck (the persistence merge mangled `swipe-deck.tsx`'s flip card); repaired on branch `claude/freelance-deck-structure`, which also carries the Cercle 1 structure (communities tag, channel, deck_rank, banned-word check, trigram similarity, funnel events) and the freelance deck. Database already migrated: 84 cards, 82 published (F20/F22 wait for their source), only real entities linked.
 - **Lovable exit, 2026-09-11 (settled in the app repo, `docs/deploy.md`)**: `main` now builds with a standard Vite/Nitro config targeting **Vercel**, Google sign-in via native Supabase auth, qualification and duplicate detection on the **Claude API** (`claude-opus-5`), npm lockfile, database = the founder's own Supabase project `ouch` (`mywbvjaitfqclenrvsdn`, Paris). Both PRs (#2 Lovable exit, #3 freelance deck + structure) are merged on `main` (`ad33d7d`). **Until Vercel is configured by Fabien** (30 min: Anthropic key, Google OAuth, env vars), no public URL serves the new build: `fix-it-karma.lovable.app` still shows the old build on the old Lovable Cloud database (38 seed cards, none of the new columns). Do not share any link before the Vercel deployment and the two-device test.
+- **2026-09-12 read of `main` (`924f93f`)**: `/entite/:slug` shows 3 cards then an ungated « Vue détaillée Maker » block with invented `devWeeks` (to remove); **no `/devenir-maker` route exists** (earlier pages citing it are stale; maker email capture has no surface yet); the qualifier drops the name of any organisation absent from the registry. Fixes sequenced in the [entity pages vs Maker space](../syntheses/strategy/2026-09-12_entity-pages-vs-maker-space.md) page.
 - Code lives in [`xeonfab/fix-it-karma`](https://github.com/xeonfab/fix-it-karma). Phase 1 spec: [`docs/persistence-spec.md`](https://github.com/xeonfab/fix-it-karma/blob/main/docs/persistence-spec.md); deployment: [`docs/deploy.md`](https://github.com/xeonfab/fix-it-karma/blob/main/docs/deploy.md).
 
 ## ❓ Open questions
@@ -44,6 +46,7 @@ last_reviewed: 2026-09-11
 - ~~What are the "organisations able to collect problems" in the founder's strategy?~~ **Settled 2026-09-11: the product's entités.** Every problem tied to an entity must appear on that entity's public page; makers are either intrapreneurs inside the entity (Type B) or independents/collectives (Type A). Hard rules 4–5 unchanged. See the [rollout playbook](../syntheses/strategy/2026-09-11_community-rollout-playbook.md).
 - Retire the 18 placeholder entities (their pages disappear) and `collectivite-locale` with them? Default yes — see the [dedup spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md).
 - Anonymous publication if the Google login wall loses >50 % of submitters? Measure first (four funnel events), CEO decision after — see the [channel plan](../syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md).
+- ~~Can an entity page be a paid teaser, and who creates an entity page?~~ **Settled 2026-09-12 (panel)**: no paywall on cards ever, the Terminal sells intent data after the signal; creation is editorial from the `entity_candidate` queue, never claimed by the entity, never automatic. Pending Fabien's confirmation (due 2026-09-14).
 - Anonymous voter identity: device id only, or upgraded to the Google profile on sign-in? (Spec week, default = device id + link on sign-in.)
 
 ## 📥 Raw sources worth re-reading
@@ -63,6 +66,7 @@ last_reviewed: 2026-09-11
 - [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-11 team-skills-audit](../syntheses/strategy/2026-09-11_team-skills-audit.md)
+- [2026-09-12 entity-pages-vs-maker-space](../syntheses/strategy/2026-09-12_entity-pages-vs-maker-space.md)
 
 **Other**
 

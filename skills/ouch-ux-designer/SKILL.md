@@ -129,3 +129,18 @@ compteur réel, hashtag, même emoji que la carte.
 
 **Contenu partagé** : le texte de partage d'une carte pointe vers le lien communauté, pas la page
 d'accueil, avec le paramètre de canal.
+
+---
+
+## Fiche entité — règles ajoutées le 2026-09-12 (panel « pages entité vs espace Maker »)
+
+Référence : `wiki/syntheses/strategy/2026-09-12_entity-pages-vs-maker-space.md`.
+
+La fiche entité reste **entièrement dans le registre victime** : chiffre capturable en tête
+(« N concerné(e)s », « N attendent une solution » en agrégat), trois cartes ouvertes, le reste
+plié sous « Voir les N autres galères », toutes publiques, jamais derrière un paiement. Le bloc
+« Vue détaillée Maker » disparaît de la page (mélange de registres, nombre inventé). Un seul
+élément au registre maker, tout en bas, en bandeau sombre : « Analyser #Entité sur le Terminal
+Maker → ». Jamais de bouton « revendiquer cette page », de badge officiel, de note ou de zone de
+réponse. Le Score de Douleur `/100` reste visible par carte sur cette page (c'est le chiffre que
+le maker capture) ; les compteurs d'opt-in par carte, la tendance et l'export sont au Terminal.

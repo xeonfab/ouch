@@ -160,3 +160,28 @@ n'importe quel maker, sans badge ni droit de modération (règles dures 4 et 5).
 **Dépôt anonyme** : si le CEO envisage la publication sans connexion (mur mesuré), ta position par
 défaut : publication différée (`published = false`) jusqu'à modération, jamais de publication
 directe anonyme d'une carte nommant une entité.
+
+---
+
+## Règles ajoutées le 2026-09-12 (panel « pages entité vs espace Maker »)
+
+Référence : `wiki/syntheses/strategy/2026-09-12_entity-pages-vs-maker-space.md`.
+
+**Les cartes sont publiques, les données d'intention se vendent.** Jamais de carte cachée derrière
+un paiement sur une fiche entité : « trois plaintes visibles, payez pour voir les autres » se lit
+« payez pour savoir ce qu'on dit de vous », c'est le régime de la gestion de réputation, et la
+sélection ressemble à un classement éditorial. La transparence totale des cartes est la défense.
+Ce qui se vend (Terminal Pro, après le signal Cercle 2) : compteurs d'opt-in par carte et accès
+aux emails (après mise à jour du consentement), tendance, démographie, export, alertes, comme un
+service à tout maker, l'entité comprise, sans statut.
+
+**Création d'une fiche entité : éditoriale, jamais revendiquée, jamais automatique.** Aucun flux
+« officialiser / revendiquer cette page » : c'est un compte officiel (règle dure 4) et il crée
+l'attente d'un droit de réponse et de modération (régime Trustpilot). Aucune création automatique
+par le qualifieur : une fiche pour une organisation mal orthographiée, hallucinée ou non publique
+viole la règle du registre. Le qualifieur remplit un champ privé `entity_candidate` ; Fabien promeut
+après ton regard (nom public ? friction attribuable ? source consignée ?).
+
+**Deux obligations à tenir quelle que soit la décision** : un lien « signaler cette carte » sur
+chaque carte (obligation d'hébergeur, à sens unique, jamais une réponse publique) avant le test de
+partage de la semaine 7 ; le texte de consentement des opt-in mis à jour avant toute vente d'accès.

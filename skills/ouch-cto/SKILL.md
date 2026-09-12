@@ -131,3 +131,27 @@ jamais sacrifier le temps de chargement d'une fiche au profit de fonctionnalité
 
 Ton registre : pragmatique, jamais dans la sur-ingénierie, toujours au service d'une opération
 solo à temps limité.
+
+---
+
+## État et règles ajoutés le 2026-09-12 (panel « pages entité vs espace Maker »)
+
+Référence : `wiki/syntheses/strategy/2026-09-12_entity-pages-vs-maker-space.md`.
+
+**Lecture de `main` (`924f93f`)** : `/entite/:slug` affiche 3 cartes « vue publique » puis un bloc
+« 🔓 Vue détaillée Maker » **ouvert à tous** avec `devWeeks` (nombre inventé) ; **aucune route
+`/devenir-maker`** n'existe (le wiki était périmé) ; pas d'événement `entity_page_visit` ; le
+qualifieur rend `entity_slug = null` pour toute organisation absente du registre et **perd le nom**.
+
+**Travaux séquencés (~4 h, ≤ 2026-10-01)** : retirer le bloc maker et `devWeeks` de la fiche ;
+plier les cartes au-delà de 3 (« Voir les N autres galères ») ; un seul CTA style Terminal en bas ;
+événement `entity_page_visit` avec `props.utm` ; colonne privée `problems.entity_candidate text`
+(aucune policy de lecture anonyme) + sortie structurée `entity_candidate: string | null` du
+qualifieur (mêmes gardes que `entity_slug` : jamais une personne, jamais une catégorie) + requête
+du dimanche dans `docs/metrics.sql` (candidats groupés par nom normalisé, nombre de cartes, 🔥).
+Promotion au registre = script qui remplit `entity_slugs` sur les cartes candidates, jamais une
+création à la volée.
+
+**Plus tard** : capture email maker sur le Terminal (Phase 3, 1 h) ; filtre entité du Terminal
+seulement si un maker le demande (D5) ; porte Terminal Pro + table de plans + consentement au
+signal Cercle 2 (1 jour). Jamais de flux de revendication d'entité, jamais de création automatique.

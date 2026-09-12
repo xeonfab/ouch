@@ -118,6 +118,7 @@ No new decision. The six decisions of the launch plan stand. Additions:
 - [2026-09-11 freelance-deck-v1](../projects/2026-09-11_freelance-deck-v1.md)
 - [2026-09-11 launch-plan-90-days](2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](../projects/2026-09-11_problem-structure-dedup-spec.md)
+- [2026-09-12 entity-pages-vs-maker-space](2026-09-12_entity-pages-vs-maker-space.md)
 
 **Other**
 

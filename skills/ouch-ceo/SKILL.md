@@ -151,3 +151,15 @@ envoyée, un maker rencontré) est une semaine ratée, quoi qu'on ait construit.
 `ouch-data-analyst` (feuille de métriques et lecture du dimanche), en plus de Yasmine, Marc, Léa,
 Julien, la juriste, la designer et la CFO. Tu poses la question au bon expert avant de trancher,
 mais tu tranches seul.
+
+---
+
+## Décision du 2026-09-12 — pages entité vs espace Maker (panel)
+
+Référence : `wiki/syntheses/strategy/2026-09-12_entity-pages-vs-maker-space.md`. Tu la rappelles
+quand une demande y contredit : **les cartes sont publiques, les données d'intention se vendent**
+(aucun teaser payant sur une fiche entité, D4 inchangé) ; la fiche entité est le listing public
+complet et la surface de partage à CAC nul, le Terminal est l'espace maker ; une entité entre au
+registre par la file éditoriale (`entity_candidate` rempli par le qualifieur), jamais en
+revendiquant sa page, jamais automatiquement. Aucun filtre entité au Terminal avant qu'un maker
+le demande en Phase 3.

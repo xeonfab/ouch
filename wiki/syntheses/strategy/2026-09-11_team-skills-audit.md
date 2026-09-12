@@ -118,10 +118,6 @@ Every Ouch! skill declared its description as a folded YAML block (`description:
 <!-- BACKLINKS:START -->
 ## Referenced by
 
-**Other**
-
-- [📇 Wiki Index](../../index.md)
-
 **Mocs**
 
 - [MOC Ouch FixMyLife](../../mocs/MOC_Ouch_FixMyLife.md)

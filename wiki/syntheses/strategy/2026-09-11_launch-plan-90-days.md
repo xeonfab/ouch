@@ -194,10 +194,7 @@ Weekly sheet (one row per week, filled Sunday):
 - [2026-09-11 freelance-deck-v1](../projects/2026-09-11_freelance-deck-v1.md)
 - [2026-09-11 problem-structure-dedup-spec](../projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-11 team-skills-audit](2026-09-11_team-skills-audit.md)
-
-**Other**
-
-- [📇 Wiki Index](../../index.md)
+- [2026-09-12 target-communities-map](2026-09-12_target-communities-map.md)
 
 **Mocs**
 

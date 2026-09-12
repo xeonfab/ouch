@@ -133,7 +133,10 @@ Located in `/mnt/skills/user/`: `ouch-ceo` (Karim, vision/roadmap), `ouch-growth
 **Syntheses**
 
 - [2026-09-10 test-concept-communaute-freelances](../strategy/2026-09-10_test-concept-communaute-freelances.md)
+- [2026-09-11 community-rollout-playbook](../strategy/2026-09-11_community-rollout-playbook.md)
 - [2026-09-11 depot-probleme-panel-decision](../strategy/2026-09-11_depot-probleme-panel-decision.md)
+- [2026-09-11 launch-plan-90-days](../strategy/2026-09-11_launch-plan-90-days.md)
+- [2026-09-12 target-communities-map](../strategy/2026-09-12_target-communities-map.md)
 
 **Other**
 

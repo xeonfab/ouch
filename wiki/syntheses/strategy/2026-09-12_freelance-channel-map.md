@@ -54,9 +54,14 @@ last_reviewed: 2026-09-12
 **Syntheses**
 
 - [2026-09-11 launch-plan-90-days](2026-09-11_launch-plan-90-days.md)
+- [2026-09-12 target-communities-map](2026-09-12_target-communities-map.md)
 
 **Other**
 
 - [📇 Wiki Index](../../index.md)
+
+**Mocs**
+
+- [MOC Ouch FixMyLife](../../mocs/MOC_Ouch_FixMyLife.md)
 
 <!-- BACKLINKS:END -->

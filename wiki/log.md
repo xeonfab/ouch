@@ -107,3 +107,11 @@
 - Livré sur Lovable (`fix-it-karma`) commits `51b724a` (création), `8abda3a` (engagement) et `81a51e5` (capture email via Google quand on rejoint un doublon sans être connecté — point ouvert refermé le jour même)
 - No new entity/concept pages
 - Patterns: none — deux itérations produit sur un même test, pas de signal cross-source
+
+## [2026-09-12] ingest | Target communities map — every community Ouch! can propose and reach, ranked
+
+- Source: Fabien's question (exhaustive list of communities to propose and reach, which are the most relevant), answered wiki-first from the rollout playbook, the 90-day plan, the channel plan and the freelance channel map v0; one web-search pass (search snippets only, page fetches blocked) for named communities per segment
+- Created: `wiki/syntheses/strategy/2026-09-12_target-communities-map.md` — six-criterion scoring grid (reach, pain density, maker value, entity richness, safety, fit), 34 candidates across Cercles 1–3, ranking (trainers/coaches as fourth freelance sub-profile now; hosts or e-merchants for Cercle 2, office managers and associations as alternates; parents then students for Cercle 3), six exclusions on safety (platform workers, foreign residents, patients, jobseekers, generic consumers, disability pending a legal frame), maker-side communities (No-Code France as Phase 3 channel), named communities table with suggested `?c=` values
+- Updated: `wiki/index.md` (Strategy table: added the channel map v0, which was unindexed, and this page), `wiki/mocs/MOC_Ouch_FixMyLife.md` (Cercle 1 workstreams: both pages; `last_reviewed` bumped)
+- No new entity/concept pages — the communities are audiences, not organisations Fabien interacts with; the named platforms (Airbnb, Amazon, Etsy, CPAM…) become entity pages only when a card names them
+- Patterns: none — single scoring pass; revisit when the Sunday sheet gives real per-channel numbers

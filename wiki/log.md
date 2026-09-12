@@ -189,3 +189,7 @@
 
 - Fabien merged `claude/ci-and-format` as PR #4 (`4181f44`) before the fallback commit landed on the branch; the deployed error page now prints the exact message (« Missing Supabase environment variable(s): SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY »), confirming the diagnosis. `client_error` events cannot land in that state (the Supabase client itself fails to build).
 - Opened [PR #5](https://github.com/xeonfab/fix-it-karma/pull/5) (`claude/supabase-public-fallback`, cherry-pick of the fallback commit on top of main); subscribed to its activity to drive CI to green.
+
+## [2026-09-12] merge | PR #5 merged: Supabase public fallback on `main`
+
+- CI green (first run of the new workflow), Vercel preview ready, merged by Fabien at 00:23 UTC. Production redeploys from `main`; the error page cannot recur for missing public values. Remaining for Fabien: the two server secrets in Vercel (problem submission, duplicate detection), then the two-device test.

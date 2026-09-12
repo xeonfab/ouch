@@ -130,7 +130,7 @@ order by sim desc;
 - Author name: never above the write headline; stated once under the publish button (« Signée X · ce nom apparaît sur la carte »), because the name is public on the card.
 
 ### Entity page (`/entite/:slug`)
-- Header = the capturable number: « N freelances / personnes concernées » summed over the entity's canonical cards; below it the cards ranked by Score de Douleur, grouped by topic when more than six.
+- Three blocks only (PR #21): a header (emoji, `#Name`, one muted line), the capturable number (« N personnes concernées par N galères », or the card count with a vote nudge when nobody has voted yet, never a big zero; leads as one small line above zero), and the cards as list rows ranked by Score de Douleur, ten visible then folded. No status, resolution badge, score, author or voices on the rows; those live on the card back and the Terminal.
 - Every card links back to its swipe; the page never shows a rating, a ranking against other entities, or a reply box (legal grid).
 - Cards merged into a canonical one do not appear twice.
 - Page exists only when at least one published card is linked; placeholder entities are gone.

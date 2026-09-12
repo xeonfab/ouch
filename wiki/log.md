@@ -321,3 +321,8 @@
 
 - Merged at 07:59 UTC, CI green. Live: skippable prompt on the first vote of a visit, then « Ajouté ✨ » toast with a one-tap « Préviens-moi 🔔 » per card, bell on voted rows and home cards, no silent registration.
 - Morning total on Fabien's phone feedback: PRs #19 and #20 merged. Open on Fabien's side: SMTP Resend, contact address, friends wave `?c=amis`. Sunday: week 1 line.
+
+## [2026-09-12] pr | PR #21 opened: entity page reduced to number + list + maker banner
+
+- Fabien on `/entite/urssaf-auto-entrepreneur`: still too much noise. Note: another session had merged a folded entity page this morning (three detailed cards, two stat tiles, `entity_page_visit` event). [PR #21](https://github.com/xeonfab/fix-it-karma/pull/21) (`claude/entity-page-declutter`): header = emoji, `#Name`, one muted line; capturable number only (card count with a vote nudge when no vote yet, never a big zero; leads as one small line above zero); every card as a `ProblemList` row, ten visible then folded; no status / resolution / score / author / voices on the rows; « Swiper d'autres problèmes » gone (footer has it); maker banner kept.
+- Rule confirmed in the spec's entity page section: one number, one list of rows, one maker banner; the Terminal keeps the details.

@@ -201,3 +201,7 @@
 - Sourcing sheet written (`wiki/syntheses/research/sourcing-sheet-entity-cards.md`) for the seven entity-named cards from public sources; F20 and F22 published in the database.
 - Channel map v0 written (`wiki/syntheses/strategy/2026-09-12_freelance-channel-map.md`): named Facebook groups, two Slack communities, Free-Work forum, Services Publics+ as harvest source; sizes and rules unverified (community pages unreachable from the sandbox), proposal for the three waves.
 - Open for Fabien: second-device test; decide whether the `?c=test` rows (his own votes, leads and card 86) are purged before the first wave (proposed SQL in the plan is not run without his say).
+
+## [2026-09-12] pr | PR #6 opened: community tag survives the Google sign-in
+
+- [PR #6](https://github.com/xeonfab/fix-it-karma/pull/6) (`claude/submit-community-persist`), subscribed for CI. Once merged, cards submitted from `/communaute/independants` carry `communities = {independants}` even when the visitor signs in with Google mid-flow.

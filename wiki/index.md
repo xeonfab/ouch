@@ -77,6 +77,8 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### 🚀 Projects (`projects/`)
 | Page | Summary |
 |---|---|
+| [Weekly metrics sheet](syntheses/projects/2026-09-12_weekly-metrics-sheet.md) | One line per week from the live Supabase data: week 0 (founder field test, two devices) filled, anomalies flagged (second device leaked into the generic `/swipe`, card 86 duplicate), Sunday procedure, queries 13–14 for vote sources and retractions |
+| [Legal pages review](syntheses/projects/2026-09-12_legal-pages-review.md) | `ouch-legal` pass on mentions légales, confidentialité, CGU: 9 gaps fixed in PR #13 (host, publisher clause, device id and events, Anthropic processor, legal bases, no-deletion wording), 2 facts for Fabien (contact address, publisher identity) |
 | [Freelance deck v1 (54 cards)](syntheses/projects/2026-09-11_freelance-deck-v1.md) | Card standard (8 checks), audit of the 10 hard-coded deck cards, 54 freelance cards in French checked against the legal grid, 10-card launch deck, insertion procedure; CSV export alongside |
 | [Freelance deck v1 — expert review](syntheses/projects/2026-09-11_freelance-deck-v1_expert-review.md) | `ouch-expert-independants` pass on the 54 cards: 4 corrected (payment term above legal cap, recovery cost is time, CGA not CGV, compte dédié vs pro), frequency ratings, launch deck confirmed |
 | [Problem structure & dedup spec](syntheses/projects/2026-09-11_problem-structure-dedup-spec.md) | Audit of the live code (hard-coded deck, 18 placeholder entities, one-topic duplicate check), `communities` tag, real-entities-only registry, 3-layer dedup with canonical merge (no deletion), presentation rules, sequencing under the feature freeze |

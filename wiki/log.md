@@ -256,3 +256,10 @@
 ## [2026-09-12] merge | PR #12 merged: a visitor can take back their own vote
 
 - Merged at 01:30 UTC, CI green. Live: the mint « Toi aussi ✓ » button retracts the vote on list rows and home cards; `retract_vote` RPC in place; `vote_retracted` events carry source and direction.
+
+## [2026-09-12] project | Next bricks after « go prochaines briques »: metrics sheet, legal review, plan update
+
+- **Weekly metrics sheet** created by `ouch-data-analyst` → [`2026-09-12_weekly-metrics-sheet.md`](syntheses/projects/2026-09-12_weekly-metrics-sheet.md), week 0 filled from the live database: 2 voting devices, 49 votes, 7 leads (1 email), 1 submission, 17 client errors all from the stale-chunk incident. Anomalies: the second device swiped on the generic `/swipe` (id order, not the curated deck), reachable from every header and footer; card 86 is a near-duplicate of 36 with wrong topic, empty tag and no entity. Queries 13–14 (vote sources, retractions) added to `docs/metrics.sql` in PR #13.
+- **Legal pages review** by `ouch-legal` → [`2026-09-12_legal-pages-review.md`](syntheses/projects/2026-09-12_legal-pages-review.md): 9 gaps fixed in [PR #13](https://github.com/xeonfab/fix-it-karma/pull/13) (host named, LCEN non-professional clause, device id and usage events, Anthropic processor and transfer, legal bases, retention, CNIL, no-deletion wording, entities without status). Two facts left to Fabien: the contact address (`contact@ouch.example` is still a placeholder on all three pages) and the publisher identity choice.
+- 90-day plan rows updated (metrics sheet done, legal pages reviewed, Vercel deployed, two devices tested); new open question on the generic `/swipe` leak from community pages.
+- Recommendation on card 86 (`ouch-editeur-cartes`): keep 36 canonical; unpublish 86 with the `?c=test` purge, or fix its tag/topic/entity if Fabien wants to keep his test card visible. Not executed without his call.

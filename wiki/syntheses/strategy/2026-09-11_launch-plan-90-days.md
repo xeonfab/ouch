@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-12
 ---
 
 # Ouch! — 90-day launch plan (CEO)
@@ -155,17 +155,19 @@ Weekly sheet (one row per week, filled Sunday):
 |---|---|---|---|
 | Fabien | Do **not** share `/communaute/independants` externally until Phase 1 ships | now | open |
 | Fabien + `ouch-cto` | Write the persistence spec (schema, policies, device id, aggregated view) | 2026-09-17 | **done 2026-09-11** → [`docs/persistence-spec.md`](https://github.com/xeonfab/fix-it-karma/blob/claude/persistence-spec/docs/persistence-spec.md) on branch `claude/persistence-spec` of `xeonfab/fix-it-karma` |
-| Fabien + `ouch-legal` | Proofread the three legal pages; final legal pass on the seed catalog | 2026-09-17 | open |
-| Fabien | Create the weekly metrics sheet | 2026-09-14 | open |
+| Fabien + `ouch-legal` | Proofread the three legal pages; final legal pass on the seed catalog | 2026-09-17 | **pages reviewed 2026-09-12** → [legal pages review](../projects/2026-09-12_legal-pages-review.md), fixes in PR #13; Fabien supplies the contact address and the publisher identity choice. Seed catalog pass: sourcing sheet done for the 7 entity-named cards, hashtag check (query 12) clean |
+| Fabien | Create the weekly metrics sheet | 2026-09-14 | **done 2026-09-12** by `ouch-data-analyst` → [weekly metrics sheet](../projects/2026-09-12_weekly-metrics-sheet.md), week 0 filled; Fabien fills the Sunday line from now on |
 | Claude Code | Implement the spec from the app repo | 2026-10-01 | **done 2026-09-11** on branch `claude/persistence-spec` (migration applied, 38 cards seeded at zero, client migrated, lint/typecheck/build green) |
 | Fabien | Open the PR, merge to `main` (Lovable sync), then run the two-device test on the Lovable preview and the 5-friend smoke test (spec §7 steps 5-6) | 2026-10-01 | open — blocked in the build sandbox (Supabase host not reachable there) |
-| Fabien | Phase 1 field check on Vercel, 2026-09-12 00:24–00:40 UTC, one device, `?c=test`: 16 swipes, 7 Google opt-ins, 1 problem submitted through the Claude qualifier, funnel events landing with the channel. Remaining for the gate: the second device (phone) on the same card, then the 5 friendly freelances | 2026-09-14 | open (one device done) |
+| Fabien | Phase 1 field check on Vercel, 2026-09-12, `?c=test`: 46 swipes, 7 Google opt-ins, 1 problem submitted through the Claude qualifier, 9 vote retractions, funnel events landing with the channel. Second device seen at 01:00 UTC (12 swipes, direct, on the generic `/swipe` page rather than the community deck, see the metrics sheet). Remaining for the gate: the 5 friendly freelances on `?c=amis` | 2026-09-14 | **two devices done**, friends wave open |
 | Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | **deck done 2026-09-11** → [freelance deck v1](../projects/2026-09-11_freelance-deck-v1.md) (54 cards, top 10 selected); channel playbook done → [communication plan](2026-09-11_freelance-channel-communication-plan.md); channel map v0 written 2026-09-12 → [freelance channel map](2026-09-12_freelance-channel-map.md), sizes and rules to verify by Fabien |
 | Claude Code (`ouch-cto`) | Structure fixes before the first wave: `communities` tag, retire placeholder entities, submission-funnel events, cross-topic dedup | 2026-10-01 | **done 2026-09-11** on branch `claude/freelance-deck-structure` of `xeonfab/fix-it-karma`; migrations applied on the live database (84 cards, 54 tagged, placeholders gone). After the merge with the Lovable exit, `main` validated for real: `npm ci`, `tsc --noEmit` and `npm run build` (Vercel preset) all green; ESLint reports only pre-existing prettier formatting on untouched files |
 | Fabien | Merge `claude/freelance-deck-structure` into `main` | 2026-09-14 | **done 2026-09-11** (PR #3), together with PR #2 (Lovable exit: Vite/Vercel, native Supabase auth, Claude API) |
-| Fabien | Deploy on Vercel per `docs/deploy.md` (Anthropic key, Google OAuth redirect on the Supabase project, six env vars), then the two-device test on the Vercel URL `/communaute/independants?c=test` and the 5-friend smoke test | 2026-09-14 | open — the Lovable URL still serves the old build on the old database, nothing to share before this |
+| Fabien | Deploy on Vercel per `docs/deploy.md` (Anthropic key, Google OAuth redirect on the Supabase project, six env vars), then the two-device test on the Vercel URL `/communaute/independants?c=test` and the 5-friend smoke test | 2026-09-14 | **deployed 2026-09-12** on `fix-it-karma.vercel.app` (public fallbacks PR #5, secrets set); field feedback of the evening shipped as PRs #7, #8, #10, #11, #12 (vote CTA, frozen ranking, stale-chunk reload, list view, vote retraction). 5-friend smoke test open |
 
 ## Open questions
+
+- Generic `/swipe` reachable from the community page header and footer: it serves the whole registry in id order after the topic picker, and the second test device swiped there instead of the curated deck. Point « Swiper » to the community deck on community pages, or rank the generic deck by Score de Douleur? (`ouch-ceo` + `ouch-ux-designer`, before the friends wave.)
 
 - Anonymous identity: device id only, or device id upgraded to the Google account when the visitor signs in? (Default: device id, link to `profiles` on sign-in, decided in the spec week.)
 - Moderation queue tool: Supabase table read via SQL, or Notion? (Default: Supabase table, one less tool.)

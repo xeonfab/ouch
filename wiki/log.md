@@ -119,3 +119,5 @@
 
 - Also restored in `wiki/index.md` the 5 Strategy rows (launch plan, rollout playbook, channel plan, team audit, channel map) dropped by the merge commit `8c5e1ec`
 - Same day, follow-up from Fabien (will a maker stay subscribed for a year?): §4 revised (no annual plan at launch, pause, 9 €/month "problème suivi" pipe per claimed problem), new §4b on episodic usage and reactivation, question 5b added to the Phase 3 script, claim-expiry rule flagged for `ouch-cto`
+- Same day, `ouch-persona-maker` test (Julien + Nadia) on the revised offer: both "je reviendrais voir plus tard" for lack of volume; pre-build question to opt-ins identified as the real #1 feature (legal item now blocking, due 2026-09-30); pipe renamed "Flux concernés", claims stay free; a claim must show a maker handle, never an entity name
+

@@ -62,7 +62,7 @@ Not in Pro, ever: raw email lists, voter identities, a badge or reply right for 
 |---|---|---|---|
 | **Free** | 0 € | every visitor, then any maker with a free account | Public cards, entity pages, full ranking, counts, 7-day arrow, 1 claim at a time |
 | **Pro Maker** | **29 €/month**, no commitment, **pause** button | solopreneurs, indie devs, no-code builders, intrapreneurs paying personally (Nadia) | §3 in full; unlimited claims; maker updates on claimed problems |
-| **Problème suivi** (the pipe) | **9 €/month per claimed problem**, offered while Pro is active | a maker who has left Pro to build | keeps the claim alive, the flow of new opt-ins, 1 update per 30 days, confirmation loop, alerts on that card only |
+| **Flux concernés** (the pipe) | **9 €/month per claimed problem**, offered while Pro is active | a maker who has left Pro to build | keeps the claim alive, the flow of new opt-ins, 1 update per 30 days, confirmation loop, alerts on that card only |
 | Studio / Team | 79–99 €/month, **deferred** | agencies, product studios, entity teams with several seats | 3–5 seats, shared watchlist, entity-scoped view. Only if the day-90 panel finds agencies/studios as buyers |
 
 Why 29 €:
@@ -134,12 +134,28 @@ Ask after they have seen one card with real numbers, in this order, and log the 
 
 Decision rule at day 90: if ≥5 of 10 place 29 € between "bargain" and "expensive but worth it" **and** at least one returning maker exists, open Pro at 29 €. If the band centres under 20 €, the intent layer is not dense enough yet: keep collecting, do not discount.
 
+### 8. Persona test, 2026-09-12 (`ouch-persona-maker`)
+
+Both voices reacted to the revised offer (Free / Pro 29 € with pause / 9 € pipe / no annual).
+
+**Julien**: takes Free; will not pay 29 € on a Terminal where three cards have real volume; profiles and trend are "comfort"; the only thing he cannot get elsewhere is talking to the opt-ins, but what he wants is to ask them **three questions before coding**, not announce a launch; "garde ta revendication" reads as a squatting fee, "ta carte continue de recruter" reads as a lead pipe; pause is how he works; annual he would never have taken. Verdict: *je reviendrais voir plus tard*. Missing: volume, and the pre-build question.
+
+**Nadia**: 29 € on a personal card is an expense note nobody reads; the value is monitoring her entity's page (trend, threshold alerts, aggregated export next to support tickets); she will **never claim a card in the company's name** (public acknowledgement of the problem, legal blocks it), so Pro is watch, not claim; if she ever claims it is under her own name; she needs a VAT invoice and 2–3 seats for support. Verdict: *je reviendrais voir plus tard*. Missing: volume above what her support already reports.
+
+| Finding | Change to the model |
+|---|---|
+| The real #1 feature is the **pre-build question** to opt-ins, not the launch update | The `ouch-legal` item becomes **blocking for pricing**: either the current consent covers a maker's question relayed by Ouch!, or a second consent line is added at email capture **now**, before Phase 2 collects the opt-ins the Pro will sell |
+| The 9 € pipe must not read as "keep your claim" | Claims stay free (1 in Free, 90-day expiry). The 9 € buys the **flow** (new concernés + the right to write to them), never the right to hold the card. Rename to "Flux concernés" in the offer |
+| An intrapreneur never claims in the entity's name | A claim always displays a **maker handle**, never an entity name (hard rule 4). Check the Terminal and card detail screens |
+| Intrapreneurs want monitoring, invoice, seats | Confirms the deferred Studio tier and that natural recurring revenue comes from this profile, not from Julien |
+| Both: not before volume | Confirms D4 |
+
 ## Decisions & next steps
 
 | Owner | Action | Due | Status |
 |---|---|---|---|
-| Fabien | Adopt the visibility ladder (§2) as the rule for what the public card and the free Terminal show; check the current card detail panel does not expose opt-in profiles | 2026-09-19 | open |
-| `ouch-legal` | Confirm that a maker update relayed by Ouch! to opt-ins is covered by the current consent ("être prévenu d'une solution"), and draft the extra consent line needed if makers may also send a *pre-build question* | before Phase 3 (2026-10-30) | open |
+| Fabien | Adopt the visibility ladder (§2) as the rule for what the public card and the free Terminal show; check the current card detail panel does not expose opt-in profiles, and that a claim shows a maker handle, never an entity name | 2026-09-19 | open |
+| `ouch-legal` | Confirm that a maker update relayed by Ouch! to opt-ins is covered by the current consent ("être prévenu d'une solution"), and draft the extra consent line for a maker's *pre-build question* — **blocking, before Phase 2 collects the opt-ins** (persona test §8) | 2026-09-30 | open |
 | `ouch-persona-maker` + `ouch-cfo` | Run the §7 questions in the 10 Phase 3 conversations; write up the pricing signal | 2026-12-03 | open (planned in the launch plan) |
 | `panel-ouch-double-face` | Day-90 decision: open Pro at 29 €, hold, or test other buyers | 2026-12-10 | open |
 | `ouch-cto` | Only after the signal: Stripe checkout, `plan` column on `profiles`, Pro-gated queries, maker-update relay job | after day 90 | not started, by design (D4/D5) |

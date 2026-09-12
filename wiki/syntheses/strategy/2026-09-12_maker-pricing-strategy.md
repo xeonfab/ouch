@@ -4,7 +4,7 @@ last_reviewed: 2026-09-12
 
 # Ouch! — Maker pricing strategy: why pay when the problems are public?
 
-> One-line TL;DR: the public space sells the *problem*; the Pro plan sells the *proof and the reach* — opt-in emails, who the concernés are, the trend over time, and the right to send them a one-way update through Ouch!. Public listing stays free by design (it is the maker acquisition funnel); a single Pro plan at 29 €/month (249 €/year) is the hypothesis to test in the Phase 3 maker conversations, not to build before the Cercle 2 signal (D4).
+> One-line TL;DR: the public space sells the *problem*; the Pro plan sells the *proof and the reach* — opt-in emails, who the concernés are, the trend over time, and the right to send them a one-way update through Ouch!. Public listing stays free by design (it is the maker acquisition funnel); a Pro plan at 29 €/month, cancel or pause any time, is the hypothesis to test in the Phase 3 maker conversations, not to build before the Cercle 2 signal (D4). Maker usage is episodic (1–3 months of hunting, then months of building), so the model is designed for **reactivation and the per-problem pipe**, not for annual retention, which would be a chimera for the solo maker.
 
 | Field | Value |
 |---|---|
@@ -61,16 +61,44 @@ Not in Pro, ever: raw email lists, voter identities, a badge or reply right for 
 | Plan | Price | Who | Content |
 |---|---|---|---|
 | **Free** | 0 € | every visitor, then any maker with a free account | Public cards, entity pages, full ranking, counts, 7-day arrow, 1 claim at a time |
-| **Pro Maker** | **29 €/month** or **249 €/year** (≈2 months free) | solopreneurs, indie devs, no-code builders, intrapreneurs paying personally (Nadia) | §3 in full; unlimited claims; maker updates on claimed problems |
+| **Pro Maker** | **29 €/month**, no commitment, **pause** button | solopreneurs, indie devs, no-code builders, intrapreneurs paying personally (Nadia) | §3 in full; unlimited claims; maker updates on claimed problems |
+| **Problème suivi** (the pipe) | **9 €/month per claimed problem**, offered while Pro is active | a maker who has left Pro to build | keeps the claim alive, the flow of new opt-ins, 1 update per 30 days, confirmation loop, alerts on that card only |
 | Studio / Team | 79–99 €/month, **deferred** | agencies, product studios, entity teams with several seats | 3–5 seats, shared watchlist, entity-scoped view. Only if the day-90 panel finds agencies/studios as buyers |
 
 Why 29 €:
 - Inside the founder's and `ouch-cfo`'s 15–40 € "impulse card" band; below the social-listening floor (Mention-type tools start at 41 €/month, paid by the brand to watch itself).
 - The one-sentence justification Julien needs: *"moins qu'une soirée de scraping Reddit, et Reddit ne te donne ni les profils ni le droit de leur écrire."* At a freelance dev's rate, one evening of manual listening costs more than a month of Pro.
 - 15 € reads as a toy and leaves no room to cut; 39 € needs the trend and the profile to be dense, which they will not be at activation. `ouch-cfo`'s rule: under-charge and raise, never the reverse.
-- Annual at 249 € anchors the monthly price and rewards the makers who return, the same behaviour the traction signal measures.
 
-No free trial: the free tier *is* the trial. No per-problem one-shot pack at launch (adds a second SKU and a second checkout for a 20 h/week operation); revisit only if conversations show makers want one card, not a subscription.
+No free trial: the free tier *is* the trial. **No annual plan at launch** (see §4b: it would sell a year to someone who needs two months, and Julien would read it as such). No per-problem one-shot pack at launch either (a second SKU and a second checkout for a 20 h/week operation); revisit only if conversations show makers want one card, not a subscription.
+
+### 4b. Retention reality — a solo maker's usage is episodic (Fabien's question, 2026-09-12)
+
+Fabien's objection: a maker hunts for a problem intensely for one or two months, then builds. Will anyone stay a year? Honest answer: **no, not the solo maker, and the model must not depend on it.**
+
+| Phase of the maker | Duration | What Ouch! is worth to him | Expected behaviour |
+|---|---|---|---|
+| Hunting | 1–3 months | ranking, profiles, trend, comparing 5–10 cards | pays Pro, uses it a lot |
+| Building | 3–9 months | one card only: new opt-ins keep arriving, the right to tell them "it's live" | cancels Pro, or keeps the 9 € pipe on his card |
+| Launched / abandoned | — | the *À confirmer* → *Résolu* loop, then nothing | leaves; comes back for the next idea |
+
+Consequences for the design:
+
+1. **Plan for reactivation, not retention.** Julien has already shipped two products; he will hunt again in six months. A **pause** (watchlist and claims kept, billing stopped) costs nothing to build on Stripe and turns a cancel into a return. Metric: *reactivation rate at 6 months*, tracked next to churn.
+2. **Put the recurring value on the problem, not on the platform.** The card keeps collecting concernés while the maker builds; that flow is the only thing worth paying for month after month during the build. Hence the 9 € "problème suivi": cheap enough to keep for a year, tied to the one asset he cares about. It also solves a product-hygiene issue that exists regardless of pricing: a claim must expire (90 days without activity or payment) so a maker who vanishes does not block a card.
+3. **The naturally recurring buyers are not Julien.** Nadia (intrapreneur monitoring her entity's page), a product studio or an agency hunting for clients all have a *continuous* need, the same shape as social listening. That is where months 4–12 of revenue come from once Cercle 2 opens, without any special status for the entity (hard rules 4–5 unchanged).
+4. **Do not sell the year.** An annual plan at launch would be sold to people who need two months; a few would take it, most would read it as a trap and trust the price less. Reconsider annual only for the Studio tier.
+
+Revenue per solo maker, order of magnitude:
+
+| Assumption | Value |
+|---|---|
+| Pro months per hunting cycle | 2–3 |
+| Pipe months per claimed problem | 6–9 at 9 € |
+| Revenue per cycle | ≈ 60–90 € Pro + ≈ 55–80 € pipe ≈ **120–170 €** |
+| Cycles per maker | 1–2 per year for a serial builder |
+
+That is a transactional business with a subscription skin, and that is fine at this stage: the point of pricing in Cercle 1 is the *willingness-to-pay signal*, not MRR. A day-90 verdict on "would they pay 29 € for two months" is as strong a signal as "would they pay for a year", and it is the honest one.
 
 ### 5. Unit economics (order of magnitude)
 
@@ -101,6 +129,7 @@ Ask after they have seen one card with real numbers, in this order, and log the 
 3. "If you could send one message to the 47 people who opted in, what would it say?" (validates feature #1; if they cannot answer, reach is not the value)
 4. Van Westendorp, four prices: at what monthly price is Pro *too cheap to trust*, *a bargain*, *expensive but worth it*, *too expensive*? Expect the acceptable band to straddle 29 €.
 5. "Would you rather pay per month, per year, or per problem?" (tests the deferred one-shot pack)
+5b. "Once you have picked your problem and start building, what would make you keep paying: the new people opting in on your card, the right to tell them when it is live, or nothing?" (tests the 9 € pipe; if the answer is "nothing", drop it and price Pro alone)
 6. For an intrapreneur (Nadia): "Would your company pay for this on a company card, and what would legal ask?" (tests the Studio tier and the no-special-status rule)
 
 Decision rule at day 90: if ≥5 of 10 place 29 € between "bargain" and "expensive but worth it" **and** at least one returning maker exists, open Pro at 29 €. If the band centres under 20 €, the intent layer is not dense enough yet: keep collecting, do not discount.
@@ -121,6 +150,8 @@ Decision rule at day 90: if ≥5 of 10 place 29 € between "bargain" and "expen
 - Should the free Terminal require a free account after the signal (cleaner return-visit tracking, a lead for the Pro upsell) or stay fully anonymous (lower friction)? Default: free account, decided at activation.
 - Per-problem one-shot pack (49–99 € for one relay on one card) if makers prefer paying per card: test in question 5, do not build speculatively.
 - Studio tier: only if the day-90 panel identifies agencies or studios as real buyers.
+- Pipe price (9 € per claimed problem) vs a single lower "builder" plan (e.g. 12 € for all claimed problems): decide from question 5b; default is per problem because it maps onto the North Star unit.
+- Claim expiry rule (90 days without activity) is a product rule needed regardless of pricing; to write into the lifecycle spec with `ouch-cto`.
 
 ## Related wiki pages
 

@@ -21,7 +21,7 @@ last_reviewed: 2026-09-12
 - [Ouch!/FixMyLife — full project context](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) — concept, business model, hard rules, data model, build status, next steps
 - [Test de concept — communauté freelances](../syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md) — message + structure de landing page pour le test de validation publique, jamais exécuté jusqu'ici
 - [Dépôt d'un problème — décision du panel double-face](../syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md) — refonte du flow de dépôt, scope resserré au partage social après découverte que le reste du brief était déjà construit
-- [Maker pricing strategy](../syntheses/strategy/2026-09-12_maker-pricing-strategy.md) — **monetisation**: visibility ladder (public card / free Terminal / Pro), Pro Maker at 29 €/month as the hypothesis for the Phase 3 conversations, reach to opt-ins relayed by Ouch! (never exported), timing unchanged (D4)
+- [Maker pricing strategy](../syntheses/strategy/2026-09-12_maker-pricing-strategy.md) — **monetisation**: visibility ladder (public card / free Terminal / Pro), Pro Maker at 29 €/month (pause, no annual) as the hypothesis for the Phase 3 conversations, reach to opt-ins relayed by Ouch! (never exported); solo-maker usage is episodic, so retention is designed as reactivation + a 9 €/month per-problem pipe; timing unchanged (D4)
 
 ## 🧾 Freelance push — Cercle 1 workstreams (2026-09-11)
 - [Freelance deck v1](../syntheses/projects/2026-09-11_freelance-deck-v1.md) — **content**: card standard, 54 cards (8 existing kept/rewritten, 46 new), 10-card launch deck, insertion procedure

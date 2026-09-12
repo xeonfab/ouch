@@ -118,3 +118,4 @@
 - Patterns: none — first pricing synthesis, no cross-source signal yet
 
 - Also restored in `wiki/index.md` the 5 Strategy rows (launch plan, rollout playbook, channel plan, team audit, channel map) dropped by the merge commit `8c5e1ec`
+- Same day, follow-up from Fabien (will a maker stay subscribed for a year?): §4 revised (no annual plan at launch, pause, 9 €/month "problème suivi" pipe per claimed problem), new §4b on episodic usage and reactivation, question 5b added to the Phase 3 script, claim-expiry rule flagged for `ouch-cto`

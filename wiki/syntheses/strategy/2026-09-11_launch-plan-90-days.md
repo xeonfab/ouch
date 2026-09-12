@@ -167,6 +167,8 @@ Weekly sheet (one row per week, filled Sunday):
 
 ## Open questions
 
+- Sign-in providers beyond Google: recommendation 2026-09-12 is an email magic link (Supabase OTP) as the fallback for the submission wall, LinkedIn only if the freelance field asks for it, no Facebook / Apple / Microsoft / GitHub. Decide after the first `submit_login_wall` reading (friends wave).
+
 - Generic `/swipe` served the whole registry in id order and the second test device swiped there instead of the curated deck. Settled 2026-09-12 for community routes: header and footer « Swiper » point to the community deck (PR #14). Still open: rank the generic `/swipe` by Score de Douleur, or keep it as the topic-picker exploration deck? (`ouch-ceo` + `ouch-ux-designer`, after the friends wave.)
 
 - Anonymous identity: device id only, or device id upgraded to the Google account when the visitor signs in? (Default: device id, link to `profiles` on sign-in, decided in the spec week.)

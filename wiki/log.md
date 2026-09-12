@@ -287,3 +287,8 @@
 
 - Fabien: « Moi aussi » in the list did not offer the email / Google opt-in, unlike the swipe. [PR #16](https://github.com/xeonfab/fix-it-karma/pull/16) (`claude/lead-prompt-everywhere`): shared `LeadPromptProvider` at the root; rows, home cards and the deck apply the same rules (Google user → silent lead; email given during the visit → reused; else one prompt per visit, then « Ajouté »). The deck loses its duplicated modal. Behaviour change: an email typed once now registers the visitor on the cards voted afterwards in the visit, as Google already did.
 - Rule for the spec: every positive vote, wherever it happens, is followed by the same opt-in path; a vote surface without it is a leak.
+
+## [2026-09-12] merge | PR #16 merged: the opt-in prompt follows every positive vote
+
+- Merged at 02:09 UTC, CI green. Live: « Moi aussi » in the list and on the home cards opens the same Google / email prompt as the swipe (once per visit), Google users and visitors who gave an email are registered silently on the cards they vote for.
+- Question from Fabien: other SSO besides Google? Answer given: none before the friends wave; next is an email magic link (Supabase OTP), not another provider; LinkedIn only on a field signal; Facebook, Apple, Microsoft, GitHub set aside. Decision pending the `submit_login_wall` reading on Sunday.

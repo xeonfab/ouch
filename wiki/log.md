@@ -107,3 +107,14 @@
 - Livré sur Lovable (`fix-it-karma`) commits `51b724a` (création), `8abda3a` (engagement) et `81a51e5` (capture email via Google quand on rejoint un doublon sans être connecté — point ouvert refermé le jour même)
 - No new entity/concept pages
 - Patterns: none — deux itérations produit sur un même test, pas de signal cross-source
+
+## [2026-09-12] ingest | Maker pricing strategy — why pay when the problems are public
+
+- Source: Fabien's question (why would makers subscribe when the public space shows every problem; which prices, which features) answered wiki-first with `ouch-cfo` + `ouch-persona-maker` framing; one targeted lookup in `raw/specs/2026-09-10_ouch-fixmylife-contexte-complet.md` for the social-listening price band
+- Created: `wiki/syntheses/strategy/2026-09-12_maker-pricing-strategy.md` — "voir gratuit, agir payant": visibility ladder, 7 Pro features ranked by non-substitutability (reach to opt-ins relayed by Ouch! first), Free / Pro Maker 29 €/month (249 €/year) / deferred Studio tier, unit-economics lines, Phase 3 interview script with a day-90 decision rule
+- Updated: `wiki/index.md` (Strategy table), `wiki/mocs/MOC_Ouch_FixMyLife.md` (Syntheses & strategy, `last_reviewed` bumped)
+- Timing unchanged: D4 (no paywall, no pricing page, no billing before the Cercle 2 signal) stands; the page is a hypothesis for the Phase 3 maker conversations
+- No new entity/concept pages
+- Patterns: none — first pricing synthesis, no cross-source signal yet
+
+- Also restored in `wiki/index.md` the 5 Strategy rows (launch plan, rollout playbook, channel plan, team audit, channel map) dropped by the merge commit `8c5e1ec`

@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-12
 ---
 
 # Ouch! — Community-by-community rollout playbook (founder's strategy)
@@ -93,7 +93,7 @@ No new decision. The six decisions of the launch plan stand. Additions:
 ## Open questions
 
 - ~~**"Organisations capables de recueillir ces problèmes"** — relay partners or the product's entités?~~ **Settled 2026-09-11 by Fabien: the product's entités.** No relay-partner channel; entity pages are the public listing where problems are collected, and the entity may itself become a maker (Type B) without any special status.
-- Submission vs swipe as the tested behaviour: the plan measures both, with swipe as the cheaper first action. Keep swipe as the primary metric and submissions as the second gate, unless Fabien wants submission to be the headline metric.
+- ~~Submission vs swipe as the tested behaviour~~ **Settled 2026-09-12 by Fabien: both, and every message asks for both.** The reflex to install is « je vais sur la page, je vote, je dépose ». Deposits by the visitors themselves are a headline metric next to distinct voters; cards written by Fabien from a comment are a fallback, tracked so that they never outnumber direct deposits. See the [channel communication plan](2026-09-11_freelance-channel-communication-plan.md), sections 1–2 and 3.7.
 - Which French freelance communities allow member posts about side projects? (Unchanged from the plan, week 4.)
 
 ## Related wiki pages

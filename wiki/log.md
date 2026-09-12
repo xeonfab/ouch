@@ -248,3 +248,10 @@
 - Target: Notion page « Com freelances » (https://app.notion.com/p/Com-freelances-3d91a159db6880bda448e54cfd6b6992), Fabien's working copy in French
 - Content: Phase 1 gate checklist, the three Phase 2 waves with `?c=` values and the channel candidates, the fun register, ready-to-paste messages (LinkedIn post and DM, admin message, Facebook group post, Slack ask, forum reply, proxy-submission DM, objection answers), harvest protocol, weekly rhythm, Phase 2 targets, guardrails, next actions with dates
 - Source of truth stays the wiki: [channel communication plan](syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md), [channel map v0](syntheses/strategy/2026-09-12_freelance-channel-map.md), [90-day plan](syntheses/strategy/2026-09-11_launch-plan-90-days.md). If the Notion page and the wiki diverge, update the wiki first, then re-export
+
+## [2026-09-12] revise | Channel messages: direct « vote + dépose » ask, proxy submission demoted to fallback
+
+- Source: Fabien's feedback on the Notion export — the first draft of the messages made people describe their problem in a comment and Fabien turn it into a card, which makes him the bottleneck and never installs the reflex « je vais sur la page, je vote, je dépose »
+- Updated: `wiki/syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md` — TL;DR, login-wall response order (ask directly → measure → fallback), the ask rule (two verbs at the destination), all channel templates (LinkedIn post and DM, Facebook post, Slack ask, forum reply), new section 3.7 (redirect reply, 48 h fallback), harvest scope, two new objections, metrics (deposits by visitors become a headline metric; fallback cards tracked without target); `2026-09-11_community-rollout-playbook.md` — open question "submission vs swipe" settled: both, asked in every message
+- Notion « Com freelances » page re-exported (v2) with the same messages in French
+- No new entity/concept pages

@@ -215,3 +215,8 @@
 - Fabien's field review of `/communaute/independants` on 2026-09-12 raised two points: the vote pill on cards (grey `🔥 0`) read as a counter, so visitors did not know they could vote; and "Vous publiez en tant que X" above the write headline was useless at that moment.
 - UX decisions (ouch-ux-designer): the vote is now a coral `Moi aussi 🔥` button (mint `Toi aussi ✓` once voted), count hidden at zero; in exchange the `douleur /100` number leaves the victim-side card, it belongs to the maker register and was 0 on most fresh cards. The author line moves to a one-line note under the publish button (the name is public on the card, so it is stated where it matters).
 - [PR #7](https://github.com/xeonfab/fix-it-karma/pull/7) (`claude/ux-card-vote-cta`), subscribed for CI. Card standard rule to carry into the presentation section of the dedup spec: one number per victim-side card, the one the visitor can move.
+
+## [2026-09-12] merge | PR #7 merged: vote button is a call to action, author line moved
+
+- Merged at 01:01 UTC, CI green. Live from this deployment: victim-side cards show « Moi aussi 🔥 » (count hidden at zero) instead of the grey counter and the `douleur /100` number; the write step no longer shows « Vous publiez en tant que », the signature note sits under the publish button.
+- To watch in the events table from now on: `vote` rows with `source = card` (listing) versus the swipe, to see whether the button moves the vote rate on the ranked list.

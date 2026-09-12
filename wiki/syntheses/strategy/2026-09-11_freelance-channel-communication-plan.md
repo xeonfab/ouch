@@ -189,6 +189,7 @@ Three levers, all copy or instrumentation, none a new feature:
 - [2026-09-11 launch-plan-90-days](2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](../projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-11 team-skills-audit](2026-09-11_team-skills-audit.md)
+- [2026-09-12 freelance-channel-map](2026-09-12_freelance-channel-map.md)
 
 **Other**
 

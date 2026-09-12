@@ -193,3 +193,11 @@
 ## [2026-09-12] merge | PR #5 merged: Supabase public fallback on `main`
 
 - CI green (first run of the new workflow), Vercel preview ready, merged by Fabien at 00:23 UTC. Production redeploys from `main`; the error page cannot recur for missing public values. Remaining for Fabien: the two server secrets in Vercel (problem submission, duplicate detection), then the two-device test.
+
+## [2026-09-12] field | Production works end to end; sourcing sheet; channel map v0; one bug found
+
+- Fabien confirmed the site works after PR #5. Database at 00:40 UTC: 31 events on `?c=test` from one device (14 right swipes, 2 left, 7 Google opt-ins, 3 `submit_started`, 1 `submit_login_wall`, 1 problem published through the Claude qualifier). Leads, votes and events all land; the login wall was hit once then passed.
+- Bug found in the field: the submitted card (id 86) has an empty `communities` tag. After the Google redirect the submit modal reopens from the saved draft without the open event, so the community prop is lost. Fixed on branch `claude/submit-community-persist` (draft carries the community). Also noted: the qualifier filed a blocked-account card under « Paiements partagés » (taxonomy v2 case) and did not tag Qonto (chip not confirmed); similarity to card 36 is 0.35, so L1 surfaced it; the judge or Fabien kept it separate.
+- Sourcing sheet written (`wiki/syntheses/research/sourcing-sheet-entity-cards.md`) for the seven entity-named cards from public sources; F20 and F22 published in the database.
+- Channel map v0 written (`wiki/syntheses/strategy/2026-09-12_freelance-channel-map.md`): named Facebook groups, two Slack communities, Free-Work forum, Services Publics+ as harvest source; sizes and rules unverified (community pages unreachable from the sandbox), proposal for the three waves.
+- Open for Fabien: second-device test; decide whether the `?c=test` rows (his own votes, leads and card 86) are purged before the first wave (proposed SQL in the plan is not run without his say).

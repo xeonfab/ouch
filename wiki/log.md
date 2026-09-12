@@ -252,3 +252,7 @@
 - Fabien, on the list view: a mis-click on « Moi aussi » had no way back. [PR #12](https://github.com/xeonfab/fix-it-karma/pull/12) (`claude/retract-vote`): the mint « Toi aussi ✓ » button retracts the vote (list rows and home cards), counter drops at once, `vote_retracted` event with source and direction.
 - Database: `retract_vote(problem_id, device_id)` applied live (security definer, search_path pinned, anon + authenticated). Deletes only that device's vote; the device uuid acts as the token. Votes are not content, so this does not touch the no-deletion rule for cards; the trace stays in `events`.
 - Not covered: undoing a swipe in the deck (a different gesture, « annuler » on the last card), to design if the field asks for it.
+
+## [2026-09-12] merge | PR #12 merged: a visitor can take back their own vote
+
+- Merged at 01:30 UTC, CI green. Live: the mint « Toi aussi ✓ » button retracts the vote on list rows and home cards; `retract_vote` RPC in place; `vote_retracted` events carry source and direction.

@@ -2,9 +2,9 @@
 last_reviewed: 2026-09-12
 ---
 
-# Freelance channel map — where French freelances actually gather (v0, to verify)
+# Freelance channel map — where French freelances actually gather (v1, to verify)
 
-> One-line TL;DR: first concrete list of French freelance communities per channel type, from web search on 2026-09-12. Sizes and posting rules are **unverified** (most community pages are unreachable from the build sandbox): each row must be checked by Fabien before the wave that uses it. Three Facebook groups, two Slack communities and two harvest sources are proposed for Phase 2.
+> One-line TL;DR: first concrete list of French freelance communities per channel type, from web searches on 2026-09-12 (v1 widened the same day: 14 Facebook groups, 5 Slack, 3 Discord, 3 forums, 4 Reddit subs, 6 newsletters, 4 collectives). Sizes and posting rules are **unverified** (most community pages are unreachable from the build sandbox): each row must be checked by Fabien before the wave that uses it. Three Facebook groups, two Slack communities and two harvest sources are proposed for Phase 2.
 
 | Field | Value |
 |---|---|
@@ -31,13 +31,37 @@ last_reviewed: 2026-09-12
 | Forum | Free-Work forum (tech freelances) | active threads on URSSAF, attestation de vigilance, missions ([example thread](https://www.free-work.com/fr/tech-it/forum/t/attestation-de-vigilance-dans-votre-espace-urssaf)) | `fo-fw` | reply-in-thread only |
 | Complaint platform | Services Publics+ (plus.transformation.gouv.fr) | public experiences on URSSAF, impôts, CAF outages and refusals; **harvest source**, not a posting channel | — | none (read only) |
 | Reddit | r/AutoEntrepreneur and similar French subs | not verifiable from the sandbox (reddit blocked to the search agent) | `rd` | existence, self-promotion rule |
+| Facebook group | « Freelance in France » | described as a pillar of the FB freelance community; daily life of the micro-entreprise, admin friction ([codeur.com](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-fif` | size, rules; wave-2 substitute if an admin refuses |
+| Facebook group | « Entrepreneurs & Freelances FR 🇫🇷 – Conseils et Réseautage » | admin, tools, pricing, peer support ([codeur.com](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-efr` | size, rules; wave 4 |
+| Facebook group | « Freelancers En France – Freelance / Portage Salarial » | large, includes portage ([codeur.com](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-fef` | size, rules; wave 4 |
+| Facebook group | « Entraide & réseau des auto-entrepreneurs » | [group page](https://www.facebook.com/groups/entraideautoentrepreneurs/) | `fb-era` | size, rules |
+| Facebook group | « Micro-entrepreneur », « Entrepreneurs Français – entraide & business » | named in 2026 roundups; the second is mixed founders/freelances, better kept for Cercle 2 | `fb-me`, `fb-efb` | existence, size |
+| Facebook group | « Artisans et Auto-entrepreneurs » (+ regional groups) | craftspeople, outside Cercle 1 | `fb-art` | not for this community |
+| Facebook group (by trade) | graphistes, rédacteurs web, développeurs (« WordPress France »), community managers, formateurs | no reliable names from search; to find in Facebook search, >5 000 members, daily activity, one deck per trade | `fb-graph`, `fb-redac`, `fb-dev`, `fb-wp`, `fb-cm`, `fb-form` | find, size, rules; wave 4 |
+| Slack | « French Designers Club », « Slack SEO France », « DevChat » | designers / SEO consultants / developers ([freebe](https://www.freebe.me/blog/slack-freelance), [followtribes](https://www.followtribes.io/meilleures-communautes-slack-metier-startup/)) | `sl-fdc`, `sl-seo`, `sl-dev` | join link, rules; wave 4 with a trade deck |
+| Slack | Crème de la crème, Wemind | reserved to those platforms' members | — | not reachable |
+| Discord | « Indépreneurs – Coworking & Networking » (+ Île-de-France, Hauts-de-France) | independents, freelances, solopreneurs; online coworking, afterworks ([disboard](https://disboard.org/fr/server/834803567805464586)) | `dc-ind` | join, rules; wave 3 bis |
+| Discord | « France Entrepreneurs & TPE » | mixed founders / freelances / coaches ([discord.me](https://discord.me/francefr)) | `dc-fetpe` | reserve |
+| Discord | Malt freelance community | hosted around Malt, an entity named on a card: **never post there** (hard rule 5) | — | none |
+| Forum | Grafikart forum; Portail / Planète Auto-Entrepreneur communities | dev/creative threads on freelance status; beginner admin questions | `fo-graf`, `fo-pae` | harvest only |
+| Reddit | r/AutoEntrepreneur, r/freelance_fr, r/vosfinances (micro-entreprise threads), r/france | not verifiable from the sandbox; expect self-promotion bans, reply in existing threads only | `rd-ae`, `rd-ffr`, `rd-vf`, `rd-fr` | existence, rules |
+| Harvest source | Trustpilot pages of Qonto, Shine, Malt, Stripe, Indy | blocked accounts, frozen funds, unreachable support; one source per entity-named card (legal check 8) | — | none (read only) |
+| Newsletter | Amédée (MAIF), L'odyssée Solo (Tribu Indé), Smart Freelancing, James Inbound, Geoffrey Dulac, Culture Freelance, Freelance Kit | French freelance newsletters and media ([malt](https://www.malt.fr/resources/article/les-8-newsletters-a-suivre-sur-le-futur-du-travail), [destinationclients](https://destinationclients.fr/5-newsletters-suivre-independant/)) | `nl-amedee`, `nl-solo`, `nl-smart`, `nl-james`, `nl-dulac`, `nl-cf`, `nl-fk` | week 8+, one card with real numbers per pitch |
+| Community / coworking | « Tribu Indé » | community + newsletter | `co-tribu` | format; wave 4 |
 | LinkedIn | Fabien's own network | wave 1 | `li`, `dm` | — |
+
+## Hard rule for channel selection
+
+Never post in a community hosted by an entity named on a card (Malt, Qonto, Shine, Stripe…): it is indirect outreach to the entity (hard rule 5). Platform-hosted communities that are *not* named on a card (FreelanceRepublik, Hello My Business) are allowed after asking the host.
 
 ## Proposal for the three Phase 2 waves
 
 1. **Wave 1 (LinkedIn)** — as planned, `?c=li` and `?c=dm`.
 2. **Wave 2 (groups)** — « Communauté des Auto-Entrepreneurs » (largest), « Le Cercle des Indépendants » (positioning closest to ours), « Freelance France » Slack (highest expected submission rate). Ask each admin first with the template in the communication plan.
-3. **Wave 3 (threads)** — Free-Work forum and the Reddit subs once verified; Services Publics+ and Free-Work as the weekly harvest sources from week 4 on.
+3. **Wave 3 (threads)** — Free-Work forum and the Reddit subs once verified; Services Publics+, Trustpilot and Free-Work as the weekly harvest sources from week 4 on. Wave 3 bis: the Indépreneurs Discord.
+4. **Wave 4 (week 8+, only if wave 2 converted)** — `fb-efr`, `fb-fef`, `fb-aea`, `fb-coin`, `sl-ft`, `sl-fdc`, then the by-trade groups with one deck per trade.
+
+The full table with `?c=` codes, priority per wave and a "verified" checkbox per row is mirrored in French on the Notion page « Com freelances », section 11.
 
 ## Decisions & next steps
 

@@ -255,3 +255,10 @@
 - Updated: `wiki/syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md` — TL;DR, login-wall response order (ask directly → measure → fallback), the ask rule (two verbs at the destination), all channel templates (LinkedIn post and DM, Facebook post, Slack ask, forum reply), new section 3.7 (redirect reply, 48 h fallback), harvest scope, two new objections, metrics (deposits by visitors become a headline metric; fallback cards tracked without target); `2026-09-11_community-rollout-playbook.md` — open question "submission vs swipe" settled: both, asked in every message
 - Notion « Com freelances » page re-exported (v2) with the same messages in French
 - No new entity/concept pages
+
+## [2026-09-12] research | Freelance channel map v1 — widened list, mirrored to Notion
+
+- Source: Fabien asked for the full list of Facebook groups and other channels on the Notion page; web searches 2026-09-12 (codeur.com, munci, tool-advisor, freebe, followtribes, disboard, malt, destinationclients)
+- Updated: `wiki/syntheses/strategy/2026-09-12_freelance-channel-map.md` — v1: +8 Facebook groups (Freelance in France, Entrepreneurs & Freelances FR, Freelancers En France, Entraide & réseau, Micro-entrepreneur, Entrepreneurs Français, Artisans), by-trade groups to find, +3 Slack, +3 Discord, +2 forums, 4 Reddit subs, Trustpilot as harvest source, 7 newsletters, Tribu Indé; new hard rule for channel selection (no community hosted by an entity named on a card, so the Malt Discord is excluded); wave 4 added
+- Notion « Com freelances » section 11 added: same list in French with `?c=` codes, priority per wave, a "verified" checkbox per row, attack order
+- Sizes and rules still unverified: Fabien's 2026-10-06 action unchanged

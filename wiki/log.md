@@ -251,3 +251,8 @@
 ## [2026-09-12] merge | PR #18 merged: metrics.sql complete again on `main`
 
 - CI green, merged by Fabien at 02:15 UTC. `docs/metrics.sql` on `main` now carries queries 1–14 plus 15 (entity candidates queue), 15b (promotion) and 16 (entity page visits, Terminal visits from a page). The panel's ~4 h of works are fully on `main` (PR #15 + #18). Check-in trigger cancelled; nothing left open on the app side for this decision. Remaining for Fabien: look at `/entite/qonto` in production.
+
+## [2026-09-12] decision | Entity creation: manual now, auto-prepared with 48 h veto later
+
+- Fabien challenged the manual promotion of entity candidates (« the criteria are mechanical, why click? »). Explained: the threshold measures popularity, not legitimacy (real public organisation, canonical name, attributable friction), and a wrong entity page is public, indexed and never deleted. Alias grouping explained (« Shine » / « shine.fr » / « Shine banque » = one entity, spellings stored as `aliases`).
+- **Validated**: manual until the queue exceeds 5 candidates a week on two consecutive Sundays; then the auto-prepared path (candidate prepared by the model with grouped aliases, non-public ready state, one-click validation or self-publication after a 48 h veto window). Registry moves to a table at that point (after day 90). Recorded in the entity-pages synthesis (follow-up decision + actions).

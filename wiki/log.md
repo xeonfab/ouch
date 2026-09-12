@@ -115,3 +115,12 @@
 - Updated: `wiki/index.md` (Strategy table: added the channel map v0, which was unindexed, and this page), `wiki/mocs/MOC_Ouch_FixMyLife.md` (Cercle 1 workstreams: both pages; `last_reviewed` bumped)
 - No new entity/concept pages — the communities are audiences, not organisations Fabien interacts with; the named platforms (Airbnb, Amazon, Etsy, CPAM…) become entity pages only when a card names them
 - Patterns: none — single scoring pass; revisit when the Sunday sheet gives real per-channel numbers
+
+## [2026-09-12] ingest | Trainers sub-profile — fact-check and 10 candidate cards; channel map sub-profile families
+
+- Source: Fabien's go on the communities map next steps (« ok go »); `ouch-expert-independants` pass with web search 2026-09-12 (six queries, snippets only)
+- Created: `wiki/syntheses/projects/2026-09-12_trainers-cards-candidates.md` + `.csv` — verified mechanics (Qualiopi audit cycle, CPF sub-contracting décret 2023-1350 and the 77 700 € micro exemption, CPF holder contribution 150 € since 2 April 2026, Caisse des Dépôts 5 + 30 day payment, OPCO file rules, BPF campaign, VAT attestation, RNCP/RS eligibility), trainer pain calendar, cards T01–T10 (T06 on hold: 1 Oct 2026 end of OPCO subrogation seen only in private sources), grid pass, editor notes, 5-card launch row
+- Updated: `wiki/syntheses/research/sourcing-sheet-entity-cards.md` (rows T04 `mon-compte-formation`, T09 `france-competences` pending URL), `wiki/syntheses/strategy/2026-09-12_freelance-channel-map.md` (sub-profile families table with `?c=` values, creative groups still to find), `wiki/syntheses/strategy/2026-09-12_target-communities-map.md` (two next steps done), `wiki/index.md`, `wiki/mocs/MOC_Ouch_FixMyLife.md`
+- Not done (Fabien's call): direct access to the independent-hosts community; go on inserting the ten cards and on adding `france-competences` to the registry; trainer persona vs proxy test
+- No new entity/concept pages — `france-competences` becomes a registry entry in the app, not a wiki entity
+- Patterns: none

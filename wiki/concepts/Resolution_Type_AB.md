@@ -51,6 +51,7 @@ _(none yet)_
 - [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-12 target-communities-map](../syntheses/strategy/2026-09-12_target-communities-map.md)
+- [2026-09-12 trainers-cards-candidates](../syntheses/projects/2026-09-12_trainers-cards-candidates.md)
 
 **Other**
 

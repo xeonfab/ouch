@@ -33,6 +33,20 @@ last_reviewed: 2026-09-12
 | Reddit | r/AutoEntrepreneur and similar French subs | not verifiable from the sandbox (reddit blocked to the search agent) | `rd` | existence, self-promotion rule |
 | LinkedIn | Fabien's own network | wave 1 | `li`, `dm` | — |
 
+## Sub-profile families (confirmed by Fabien 2026-09-12)
+
+One community tag (`independants`), four distribution sub-profiles, each with its own `?c=` family so the Sunday sheet can compare them. Source: [target communities map](2026-09-12_target-communities-map.md) §3.
+
+| Sub-profile | `?c=` family | Communities (from the table above and the communities map §5) | Cards | Persona |
+|---|---|---|---|---|
+| Generic micro-entrepreneurs | `li`, `dm`, `fb-cae`, `fb-cdi`, `fb-aef`, `fb-hmb`, `fb-mae` | LinkedIn own network, « Communauté des Auto-Entrepreneurs », « Le Cercle des Indépendants », the auto-entrepreneur groups | deck v1 launch row | Léa |
+| Tech freelances in SASU | `sl-ff`, `sl-ft`, `fo-fw` | Slack Freelance France, FreelanceTalks, Free-Work forum | TJM, ESN, portage, unpaid tests | Sami |
+| Creatives | `fb-crea-<groupe>` | trade FB groups (graphic design, photo, video): **names still to find** | free revisions, late payment, Malt | Léa |
+| Solopreneurs / indie hackers | `dc-imf`, `dc-ncf`, `fb-phfr`, `x` | INDIE MAKERS FR Discord (~200), No-Code France Discord (10 000+), Product Hunt France FB group, X | Stripe, App Store, INPI (cards to write) | Julien |
+| Trainers / coaches | `fb-afpi`, `fb-meof`, `fb-mrof`, `fb-gfi`, `fb-fiof` | « Association des Formateurs Professionnels Indépendants » (~7 900), « Micro-entrepreneurs – Organismes de formation » (~6 000), « Mise en relation OF / formateurs » (~5 900), two more unverified | [10 candidate cards](../projects/2026-09-12_trainers-cards-candidates.md), 5-card launch row | none yet (see open question) |
+
+Wave order unchanged: LinkedIn first, then groups, then threads. The trainer groups join wave 2 only once the five launch cards are inserted.
+
 ## Proposal for the three Phase 2 waves
 
 1. **Wave 1 (LinkedIn)** — as planned, `?c=li` and `?c=dm`.
@@ -45,6 +59,7 @@ last_reviewed: 2026-09-12
 |---|---|---|---|
 | Fabien | Open each candidate, note size and posting rules in this table, strike the dead ones | 2026-10-06 | open |
 | Fabien | Send the admin message to the three wave-2 communities | 2026-10-08 | open |
+| `ouch-growth-hacker` | Find the creative-trade FB groups (graphic designers, photographers, video) for the `fb-crea-*` family | 2026-10-06 | open |
 
 ---
 
@@ -55,6 +70,7 @@ last_reviewed: 2026-09-12
 
 - [2026-09-11 launch-plan-90-days](2026-09-11_launch-plan-90-days.md)
 - [2026-09-12 target-communities-map](2026-09-12_target-communities-map.md)
+- [2026-09-12 trainers-cards-candidates](../projects/2026-09-12_trainers-cards-candidates.md)
 
 **Other**
 

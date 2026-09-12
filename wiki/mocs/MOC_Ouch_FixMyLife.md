@@ -27,6 +27,7 @@ last_reviewed: 2026-09-12
 - [Freelance channel communication plan](../syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md) — **distribution**: per-channel playbook and copy, harvest protocol, proxy submission, metrics by channel
 - [Problem structure & dedup spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md) — **platform**: community tag, real-entities-only registry (retire 18 placeholders), 3-layer dedup with canonical merge, presentation rules
 - [Freelance channel map v0](../syntheses/strategy/2026-09-12_freelance-channel-map.md) — **channels**: first named freelance groups/Slacks/forums per channel type, to verify before each wave
+- [Trainers & coaches — fact-check and 10 candidate cards](../syntheses/projects/2026-09-12_trainers-cards-candidates.md) — **content, sub-profile 4**: mechanics verified and dated, ten cards not yet inserted, one on hold pending an official source
 - [Target communities map](../syntheses/strategy/2026-09-12_target-communities-map.md) — **next communities**: the long list (34) scored on six criteria; trainers as a fourth freelance sub-profile now, hosts or e-merchants as the Cercle 2 deck, parents for Cercle 3, six audiences excluded on safety
 
 ## 🧑‍🤝‍🧑 Team
@@ -70,6 +71,7 @@ last_reviewed: 2026-09-12
 - [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-11 team-skills-audit](../syntheses/strategy/2026-09-11_team-skills-audit.md)
 - [2026-09-12 target-communities-map](../syntheses/strategy/2026-09-12_target-communities-map.md)
+- [2026-09-12 trainers-cards-candidates](../syntheses/projects/2026-09-12_trainers-cards-candidates.md)
 
 **Other**
 

@@ -189,9 +189,9 @@ Second-pass needed (thin or empty in this budget): content creators (only hobbyi
 
 | Owner | Action | Due | Status |
 |---|---|---|---|
-| Fabien | Confirm the four freelance sub-profiles as distinct `?c=` families in the channel map (tech / creatives / solopreneurs / trainers) | 2026-10-06 | open |
+| Fabien | Confirm the four freelance sub-profiles as distinct `?c=` families in the channel map (tech / creatives / solopreneurs / trainers) | 2026-10-06 | **done 2026-09-12** → [channel map](2026-09-12_freelance-channel-map.md) |
 | Fabien | Confirm or deny direct access to the independent-hosts community (#15); rank 1 if yes, e-merchants (#5) by default otherwise | 2026-10-06 | open |
-| `ouch-expert-independants` | Fact-check the Qualiopi / CPF / OPCO mechanics before any trainer card (#6) is written | before the trainer wave | open |
+| `ouch-expert-independants` | Fact-check the Qualiopi / CPF / OPCO mechanics before any trainer card (#6) is written | before the trainer wave | **done 2026-09-12** → [trainer cards candidates](../projects/2026-09-12_trainers-cards-candidates.md) (10 cards, 1 on hold) |
 | `ouch-growth-hacker` + `ouch-expert-independants` | Add accountant forums (#16) to the Friday harvest sources from week 6 | 2026-10-24 | open |
 | `ouch-legal` | Write the admin-only frame for health professionals (#8) and disability (#32) before either is considered | before day 90 | open |
 | Fabien + `ouch-ceo` | Day-90 review: pick the Cercle 2 deck from the shortlist (#15 or #5 default, #14 if warm intros exist) using the Sunday sheet, not this page's scores | 2026-12-10 | open |
@@ -217,6 +217,11 @@ Second-pass needed (thin or empty in this budget): content creators (only hobbyi
 
 <!-- BACKLINKS:START -->
 ## Referenced by
+
+**Syntheses**
+
+- [2026-09-12 freelance-channel-map](2026-09-12_freelance-channel-map.md)
+- [2026-09-12 trainers-cards-candidates](../projects/2026-09-12_trainers-cards-candidates.md)
 
 **Other**
 

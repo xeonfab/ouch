@@ -29,11 +29,13 @@ A card that tags an entity is published only with at least one row here. Preferr
 | F23 (id 31) déclaration de revenus multi-sources | impots-gouv | [Comment déclarer les revenus de mon activité de micro-entrepreneur — impots.gouv.fr](https://www.impots.gouv.fr/particulier/questions/comment-declarer-les-revenus-provenant-de-mon-activite-dauto-entrepreneur) · [Micro-entrepreneurs : comment déclarer vos revenus — economie.gouv.fr](https://www.economie.gouv.fr/entreprises/gerer-sa-micro-entreprise/micro-entrepreneurs-comment-declarer-vos-revenus) | official procedure (2042-C-PRO, several boxes by regime) | 2026-09-12 |
 | F28 (id 36) compte Qonto bloqué pour contrôle de conformité | qonto | [Compte bancaire Qonto bloqué avec argent clients — question alexia.fr](https://www.alexia.fr/questions/548979/compte-bancaire-qonto-bloque-avec-argent-clients.htm) · [Qonto virement bloqué : pourquoi et comment débloquer — Finance-Entreprendre](https://finance-entreprendre.fr/qonto-virement-bloque-tracfin-justificatif-origine-fonds-compte-pro/) · [Qonto compte bloqué 2026 — banqcompare](https://banqcompare.com/qonto-compte-bloque.html) | legal Q&A, guides documenting compliance freezes and delays | 2026-09-12 |
 | F05 (id 37) paiement Malt conditionné à la validation client | malt | [Sous quel délai vais-je recevoir mes paiements ? — help.malt.com](https://help.malt.com/hc/fr/articles/29542912511122-Sous-quel-d%C3%A9lai-recevrai-je-mes-fonds) (funds released after client validation) · [Malt avis 2026 — lefreelance.fr](https://lefreelance.fr/articles/malt-avis-2026/) | official procedure, review | 2026-09-12 |
+| T04 (trainers, #ServiceFait) payés plus d'un mois après la fin d'une formation CPF | mon-compte-formation | [Quels sont les délais de paiement de la Caisse des Dépôts ? — of.moncompteformation.gouv.fr](https://of.moncompteformation.gouv.fr/aide/quels-sont-les-delais-de-paiement-de-la-caisse-des-depots) (30 calendar days after validation) · [Comment déclarer le service fait — of.moncompteformation.gouv.fr](https://of.moncompteformation.gouv.fr/espace-public/aide/comment-declarer-le-service-fait-qui-valide-le-service-fait) (validation within 5 working days) · [Délais de règlement de la Caisse des Dépôts — question au Sénat](https://www.senat.fr/questions/base/2020/qSEQ200113980.html) | official procedure, parliamentary question | 2026-09-12 |
+| T09 (trainers, #EligibiliteCPF) certification RS/RNCP requise pour vendre via le CPF | france-competences | francecompetences.fr (RNCP/RS registration rules) and moncompteformation.gouv.fr eligibility rules: **official page URLs to be added at insertion** (not reachable from the sandbox on 2026-09-12) | official procedure (pending link) | 2026-09-12 |
 | F29 (id 38) fonds Stripe gelés, réponses types du support | stripe | [Compte Stripe ou PayPal bloqué : que faire — Kohen Avocats](https://kohenavocats.fr/2026/05/23/compte-stripe-paypal-bloque-fonds-commercant-recours/) · [Business risk level considerations — support.stripe.com](https://support.stripe.com/questions/business-risk-level-considerations-and-evaluation) · [Blocage stripe — Shopify community](https://community.shopify.com/t/blocage-stripe/40262) | law firm article, official policy, forum | 2026-09-12 |
 
 ## Consequence
 
-F20 and F22 were inserted unpublished on 2026-09-11 pending this sheet; published on 2026-09-12 once the rows above were logged.
+F20 and F22 were inserted unpublished on 2026-09-11 pending this sheet; published on 2026-09-12 once the rows above were logged. T04 and T09 (trainer candidates, not inserted yet) are pre-logged; T09 needs its official URL before insertion.
 
 ---
 
@@ -43,6 +45,7 @@ F20 and F22 were inserted unpublished on 2026-09-11 pending this sheet; publishe
 **Syntheses**
 
 - [2026-09-11 freelance-deck-v1](../projects/2026-09-11_freelance-deck-v1.md)
+- [2026-09-12 trainers-cards-candidates](../projects/2026-09-12_trainers-cards-candidates.md)
 
 **Other**
 

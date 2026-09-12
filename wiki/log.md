@@ -263,3 +263,7 @@
 - **Legal pages review** by `ouch-legal` → [`2026-09-12_legal-pages-review.md`](syntheses/projects/2026-09-12_legal-pages-review.md): 9 gaps fixed in [PR #13](https://github.com/xeonfab/fix-it-karma/pull/13) (host named, LCEN non-professional clause, device id and usage events, Anthropic processor and transfer, legal bases, retention, CNIL, no-deletion wording, entities without status). Two facts left to Fabien: the contact address (`contact@ouch.example` is still a placeholder on all three pages) and the publisher identity choice.
 - 90-day plan rows updated (metrics sheet done, legal pages reviewed, Vercel deployed, two devices tested); new open question on the generic `/swipe` leak from community pages.
 - Recommendation on card 86 (`ouch-editeur-cartes`): keep 36 canonical; unpublish 86 with the `?c=test` purge, or fix its tag/topic/entity if Fabien wants to keep his test card visible. Not executed without his call.
+
+## [2026-09-12] pr | PR #14 opened: « Swiper » keeps a community visitor on the community deck
+
+- CEO call on the open question raised by the metrics sheet: during the friends wave, a visitor sent to `/communaute/independants` must stay on the curated deck. [PR #14](https://github.com/xeonfab/fix-it-karma/pull/14) (`claude/community-swipe-links`): header « Le Swipe » and footer « Swiper 👉 » point to the community page on community routes (`useSwipeTarget`), `/swipe` elsewhere; `community_visit` carries user agent and viewport width. Ranking the generic `/swipe` by Score de Douleur stays open.

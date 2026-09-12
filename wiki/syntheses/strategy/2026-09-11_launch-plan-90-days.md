@@ -167,7 +167,7 @@ Weekly sheet (one row per week, filled Sunday):
 
 ## Open questions
 
-- Generic `/swipe` reachable from the community page header and footer: it serves the whole registry in id order after the topic picker, and the second test device swiped there instead of the curated deck. Point « Swiper » to the community deck on community pages, or rank the generic deck by Score de Douleur? (`ouch-ceo` + `ouch-ux-designer`, before the friends wave.)
+- Generic `/swipe` served the whole registry in id order and the second test device swiped there instead of the curated deck. Settled 2026-09-12 for community routes: header and footer « Swiper » point to the community deck (PR #14). Still open: rank the generic `/swipe` by Score de Douleur, or keep it as the topic-picker exploration deck? (`ouch-ceo` + `ouch-ux-designer`, after the friends wave.)
 
 - Anonymous identity: device id only, or device id upgraded to the Google account when the visitor signs in? (Default: device id, link to `profiles` on sign-in, decided in the spec week.)
 - Moderation queue tool: Supabase table read via SQL, or Notion? (Default: Supabase table, one less tool.)

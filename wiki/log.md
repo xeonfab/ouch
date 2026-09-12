@@ -179,3 +179,8 @@
 - Fabien sees « This page didn't load » on `/communaute/independants?c=test` while Vercel logs the request as 200: the crash is client-side. Reproduced neither with blocked network nor with the real 82 rows injected into headless Chromium (page renders, deck 1/10). Suspects: browser-specific (Mac user agent, Safari?) or the auth call path, which the sandbox cannot exercise.
 - Branch `claude/ci-and-format` now makes the error page print the error message and record a `client_error` event (message, stack, path, user agent) so the next reload gives the exact cause in the database. Same branch: swipe deck honours the curated id order (it followed registry order before).
 - Next: Fabien merges the branch, reloads; I read `events where name = 'client_error'`.
+
+## [2026-09-12] fix | Root cause of the Vercel error page: no environment variables in the build
+
+- Fabien's screen showed « Missing Supabase environment variable(s): SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY ». The Vercel build did not embed the public Supabase values (the committed `.env` was not picked up, and the six variables were not yet set in Vercel), so the browser client threw at start.
+- Fix on `claude/ci-and-format`: the public URL and publishable key now fall back to their public values in the client, the auth middleware and the server client; the two secrets keep no fallback. `docs/deploy.md` records the incident. Setting the variables in Vercel (Settings → Environment Variables) remains required for the secrets.

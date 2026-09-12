@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-12
 ---
 
 # Problem structure & dedup spec — presenting problems cleanly, storing them without duplicates or fuzz
@@ -121,6 +121,8 @@ order by sim desc;
 - Deck = problems tagged with the community, not `verifying`/`resolved`, not merged, ranked by Score de Douleur then recency, **capped at 10** in the swipe; the rest in the ranked listing below (already built). Newly submitted cards (0 votes) get one guaranteed slot in the swipe for 48 hours so the submitter sees their card in circulation.
 - One action above the fold: swipe. The « Ajoute-la » block moves below the deck (see the channel plan).
 - Registers: fun on this page; no Terminal styling.
+- Victim-side cards (listing and home): **one number per card, the one the visitor can move**. The vote is a visible button (« Moi aussi 🔥 », « Toi aussi ✓ » once voted), the count hidden at zero; the Score de Douleur `/100` never appears on these cards, it stays on the Terminal, the entity page and the duplicate screen of the submit flow (decided 2026-09-12 after Fabien's field review, PR #7).
+- Author name: never above the write headline; stated once under the publish button (« Signée X · ce nom apparaît sur la carte »), because the name is public on the card.
 
 ### Entity page (`/entite/:slug`)
 - Header = the capturable number: « N freelances / personnes concernées » summed over the entity's canonical cards; below it the cards ranked by Score de Douleur, grouped by topic when more than six.

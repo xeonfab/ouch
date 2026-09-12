@@ -209,3 +209,9 @@
 ## [2026-09-12] merge | PR #6 merged: community tag survives the sign-in round-trip
 
 - CI green, merged at 00:50 UTC. From this deployment on, a card submitted from `/communaute/independants` carries `communities = {independants}` even after the Google redirect. Card 86 (Fabien's test) keeps its empty tag; purge or tag it manually if it is kept.
+
+## [2026-09-12] pr | PR #7 opened: vote button becomes a call to action, author line moved
+
+- Fabien's field review of `/communaute/independants` on 2026-09-12 raised two points: the vote pill on cards (grey `🔥 0`) read as a counter, so visitors did not know they could vote; and "Vous publiez en tant que X" above the write headline was useless at that moment.
+- UX decisions (ouch-ux-designer): the vote is now a coral `Moi aussi 🔥` button (mint `Toi aussi ✓` once voted), count hidden at zero; in exchange the `douleur /100` number leaves the victim-side card, it belongs to the maker register and was 0 on most fresh cards. The author line moves to a one-line note under the publish button (the name is public on the card, so it is stated where it matters).
+- [PR #7](https://github.com/xeonfab/fix-it-karma/pull/7) (`claude/ux-card-vote-cta`), subscribed for CI. Card standard rule to carry into the presentation section of the dedup spec: one number per victim-side card, the one the visitor can move.

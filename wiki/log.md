@@ -173,3 +173,9 @@
 - Field anomaly: after Fabien's visits, `events`, `votes`, `survey_answers` still count 0 in the `ouch` database, while the local headless-browser check shows the client does issue the Supabase requests (problems, stats, voices, `community_visit`). Verified: the publishable key embedded in the build matches the project's active key; the anon role can read problems/stats, call `similar_problems` and insert events. Cause not identifiable from the sandbox (browser side); asked Fabien for the browser console and a swipe.
 - Branch `claude/ci-and-format` (to merge) also adds an explicit loading state and a failure state with retry on the swipe deck (it previously showed « Tu as tout passé en revue ! » when the registry could not load), plus a migration pinning `search_path` on the two SQL functions (Supabase advisor), applied live.
 - Note for Fabien: the Vercel « Environments » page is not where env vars go; it is Settings → Environment Variables.
+
+## [2026-09-12] debug | Error page on the Vercel deployment, cause not yet identified
+
+- Fabien sees « This page didn't load » on `/communaute/independants?c=test` while Vercel logs the request as 200: the crash is client-side. Reproduced neither with blocked network nor with the real 82 rows injected into headless Chromium (page renders, deck 1/10). Suspects: browser-specific (Mac user agent, Safari?) or the auth call path, which the sandbox cannot exercise.
+- Branch `claude/ci-and-format` now makes the error page print the error message and record a `client_error` event (message, stack, path, user agent) so the next reload gives the exact cause in the database. Same branch: swipe deck honours the curated id order (it followed registry order before).
+- Next: Fabien merges the branch, reloads; I read `events where name = 'client_error'`.

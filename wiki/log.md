@@ -311,3 +311,8 @@
 ## [2026-09-12] merge | PR #19 merged: community page decluttered on mobile
 
 - Merged at 07:43 UTC, CI green. Live: « Spécial indépendants 🧾 » as the title, one-line promise, « n / N » progress only, labelled « Passer » / « Moi aussi 🔥 » pills, card front with the list row's landmarks and one counter only above zero, « tu » register.
+
+## [2026-09-12] pr | PR #20 opened: being notified is a per-card choice
+
+- Fabien on the phone: « Moi aussi » did not ask for his email (prompt already shown once in the tab), and he wants to choose card by card. [PR #20](https://github.com/xeonfab/fix-it-karma/pull/20) (`claude/notify-me-per-card`): first positive vote of a visit → skippable prompt; every vote after → toast « Ajouté ✨ » with a one-tap « Préviens-moi 🔔 » (no form when the email is known); bell on voted rows and home cards to ask later; silent registration of every vote for known emails (PR #16) removed, so « en attente d'une solution » counts explicit requests only.
+- Rule replaces the PR #16 line in the spec: voting and being notified are two intents; the opt-in is offered after every positive vote, chosen per card in one tap, never applied silently.

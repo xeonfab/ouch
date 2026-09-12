@@ -226,3 +226,8 @@
 - Fabien's test after PR #7: voting « Moi aussi » on card 42 made it jump to rank 37, because the listing is sorted by Score de Douleur and re-sorted live. Rule added to the presentation section of the dedup spec: a ranked list never re-sorts under the visitor's cursor; the order is computed once per page load (`useFrozenOrder`), new cards go first.
 - Card votes now carry `source = card` in the event props (they defaulted to `swipe`); the log entry of PR #7 assumed this and was wrong until PR #8 is live. Also `.vercel` added to eslint ignores.
 - [PR #8](https://github.com/xeonfab/fix-it-karma/pull/8) (`claude/card-vote-source`), subscribed for CI.
+
+## [2026-09-12] merge | PR #8 merged: ranked lists frozen for the visit, card votes tagged
+
+- Merged at 01:16 UTC, CI green. Live: the community listing and the home « Tendances » keep their order while the visitor votes; card votes carry `source = card` in `swipe_right` events, so query 9 of `docs/metrics.sql` can split card votes from swipe votes from this deployment on.
+- Open UX question from Fabien: list view instead of the card grid for reading the ranked problems. Verdict given with a mock (list on the community listing and the catalogue, cards kept on the swipe and on the home showcase); waiting for his call before building `ProblemRow`.

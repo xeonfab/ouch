@@ -246,3 +246,9 @@
 
 - Merged at 01:22 UTC, CI green. Live: « Déjà signalé par la commu » and the catalogue read as one line per problem with the vote button in the right column; cards remain on the swipe and the home showcase. Votes from the list carry `source = list`, from the home cards `source = card`, from the deck `source = swipe`.
 - State of the day: PRs #7, #8, #10, #11 merged in one evening on Fabien's field feedback (vote CTA, frozen ranking, stale-chunk reload, list view). Next on Fabien's side: phone test, friends wave `?c=amis`, decision on purging `?c=test`. Next on mine: weekly metrics sheet (`ouch-data-analyst`), card 86 moderation.
+
+## [2026-09-12] pr | PR #12 opened: a visitor can take back their own vote
+
+- Fabien, on the list view: a mis-click on « Moi aussi » had no way back. [PR #12](https://github.com/xeonfab/fix-it-karma/pull/12) (`claude/retract-vote`): the mint « Toi aussi ✓ » button retracts the vote (list rows and home cards), counter drops at once, `vote_retracted` event with source and direction.
+- Database: `retract_vote(problem_id, device_id)` applied live (security definer, search_path pinned, anon + authenticated). Deletes only that device's vote; the device uuid acts as the token. Votes are not content, so this does not touch the no-deletion rule for cards; the trace stays in `events`.
+- Not covered: undoing a swipe in the deck (a different gesture, « annuler » on the last card), to design if the field asks for it.

@@ -302,3 +302,8 @@
 
 - Merged at 02:15 UTC, CI green. Live: « Rejoindre », the submission wall and the « joined » screen offer Google then « ou par email ». The email itself only reaches visitors once Fabien sets custom SMTP (Resend) on the Supabase project, `docs/deploy.md` b bis.
 - Evening total: PRs #7, #8, #10, #11, #12, #13, #14, #16, #17 merged on field feedback. Open on Fabien's side: SMTP setup, real contact address on the legal pages, friends wave `?c=amis`. Sunday: week 1 line of the metrics sheet.
+
+## [2026-09-12] pr | PR #19 opened: community page decluttered on mobile
+
+- Fabien's phone read (09:04): too loaded, complex description, « Spécial indépendants » lost in a chip, counters useless, heart less clear than « Moi aussi », swipe card should carry the list row's landmarks. [PR #19](https://github.com/xeonfab/fix-it-karma/pull/19) (`claude/mobile-declutter`): title = « Spécial indépendants 🧾 », one-line promise, « 1 / 9 » progress only, labelled pills « Passer » / « Moi aussi 🔥 », card front = emoji + hashtag + entity chip + first-person statement, one counter only above zero, register « tu ».
+- Rules added to the spec: the swipe card front and the list row share the same landmarks (emoji, hashtag, entity, « Moi aussi »); the statement stays first person on the card, the title stays factual on the row; no counter at zero anywhere on the victim side; « tu » everywhere on the victim side.

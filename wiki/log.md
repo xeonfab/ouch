@@ -276,3 +276,9 @@
 
 - Merged at 01:44 UTC, CI green. Live: mentions légales name the host and use the LCEN non-professional clause; confidentialité lists the device id, usage events, the Anthropic processor and transfer, legal bases, retention, rights and the CNIL; CGU state correction / merge / unpublication, vote retraction, entities without status. Placeholders left for Fabien: contact address, publisher identity.
 - All PRs of the evening merged (#7, #8, #10, #11, #12, #13, #14). Nothing open in the app repo. Next: Fabien's contact address, card 86 and `?c=test` purge decisions, friends wave `?c=amis`; the Sunday metrics line.
+
+## [2026-09-12] decision | Card 36 canonical, card 86 unpublished, field-test data purged
+
+- Fabien: « garder la 36 canonique, dépublier la 86 avec la purge ». Executed live at 02:05 UTC: card 86 set `published = false` (row kept, no deletion); all engagement rows deleted since every row came from the evening's field test (3 devices: the Mac on `?c=test`, the phone direct at 01:00, and a third device on `?c=amis` at 02:01 identified as Fabien's Mac again by identical user agent, viewport and timing). Deleted: 54 votes, 8 leads, 124 events; confirmations and survey answers were empty. 85 → 84 published cards.
+- Week 0 of the metrics sheet keeps the numbers as the record of the test; from now on the counters start at zero for the friends wave.
+- Side effect: Fabien's browsers still hold the local vote mirror, so his cards show « Toi aussi » without a server row; clearing the site data (or retracting, which deletes nothing) resets them. Not an issue for new visitors.

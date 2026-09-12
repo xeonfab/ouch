@@ -23,6 +23,8 @@ last_reviewed: 2026-09-12
 
 ## Week 0 — 2026-09-12 (founder field test, two devices)
 
+> Purged on 2026-09-12 at 02:05 UTC after this line was filled (Fabien's call): all votes, leads and events deleted, card 86 unpublished, card 36 kept canonical. Counters start at zero for the friends wave.
+
 | Metric | Value | Sample | Target (end of Phase 2) | Verdict |
 |---|---|---|---|---|
 | Distinct voters | 2 | Fabien's Mac + one second device (no user agent recorded, direct) | 300 | instruments only |
@@ -49,7 +51,7 @@ Every deck card sits at 1 right / 0 left from the Mac (1, 46, 40, 10, 53, 63) or
 ### Anomalies flagged before any reading
 
 1. **The second device swiped outside the community deck.** Its 12 right swipes hit cards 41, 58, 49, 47, 55, 54, 52, 51, 69, 68, 50, 42, in id order, at a swipe rhythm (3 s apart), none of the ten curated cards. The community deck code respects the curated ids (`SwipeDeck` sorts by `problemIds`), so the device was on the generic `/swipe` page, reachable from the header and footer of every page including the community one. The generic page serves the whole registry in id order once the topic picker is passed. **Read**: a visitor landing on `/communaute/independants` can leak into a non-ranked, non-freelance deck in one tap. Handed to `ouch-ceo` / `ouch-ux-designer`: on community pages the header « Swiper » should point to the community deck, or the generic `/swipe` should rank by Score de Douleur like the community deck. Until then, deck-card statistics are only meaningful for votes with `source = swipe` on the community page.
-2. **Card 86** (the founder's test submission) is a near-duplicate of card 36 (Qonto account blocked for a compliance check): same friction, more specific consequence (4 days, rent and suppliers waiting). It carries an empty `communities` tag (fixed for future submissions by PR #6), the topic « Paiements partagés » (wrong, should be « Budget »), no entity link although the statement names Qonto. `ouch-editeur-cartes` recommendation: keep 36 canonical, unpublish 86 together with the `?c=test` purge, or, if the founder wants it kept, fix its tag, topic and entity and merge it into 36 once `merged_into` exists (Phase 2).
+2. **Card 86** (the founder's test submission) is a near-duplicate of card 36 (Qonto account blocked for a compliance check): same friction, more specific consequence (4 days, rent and suppliers waiting). It carries an empty `communities` tag (fixed for future submissions by PR #6), the topic « Paiements partagés » (wrong, should be « Budget »), no entity link although the statement names Qonto. Decided 2026-09-12: 36 canonical, 86 unpublished with the purge.
 3. **User agent missing** on the second device's events (`props.ua` only exists on `client_error`). Add `ua` and viewport width to `community_visit` so the phone / desktop split is readable; one line in `events.ts`. Not urgent.
 
 ### Verdict

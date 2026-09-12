@@ -30,7 +30,7 @@ The product surface is essentially built (swipe, Terminal Maker, entity pages, A
 | Social share after publishing a problem | Built 2026-09-11 | Good: free distribution loop. Keep. |
 | Lovable `roadmap.md` | All 12 items checked | Feature backlog is empty by design. Nothing else is "missing" for launch. |
 | Demo counters in the catalog | `seedRight` up to 512, `seedLeads` up to 214, fake statuses, fake maker updates, fake verbatims, synthetic growth curve, hero "+12 480 problèmes" | **All zeroed or removed before any public share** (spec §1b). A maker must never see an invented number. |
-| Code repository | Lovable now synced two-way with `xeonfab/fix-it-karma` (`main`) | Claude Code works from the repo on branches; Lovable keeps preview, hosting and AI gateway. One driver on the code at a time. |
+| Code repository | `xeonfab/fix-it-karma` on GitHub; **Lovable exited on 2026-09-11** (PR #2): Vite/Nitro build for Vercel, native Supabase auth, Claude API for qualification and duplicates, npm lockfile | Claude Code works from the repo on branches, PR to `main` = Vercel deploy. Lovable's agent, preview and AI gateway are no longer part of the loop; the Lovable GitHub connection is to be disconnected per `docs/deploy.md` §3. |
 | Vocabulary | Still "concerné(e)s" + 🔥 | Settled below (D2). |
 | Legal pages `/mentions-legales`, `/confidentialite`, `/cgu` | Routes exist | Content to proofread once in Sprint 0, not rebuilt. |
 
@@ -159,7 +159,11 @@ Weekly sheet (one row per week, filled Sunday):
 | Fabien | Create the weekly metrics sheet | 2026-09-14 | open |
 | Claude Code | Implement the spec from the app repo | 2026-10-01 | **done 2026-09-11** on branch `claude/persistence-spec` (migration applied, 38 cards seeded at zero, client migrated, lint/typecheck/build green) |
 | Fabien | Open the PR, merge to `main` (Lovable sync), then run the two-device test on the Lovable preview and the 5-friend smoke test (spec §7 steps 5-6) | 2026-10-01 | open — blocked in the build sandbox (Supabase host not reachable there) |
-| Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | open |
+| Fabien | Phase 1 field check on Vercel, 2026-09-12 00:24–00:40 UTC, one device, `?c=test`: 16 swipes, 7 Google opt-ins, 1 problem submitted through the Claude qualifier, funnel events landing with the channel. Remaining for the gate: the second device (phone) on the same card, then the 5 friendly freelances | 2026-09-14 | open (one device done) |
+| Fabien + `ouch-growth-hacker` | Pick the 3 channels and write the 10-card freelance deck | 2026-10-08 | **deck done 2026-09-11** → [freelance deck v1](../projects/2026-09-11_freelance-deck-v1.md) (54 cards, top 10 selected); channel playbook done → [communication plan](2026-09-11_freelance-channel-communication-plan.md); channel map v0 written 2026-09-12 → [freelance channel map](2026-09-12_freelance-channel-map.md), sizes and rules to verify by Fabien |
+| Claude Code (`ouch-cto`) | Structure fixes before the first wave: `communities` tag, retire placeholder entities, submission-funnel events, cross-topic dedup | 2026-10-01 | **done 2026-09-11** on branch `claude/freelance-deck-structure` of `xeonfab/fix-it-karma`; migrations applied on the live database (84 cards, 54 tagged, placeholders gone). After the merge with the Lovable exit, `main` validated for real: `npm ci`, `tsc --noEmit` and `npm run build` (Vercel preset) all green; ESLint reports only pre-existing prettier formatting on untouched files |
+| Fabien | Merge `claude/freelance-deck-structure` into `main` | 2026-09-14 | **done 2026-09-11** (PR #3), together with PR #2 (Lovable exit: Vite/Vercel, native Supabase auth, Claude API) |
+| Fabien | Deploy on Vercel per `docs/deploy.md` (Anthropic key, Google OAuth redirect on the Supabase project, six env vars), then the two-device test on the Vercel URL `/communaute/independants?c=test` and the 5-friend smoke test | 2026-09-14 | open — the Lovable URL still serves the old build on the old database, nothing to share before this |
 
 ## Open questions
 
@@ -170,7 +174,7 @@ Weekly sheet (one row per week, filled Sunday):
 ## Related wiki pages
 
 - Concepts: [Score de Douleur](../../concepts/Score_de_Douleur.md), [Resolution Type A/B](../../concepts/Resolution_Type_AB.md)
-- Syntheses: [Ouch!/FixMyLife — full project context](../projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
+- Syntheses: [Community-by-community rollout playbook](2026-09-11_community-rollout-playbook.md) — this plan is iteration #1 of that loop; [Ouch!/FixMyLife — full project context](../projects/2026-09-10_ouch-fixmylife-contexte-complet.md)
 - MOC: [Ouch! / FixMyLife](../../mocs/MOC_Ouch_FixMyLife.md)
 
 ## Sources
@@ -182,6 +186,14 @@ Weekly sheet (one row per week, filled Sunday):
 
 <!-- BACKLINKS:START -->
 ## Referenced by
+
+**Syntheses**
+
+- [2026-09-11 community-rollout-playbook](2026-09-11_community-rollout-playbook.md)
+- [2026-09-11 freelance-channel-communication-plan](2026-09-11_freelance-channel-communication-plan.md)
+- [2026-09-11 freelance-deck-v1](../projects/2026-09-11_freelance-deck-v1.md)
+- [2026-09-11 problem-structure-dedup-spec](../projects/2026-09-11_problem-structure-dedup-spec.md)
+- [2026-09-11 team-skills-audit](2026-09-11_team-skills-audit.md)
 
 **Other**
 

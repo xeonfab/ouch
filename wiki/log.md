@@ -307,3 +307,7 @@
 
 - Fabien's phone read (09:04): too loaded, complex description, « Spécial indépendants » lost in a chip, counters useless, heart less clear than « Moi aussi », swipe card should carry the list row's landmarks. [PR #19](https://github.com/xeonfab/fix-it-karma/pull/19) (`claude/mobile-declutter`): title = « Spécial indépendants 🧾 », one-line promise, « 1 / 9 » progress only, labelled pills « Passer » / « Moi aussi 🔥 », card front = emoji + hashtag + entity chip + first-person statement, one counter only above zero, register « tu ».
 - Rules added to the spec: the swipe card front and the list row share the same landmarks (emoji, hashtag, entity, « Moi aussi »); the statement stays first person on the card, the title stays factual on the row; no counter at zero anywhere on the victim side; « tu » everywhere on the victim side.
+
+## [2026-09-12] merge | PR #19 merged: community page decluttered on mobile
+
+- Merged at 07:43 UTC, CI green. Live: « Spécial indépendants 🧾 » as the title, one-line promise, « n / N » progress only, labelled « Passer » / « Moi aussi 🔥 » pills, card front with the list row's landmarks and one counter only above zero, « tu » register.

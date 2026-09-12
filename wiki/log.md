@@ -234,3 +234,10 @@
 - Code read on `main` (`924f93f`): the entity page already shows a top-3 « vue publique » and an **ungated** « Vue détaillée Maker » block with invented `devWeeks` (to remove); **no `/devenir-maker` route exists** (wiki was stale); no `entity_page_visit` event. Build sequence: ~4 h before 2026-10-01 (fold + CTA, event, candidate column/qualifier/query), 1 h in Phase 3 (maker email capture on the Terminal), 1 day at the signal (gate + consent).
 - Skills updated with the new rules: `ouch-legal`, `ouch-cto`, `ouch-ux-designer`, `ouch-ceo`.
 - Open for Fabien: confirm the three decisions by 2026-09-14; whether the aggregate « N attendent une solution » stays on the public page (panel default: yes).
+
+## [2026-09-12] pr | PR #15 opened: entity page folded, private entity-candidate queue, `entity_page_visit`
+
+- Fabien confirmed the three panel decisions and the ~4 h of works. [PR #15](https://github.com/xeonfab/fix-it-karma/pull/15) (`claude/entity-page-fold-candidates`), subscribed for CI.
+- Entity page: capturable number in the header, top 3 open, the rest folded (public, inline vote, frozen order), maker block and `devWeeks` removed, one Terminal-style CTA at the bottom. Event `entity_page_visit` + queries §12 in `docs/metrics.sql`.
+- `entity_candidates` table (not a column: column-level privileges would break the client's `select *` on `problems`): qualifier output `entity_candidate`, inserted after publication by the author only, never readable by the client; queries §11/§11b (weekly queue, promotion). Migration applied live on `ouch`; the insert privilege inherited by `anon` from the schema defaults was revoked.
+- Not done: visual check on the Vercel preview (`/entite/qonto`: fold, list vote, dark strip). Terminal's « Dev estimé » (`devWeeks`) is still an invented number, out of this PR's scope; to remove in a later pass.

@@ -207,7 +207,7 @@ A person is never a candidate (existing guard). A category (« ma banque ») is 
 |---|---|---|---|---|
 | Entity page: remove the « Vue détaillée Maker » block and `devWeeks`; fold cards beyond 3 with « Voir les N autres galères »; one Terminal-style CTA at the bottom | legal/consistency fix (an invented number on a public page; register mix) | `ouch-cto` + `ouch-ux-designer` | ≤ 2026-10-01 | 1.5 h |
 | `entity_page_visit` event with `props.utm`; `terminal_visit` already carries `referrer` | instrumentation (D5-c) | `ouch-cto` | ≤ 2026-10-01 | 0.5 h |
-| `entity_candidate text` column (private, no anon read), qualifier output, Sunday query in `docs/metrics.sql` | instrumentation (D5-c): the qualifier drops information today | `ouch-cto` | ≤ 2026-10-01 | 2 h |
+| `entity_candidate` (private, no client read; built as the table `entity_candidates`), qualifier output, Sunday query in `docs/metrics.sql` | instrumentation (D5-c): the qualifier drops information today | `ouch-cto` | ≤ 2026-10-01 | 2 h |
 | « Signaler cette carte » link (mailto or form, one-way) on card detail and entity page | legal obligation (D5-b) | `ouch-legal` wording, `ouch-cto` | Phase 2, before the week-7 share test | 1 h |
 | Maker email capture on the Terminal (« Prévenez-moi à l'ouverture du Terminal Pro ») | Phase 3 need (replaces the missing `/devenir-maker`) | `ouch-cto` | week 8 | 1 h |
 | Entity filter in the Terminal | new filter: only if a Phase 3 maker asks | `ouch-cto` | Phase 3 or after day 90 | 2 h |
@@ -217,8 +217,8 @@ A person is never a candidate (existing guard). A category (« ma banque ») is 
 
 | Owner | Action | Due | Status |
 |---|---|---|---|
-| Fabien | Confirm the three decisions: cards public / data sold; editorial creation, no claim flow; `entity_candidate` as the bridge | 2026-09-14 | open |
-| Claude Code (`ouch-cto`) | Branch: entity page fold + CTA + `entity_page_visit` + `entity_candidate` (column, qualifier, query) | 2026-10-01 | open |
+| Fabien | Confirm the three decisions: cards public / data sold; editorial creation, no claim flow; `entity_candidate` as the bridge | 2026-09-14 | **done 2026-09-12** (« ok go je confirme les travaux ») |
+| Claude Code (`ouch-cto`) | Branch: entity page fold + CTA + `entity_page_visit` + `entity_candidate` (column, qualifier, query) | 2026-10-01 | **done 2026-09-12** — [PR #15](https://github.com/xeonfab/fix-it-karma/pull/15); the private field became a private table `entity_candidates` (insert-only for the card's author, no client read), because column-level privileges on `problems` would break the client's `select *`; migration applied live |
 | `ouch-legal` | Wording of « Signaler cette carte » and the future consent line for opt-in access | 2026-10-15 | open |
 | Fabien + `ouch-editeur-cartes` | Sunday: read the candidate query, promote per the threshold | from 2026-10-12 | open |
 | Wiki | Correct the stale `/devenir-maker` mentions (full context page, launch plan) | 2026-09-12 | **done in this page and the MOC** |

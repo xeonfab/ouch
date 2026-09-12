@@ -122,6 +122,7 @@ order by sim desc;
 - One action above the fold: swipe. The « Ajoute-la » block moves below the deck (see the channel plan).
 - Registers: fun on this page; no Terminal styling.
 - Victim-side cards (listing and home): **one number per card, the one the visitor can move**. The vote is a visible button (« Moi aussi 🔥 », « Toi aussi ✓ » once voted), the count hidden at zero; the Score de Douleur `/100` never appears on these cards, it stays on the Terminal, the entity page and the duplicate screen of the submit flow (decided 2026-09-12 after Fabien's field review, PR #7).
+- A ranked list never re-sorts under the visitor's cursor: the order is computed once per page load and frozen for the visit, a card submitted during the visit goes first (PR #8). Live re-ranking is for the Terminal only.
 - Author name: never above the write headline; stated once under the publish button (« Signée X · ce nom apparaît sur la carte »), because the name is public on the card.
 
 ### Entity page (`/entite/:slug`)

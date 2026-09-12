@@ -220,3 +220,9 @@
 
 - Merged at 01:01 UTC, CI green. Live from this deployment: victim-side cards show « Moi aussi 🔥 » (count hidden at zero) instead of the grey counter and the `douleur /100` number; the write step no longer shows « Vous publiez en tant que », the signature note sits under the publish button.
 - To watch in the events table from now on: `vote` rows with `source = card` (listing) versus the swipe, to see whether the button moves the vote rate on the ranked list.
+
+## [2026-09-12] pr | PR #8 opened: ranked lists frozen during the visit, card votes tagged
+
+- Fabien's test after PR #7: voting « Moi aussi » on card 42 made it jump to rank 37, because the listing is sorted by Score de Douleur and re-sorted live. Rule added to the presentation section of the dedup spec: a ranked list never re-sorts under the visitor's cursor; the order is computed once per page load (`useFrozenOrder`), new cards go first.
+- Card votes now carry `source = card` in the event props (they defaulted to `swipe`); the log entry of PR #7 assumed this and was wrong until PR #8 is live. Also `.vercel` added to eslint ignores.
+- [PR #8](https://github.com/xeonfab/fix-it-karma/pull/8) (`claude/card-vote-source`), subscribed for CI.

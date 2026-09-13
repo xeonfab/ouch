@@ -42,6 +42,8 @@ The app's public name is "Ouch!" (alias "FixMyLife", Lovable id `fix-it-karma`).
 
 Other free `.com` with concept feel, lower priority: `ouchscore`, `ouchboard`, `ouchlist`, `ouchify`, `ouchspot`, `swipeouch` / `ouchswipe`, `tellouch`, `itchmap`, `twingely`, `snafuly`, `where-it-hurts` (`whereithurts.com` is taken).
 
+Asked by Fabien: `twinge.com` is taken and parked at GoDaddy's NameFind brokerage (premium resale, typically thousands of €); `.ai .io .net .org .me .life` also taken, `.fr .co .app .eu .xyz` free. Good concept fit (a twinge = a small sharp pain) but crowded name, unknown to many non-native speakers, and "Twingo" confusion in France.
+
 Rejected after search: `hurtmap.com` (free, but "Hurtmap" is an existing injury-treatment app), `ouchometer.com` (former feature name of the "Ouch! Emotional Bandage" app). Taken: `ouchly`, `ouchr`, `ouchio`, `ouchy`, `ouchie`, `ouchmap`, `ouchhub`, `ouchbox`, `painpoint`, `painmap`, `paindex`, `painscale`, `whereithurts`, `ithurts`, `itchy`, `snaglist`, `fixthis`, `fixlist`, `dolor*` (most), `twinge`, `pangs`.
 
 ## Recommendation (French-only, pass 1, superseded)

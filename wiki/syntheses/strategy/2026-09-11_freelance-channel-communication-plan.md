@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-13
 ---
 
 # Freelance channel communication plan — collect problems, convince freelances to submit
@@ -117,7 +117,7 @@ Three levers, all copy or instrumentation, none a new feature:
 
 | Objection | Answer |
 |---|---|
-| « C'est quoi l'intérêt pour moi ? » | « Voir que t'es pas seul, et être prévenu si quelqu'un construit une solution. C'est tout, et c'est gratuit. » |
+| « C'est quoi l'intérêt pour moi ? » | « Voir en 48 h combien de freelances ont exactement la même galère que toi. Et si un jour quelqu'un construit une solution, t'es prévenu·e en premier. C'est gratuit. » *(rewritten 2026-09-13, see [short-term value of submitting](2026-09-13_valeur-court-terme-depot.md): lead with the frequent event, not the rare one)* |
 | « Vous faites quoi de mon email ? » | « Uniquement te prévenir si une solution sort pour cette galère précise. Rien d'autre, c'est écrit au moment où tu le laisses. » |
 | « Encore une plateforme… » | « Pas de compte pour swiper. 20 secondes. » |
 | « Ça sert à rien de râler » | « Ici ça sert à un truc précis : compter combien de freelances ont exactement la même galère, pour que quelqu'un la prenne au sérieux. » |
@@ -191,6 +191,7 @@ Three levers, all copy or instrumentation, none a new feature:
 - [2026-09-11 team-skills-audit](2026-09-11_team-skills-audit.md)
 - [2026-09-12 freelance-channel-map](2026-09-12_freelance-channel-map.md)
 - [2026-09-13 facebook-finance-group-post](2026-09-13_facebook-finance-group-post.md)
+- [2026-09-13 valeur-court-terme-depot](2026-09-13_valeur-court-terme-depot.md)
 
 **Other**
 

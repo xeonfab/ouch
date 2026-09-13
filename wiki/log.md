@@ -273,3 +273,11 @@
 - Created: `wiki/syntheses/strategy/2026-09-13_facebook-finance-group-post.md` — checks in order (Phase 1 two-device test still open, `?c=test` purge decision, mobile check; group fit rule: finance professionals = go, personal finance = no-go before day 90; admin first; legal grid; `?c=fb-finance`), and the French copy: admin DM, post opening on three entity-free cards (F01, F18, F34), first comment with the link, replies.
 - Updated: `wiki/index.md` (Strategy row), MOC (freelance push section), channel map (placeholder row `fb-finance`).
 - Wave order changes (Facebook group before the LinkedIn wave); to be logged at the Sunday review.
+
+## [2026-09-13] decision | Short-term value of submitting a problem — concept doubt answered (CEO)
+
+- Trigger: Fabien questioned the concept after his own one-device test: people want solutions, submitting a problem returns nothing in the short term.
+- Decision (`ouch-ceo`): no pivot to "solutions" (that is the forum, competing with ChatGPT, without the maker thesis); the victim-side return is the counter moving, petition-style, so the fix is on the submission promise, not the concept. Concept question not reopened before day 90.
+- Created: `wiki/syntheses/strategy/2026-09-13_valeur-court-terme-depot.md` — where the doubt is right/wrong, three changes (vote-milestone notification at 5/10/25 replacing the maker-pickup promise; 48 h guaranteed swipe slot for fresh cards, already in dedup spec §7; one factual line on the card back), two D5 exceptions, new gate metric "submitters back within 7 days" (≥50 %), three tickets ready to paste for `xeonfab/fix-it-karma`.
+- Updated: `wiki/index.md` (Strategy row), MOC (syntheses bullet + open question), launch plan (D5-a row, metric row, next-step row), channel plan (§6 objection answer rewritten).
+- Not done: the tickets could not be opened on `xeonfab/fix-it-karma` from this session (repository attach denied); they are in the page, to paste by hand or from a session with that repo attached.

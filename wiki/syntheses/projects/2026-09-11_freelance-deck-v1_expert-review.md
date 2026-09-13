@@ -105,6 +105,7 @@ Nine of the ten launch cards (F01, F11, F03, F10, F18, F33, F36, F31, F42) are *
 
 - [2026-09-11 freelance-deck-v1](2026-09-11_freelance-deck-v1.md)
 - [2026-09-11 team-skills-audit](../strategy/2026-09-11_team-skills-audit.md)
+- [2026-09-13 valeur-court-terme-depot](../strategy/2026-09-13_valeur-court-terme-depot.md)
 
 **Other**
 

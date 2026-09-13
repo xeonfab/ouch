@@ -44,6 +44,7 @@ F20 and F22 were inserted unpublished on 2026-09-11 pending this sheet; publishe
 
 - [2026-09-11 freelance-deck-v1](../projects/2026-09-11_freelance-deck-v1.md)
 - [2026-09-13 facebook-finance-group-post](../strategy/2026-09-13_facebook-finance-group-post.md)
+- [2026-09-13 valeur-court-terme-depot](../strategy/2026-09-13_valeur-court-terme-depot.md)
 
 **Other**
 

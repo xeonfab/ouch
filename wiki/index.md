@@ -76,6 +76,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 | [Freelance channel map v0](syntheses/strategy/2026-09-12_freelance-channel-map.md) | First named list of French freelance communities per channel type (Facebook groups, Slack, forums, complaint platform as harvest source), sizes and rules to verify, proposal for the three Phase 2 waves |
 | [Team skills audit & upgrade](syntheses/strategy/2026-09-11_team-skills-audit.md) | Audit of the 9 Ouch! skills against the freelance push: auto-trigger defect fixed on all, CEO/CTO/growth/legal/UX updated, second voices for both personas, 3 new experts (freelance domain, card editor, data analyst); coverage matrix by workstream |
 | [Facebook finance group post](syntheses/strategy/2026-09-13_facebook-finance-group-post.md) | Pre-flight checklist (gate, group rules, legal, tracking) and ready-to-paste French copy (admin DM, post, first comment, replies) for the first Facebook group wave, aimed at a finance community |
+| [Short-term value of submitting a problem (CEO)](syntheses/strategy/2026-09-13_valeur-court-terme-depot.md) | Fabien's doubt ("people want solutions, submitting gives nothing back") answered: concept not reopened before day 90, promise rewritten around "moi aussi" milestones, 48 h guaranteed circulation for fresh cards, one factual line on the card back; new gate metric (submitters back within 7 days); three tickets ready to paste |
 
 ### 🚀 Projects (`projects/`)
 | Page | Summary |

@@ -91,6 +91,7 @@ Deux récits bruts à coller dans "Déposer ma frustration" pour valider le flow
 **Syntheses**
 
 - [2026-09-10 test-concept-communaute-freelances](2026-09-10_test-concept-communaute-freelances.md)
+- [2026-09-13 valeur-court-terme-depot](2026-09-13_valeur-court-terme-depot.md)
 
 **Other**
 

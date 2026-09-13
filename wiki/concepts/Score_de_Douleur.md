@@ -48,6 +48,7 @@ _(none yet — no external vendor/expert tied to this mechanism)_
 - [2026-09-11 freelance-deck-v1](../syntheses/projects/2026-09-11_freelance-deck-v1.md)
 - [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
+- [2026-09-13 valeur-court-terme-depot](../syntheses/strategy/2026-09-13_valeur-court-terme-depot.md)
 
 **Other**
 

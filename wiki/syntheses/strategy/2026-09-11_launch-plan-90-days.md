@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-13
 ---
 
 # Ouch! — 90-day launch plan (CEO)
@@ -43,6 +43,7 @@ The product surface is essentially built (swipe, Terminal Maker, entity pages, A
 | **D3** | **Launch surface = `/communaute/independants`, not the homepage.** One community at a time, one link per community, one curated deck of ~10 cards per community. | Already built. A community-specific link converts better than a generic homepage and gives clean per-community metrics. |
 | **D4** | **No paywall, no pricing page before the Cercle 2 signal.** `/devenir-maker` stays "pricing soon" + email capture. The Terminal stays open (no login) so we can observe maker return visits. | An empty paid Terminal kills credibility. Return visits are the metric, not signups. |
 | **D5** | **Feature freeze.** Nothing enters Lovable in Phases 2–3 unless it is (a) a bug that blocks voting/opt-in, (b) required by a legal rule, or (c) an instrumentation gap. | Every Lovable message costs an hour of Fabien's week. Distribution costs the same hours and is the actual bottleneck. |
+| **D5-a** (2026-09-13) | **Two exceptions granted under (c)**: vote-milestone notification replacing the maker-pickup promise, and a 48 h guaranteed swipe slot for fresh cards. Without them the Phase 2 criterion « ≥10 spontaneous submissions » measures a broken promise, not the appetite to submit. See [short-term value of submitting](2026-09-13_valeur-court-terme-depot.md). |
 | **D6** | **Seeding is curated, not scraped, for the first 60 cards.** The Make/n8n scraping pipeline (Reddit, X, forums → Claude qualification → moderation queue) is built only in Phase 2 and only feeds a moderation queue, never auto-publishes. | 60 sharp, legally clean, freelance-specific cards beat 500 generic ones. The legal grid (factual lived fact, no value judgment, entity = organisation only) is easier to guarantee by hand at this volume. |
 
 ## The 90 days — three phases, one priority each
@@ -112,6 +113,7 @@ Weekly sheet (one row per week, filled Sunday):
 | Swipes / positive rate | `votes` | positive rate 30–60% (below 30% the deck is off-target, above 60% cards are too generic) |
 | Opt-in rate on positive swipes | `leads` ÷ right swipes | ≥10% |
 | Problems submitted by visitors | `problems` where source = user | ≥10 |
+| Submitters back within 7 days | `problem_submitted` device id seen again on its card or the community page ≤7 days | ≥50 % (below 30 %: the submission promise is still wrong, reopen at day 90) — added 2026-09-13 |
 | Validated problems (North Star) | derived | ≥3 |
 | Maker Terminal visits / returning devices | `events` | Phase 3: ≥1 returning |
 | Cost per voter by channel | link parameter | qualitative ranking of channels |
@@ -164,6 +166,7 @@ Weekly sheet (one row per week, filled Sunday):
 | Claude Code (`ouch-cto`) | Structure fixes before the first wave: `communities` tag, retire placeholder entities, submission-funnel events, cross-topic dedup | 2026-10-01 | **done 2026-09-11** on branch `claude/freelance-deck-structure` of `xeonfab/fix-it-karma`; migrations applied on the live database (84 cards, 54 tagged, placeholders gone). After the merge with the Lovable exit, `main` validated for real: `npm ci`, `tsc --noEmit` and `npm run build` (Vercel preset) all green; ESLint reports only pre-existing prettier formatting on untouched files |
 | Fabien | Merge `claude/freelance-deck-structure` into `main` | 2026-09-14 | **done 2026-09-11** (PR #3), together with PR #2 (Lovable exit: Vite/Vercel, native Supabase auth, Claude API) |
 | Fabien | Deploy on Vercel per `docs/deploy.md` (Anthropic key, Google OAuth redirect on the Supabase project, six env vars), then the two-device test on the Vercel URL `/communaute/independants?c=test` and the 5-friend smoke test | 2026-09-14 | open — the Lovable URL still serves the old build on the old database, nothing to share before this |
+| Fabien | Open the three tickets (milestone notification, 48 h slot, fact line) in `xeonfab/fix-it-karma` from [short-term value of submitting](2026-09-13_valeur-court-terme-depot.md); tickets 1–2 ship before wave 1 | 2026-09-14 | open |
 
 ## Open questions
 
@@ -195,6 +198,7 @@ Weekly sheet (one row per week, filled Sunday):
 - [2026-09-11 problem-structure-dedup-spec](../projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-11 team-skills-audit](2026-09-11_team-skills-audit.md)
 - [2026-09-13 facebook-finance-group-post](2026-09-13_facebook-finance-group-post.md)
+- [2026-09-13 valeur-court-terme-depot](2026-09-13_valeur-court-terme-depot.md)
 
 **Other**
 

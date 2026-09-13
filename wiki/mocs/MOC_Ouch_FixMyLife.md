@@ -21,6 +21,7 @@ last_reviewed: 2026-09-13
 - [Ouch!/FixMyLife — full project context](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) — concept, business model, hard rules, data model, build status, next steps
 - [Test de concept — communauté freelances](../syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md) — message + structure de landing page pour le test de validation publique, jamais exécuté jusqu'ici
 - [Dépôt d'un problème — décision du panel double-face](../syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md) — refonte du flow de dépôt, scope resserré au partage social après découverte que le reste du brief était déjà construit
+- [Short-term value of submitting a problem (CEO)](../syntheses/strategy/2026-09-13_valeur-court-terme-depot.md) — Fabien's concept doubt (2026-09-13) settled: no pivot to "solutions", the return is the counter moving; promise rewritten on "moi aussi" milestones, 48 h slot for fresh cards, one factual line per card back; gate metric "submitters back within 7 days"; two D5 exceptions granted
 
 ## 🧾 Freelance push — Cercle 1 workstreams (2026-09-11)
 - [Freelance deck v1](../syntheses/projects/2026-09-11_freelance-deck-v1.md) — **content**: card standard, 54 cards (8 existing kept/rewritten, 46 new), 10-card launch deck, insertion procedure
@@ -47,6 +48,7 @@ last_reviewed: 2026-09-13
 - ~~What are the "organisations able to collect problems" in the founder's strategy?~~ **Settled 2026-09-11: the product's entités.** Every problem tied to an entity must appear on that entity's public page; makers are either intrapreneurs inside the entity (Type B) or independents/collectives (Type A). Hard rules 4–5 unchanged. See the [rollout playbook](../syntheses/strategy/2026-09-11_community-rollout-playbook.md).
 - Retire the 18 placeholder entities (their pages disappear) and `collectivite-locale` with them? Default yes — see the [dedup spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md).
 - Anonymous publication if the Google login wall loses >50 % of submitters? Measure first (four funnel events), CEO decision after — see the [channel plan](../syntheses/strategy/2026-09-11_freelance-channel-communication-plan.md).
+- Do freelances submit when the return is a moving counter rather than a solution? Measured in Phase 2 by "submitters back within 7 days" (target ≥50 %, reopen the concept question below 30 %) — see [short-term value of submitting](../syntheses/strategy/2026-09-13_valeur-court-terme-depot.md).
 - Anonymous voter identity: device id only, or upgraded to the Google profile on sign-in? (Spec week, default = device id + link on sign-in.)
 
 ## 📥 Raw sources worth re-reading
@@ -69,6 +71,7 @@ last_reviewed: 2026-09-13
 - [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-11 team-skills-audit](../syntheses/strategy/2026-09-11_team-skills-audit.md)
 - [2026-09-13 facebook-finance-group-post](../syntheses/strategy/2026-09-13_facebook-finance-group-post.md)
+- [2026-09-13 valeur-court-terme-depot](../syntheses/strategy/2026-09-13_valeur-court-terme-depot.md)
 
 **Other**
 

@@ -107,3 +107,11 @@
 - Livré sur Lovable (`fix-it-karma`) commits `51b724a` (création), `8abda3a` (engagement) et `81a51e5` (capture email via Google quand on rejoint un doublon sans être connecté — point ouvert refermé le jour même)
 - No new entity/concept pages
 - Patterns: none — deux itérations produit sur un même test, pas de signal cross-source
+
+## [2026-09-13] query | Domain name search for Ouch! / FixMyLife — decision `frictum.com`
+
+- Request: a cheap, available domain that carries the concept; refined twice (international rather than French, then no "ouch" in the name).
+- Method: DNS-delegation checks (WHOIS/RDAP unreachable from the session), 1,640 candidates over three passes, web search for brand collisions and 2026 registrar prices.
+- Created: `wiki/syntheses/strategy/2026-09-13_domain-name-shortlist.md` (decision, three shortlists, prices, buy steps)
+- Updated: `wiki/index.md` (Strategy table), `wiki/mocs/MOC_Ouch_FixMyLife.md` (domain line, `last_reviewed` bumped)
+- Decision by Fabien: `frictum.com` (+ `frictum.fr`); to confirm at the registrar before paying, DNS check is not registry-level.

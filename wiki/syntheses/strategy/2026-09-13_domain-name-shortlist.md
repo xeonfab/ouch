@@ -4,7 +4,7 @@ last_reviewed: 2026-09-13
 
 # Domain name shortlist — Ouch! / FixMyLife
 
-> One-line TL;DR: **`ouchdex.com`** (≈ 8–11 €/year) is the recommended buy after Fabien asked for an international name that also reads naturally in French; `ouchdeck.com` and `sameouch.com` are the alternates, `fixouch.com` was dropped because the "x-ou" junction reads "fiksouch" in French. First pass (French-only) had picked `cacoince.fr`; kept below for the record. All picks are free on every checked extension.
+> One-line TL;DR: **Decision 2026-09-13 (Fabien): buy `frictum.com`** (+ `frictum.fr` as redirect), ≈ 8–11 €/year. Three passes led there: French names (`cacoince.fr`), "ouch" names (`ouchdex.com`, after `fixouch.com` was dropped for its French reading), then names without "ouch" at Fabien's request. All shortlisted names were free on every checked extension at check time.
 
 | Field | Value |
 |---|---|
@@ -26,7 +26,7 @@ The app's public name is "Ouch!" (alias "FixMyLife", Lovable id `fix-it-karma`).
 - Pass 2: 297 international / coined names on `.com` and `.fr`; the 22 best also on `.io .co .app .xyz .eu .net .org .ovh .dev`.
 - Pass 3 (no "ouch" in the name): 1,210 coined names from 46 roots readable in both French and English (frict-, frustr-, vex-, irrit-, tension-, sore-, sting-, argh, grr, Latin roots…) × 24 suffixes, on `.com`; the 20 best also on `.fr .io .co .app .eu .net .org .xyz`.
 
-## Recommendation (international, final)
+## Recommendation with "ouch" (pass 2, superseded by the decision above)
 
 **Buy `ouchdex.com`** (+ `ouchdex.fr` as redirect; `.io .co .app .eu` also free).
 
@@ -48,6 +48,15 @@ Other free `.com` with concept feel, lower priority: `ouchscore`, `ouchindex`, `
 Asked by Fabien: `twinge.com` is taken and parked at GoDaddy's NameFind brokerage (premium resale, typically thousands of €); `.ai .io .net .org .me .life` also taken, `.fr .co .app .eu .xyz` free. Good concept fit (a twinge = a small sharp pain) but crowded name, unknown to many non-native speakers, and "Twingo" confusion in France.
 
 Rejected after search: `hurtmap.com` (free, but "Hurtmap" is an existing injury-treatment app), `ouchometer.com` (former feature name of the "Ouch! Emotional Bandage" app). Taken: `ouchly`, `ouchr`, `ouchio`, `ouchy`, `ouchie`, `ouchmap`, `ouchhub`, `ouchbox`, `painpoint`, `painmap`, `paindex`, `painscale`, `whereithurts`, `ithurts`, `itchy`, `snaglist`, `fixthis`, `fixlist`, `dolor*` (most), `twinge`, `pangs`.
+
+## Decision (2026-09-13)
+
+**`frictum.com` is the domain.** Chosen by Fabien after the third pass, over `ouchdex.com` (kept "ouch", which he wanted to drop) and `frustrio.com` / `arghmeter.com` (more playful, less usable on the maker side).
+
+- Free at check time on `.com .fr .io .co .app .eu .net .org .xyz`; `frictum` returns only Latin-dictionary hits (past participle of *fricare*, "rubbed"), no brand, app or company.
+- Buy now: `frictum.com` (≈ 8–11 €) and `frictum.fr` (≈ 5–7 €, redirect, keeps a French squatter away). Optional later: `.io` / `.app` only if a product split needs them; not worth it at cold start.
+- Registrar: OVHcloud (French invoice, stable renewal) or Porkbun / Cloudflare (cheapest flat renewal on `.com`). Avoid the 1 € first-year offers with 11 €+ renewals.
+- After purchase: INPI / EUIPO trademark search on "frictum" (class 42, software services) before any printed or paid material; add the domain to the Vercel project once configured (see [`docs/deploy.md`](https://github.com/xeonfab/fix-it-karma/blob/main/docs/deploy.md)); keep "Ouch!" as the in-product name until a rename is decided, `frictum` can be the URL alone.
 
 ## Options without "ouch" in the name (pass 3, on request)
 
@@ -100,9 +109,9 @@ Taken, for the record: `ouch.fr/.com`, `aie.fr/.com`, `ouille.fr/.com`, `capique
 
 ## Next steps
 
-1. Type `ouchdex.com` in the registrar's search box to confirm (DNS check is not registry-level).
-2. Buy `ouchdex.com` (≈ 8–11 €) and `ouchdex.fr` (≈ 5–7 €) as redirect. Total under 20 €.
-3. Quick INPI / EUIPO trademark search on "ouchdex" before printing anything.
+1. Type `frictum.com` in the registrar's search box to confirm (DNS check is not registry-level).
+2. Buy `frictum.com` (≈ 8–11 €) and `frictum.fr` (≈ 5–7 €) as redirect. Total under 20 €.
+3. Quick INPI / EUIPO trademark search on "frictum" before printing anything.
 4. Point the domain at the Vercel deployment once configured (see [`docs/deploy.md`](https://github.com/xeonfab/fix-it-karma/blob/main/docs/deploy.md)).
 
 ---

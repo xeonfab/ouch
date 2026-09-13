@@ -70,7 +70,7 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 |---|---|
 | [Test de concept — communauté freelances](syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md) | Message + structure de landing page pour exécuter le test de validation publique, ciblé sur un groupe fermé de freelances |
 | [Dépôt d'un problème — décision du panel double-face](syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md) | Refonte du flow de dépôt de problème : la plupart du brief était déjà construite, le panel a resserré le scope au partage social |
-| [Domain name shortlist](syntheses/strategy/2026-09-13_domain-name-shortlist.md) | Recommended `ouchdex.com` (alternates `ouchdeck.com`, `sameouch.com`); without "ouch": `frictum.com`, `frustrio.com`, `arghmeter.com`; French pass kept `cacoince.fr`; 1,640 names DNS-checked, 2026 prices, buy steps |
+| [Domain name shortlist](syntheses/strategy/2026-09-13_domain-name-shortlist.md) | **Decision: `frictum.com`** (+ `.fr` redirect). Three passes, 1,640 names DNS-checked: French (`cacoince.fr`), with "ouch" (`ouchdex.com`), without (`frictum`, `frustrio`, `arghmeter`); 2026 prices, buy steps |
 
 ### 🚀 Projects (`projects/`)
 | Page | Summary |

@@ -271,3 +271,9 @@
 - Findings: links already live in five channels (`fb-fif` 21 visitors / 8 voters, `amis`, `fb-cdi`, `fb-cae`, `fb-fef`); no `submit_*` or `problem_submitted` event lands although one problem was deposited (instrumentation gap, owner `ouch-cto`); two typo'd codes (`amis.`, `fb-fefSi`); opt-in 28 % is friends only
 - Routine: a Sunday 16:00 UTC Routine was created then deleted because this session cannot attach the Supabase/Notion connectors to it; Fabien creates it from the claude.ai Routines UI with the prompt stored on the page
 - Notion « Com freelances » section 12 « Tracking » added (French mirror of the snapshot and anomalies)
+
+## [2026-09-13] asset | Card visual template for Facebook posts, variant « une carte + un visuel »
+
+- Source: Fabien's proposal to post one problem with a visual instead of the question post
+- Created: `tools/card-visual/carte-template.html` + README (1080×1350, Ouch! palette, rendered with headless Chromium); first visual generated for deck card 1 (F01 relances impayés)
+- Notion « Com freelances » §5.4 bis added: card-first post with the visual, link in the first comment, deck card 1 so the first swipe lands on the card shown; one post per group rule unchanged

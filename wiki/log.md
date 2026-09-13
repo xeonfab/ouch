@@ -282,6 +282,6 @@
 
 - Source: Fabien's card-first post idea and his remark that the card shown was not the first card of the swipe; live read of `fix-it-karma` (cloned into the session)
 - Finding: `communityDeck()` orders by pain score, then `deck_rank`, then freshness, so the curated order only applies while scores tie; cards tagged `independants` without a rank can enter the top ten once voted
-- Shipped: `?p=<id>` on `/communaute/independants` (validated search, `?c=` kept), pins that card first; branch `claude/deck-pinned-card` of `fix-it-karma`, tsc/eslint/prettier/build green, PR not opened yet
+- Shipped: `?p=<id>` on `/communaute/independants` (validated search, `?c=` kept), pins that card first; branch `claude/deck-pinned-card` of `fix-it-karma`, tsc/eslint/prettier/build green, PR #26 opened
 - Corrected: tracking anomaly 1 was wrong — the deposit events are emitted; the finding is zero deposit attempts since instrumentation. `fb-fef` zero-swipe visits are Fabien's own devices. New anomaly 5: `client_error` « Invalid supabaseUrl » ×15 on an entity page from one device
 - Updated: `channel-tracking.md`, channel map (fb-fef = facebook.com/groups/554243395276867), communication plan §3.6 bis; Notion §5.4 bis, §11.1, §12.6 aligned

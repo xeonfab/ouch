@@ -111,7 +111,7 @@ Hard rules: never read or export emails; never invent a number; wiki in English,
 | Claude Code (`ouch-cto`) | Views `channel_funnel`, `channel_weekly`, `channel_problems`, `launch_kpis` + `norm_channel()` on the live database | 2026-09-13 | **done** |
 | Fabien | Create the Sunday routine from the claude.ai Routines UI with the Supabase + Notion connectors (prompt above) | 2026-09-14 | open |
 | Fabien + `ouch-cto` | ~~Anomaly 1: make the deposit events land~~ | — | **closed 2026-09-13**: events are emitted; zero deposit attempts is the finding |
-| Claude Code (`ouch-cto`) | `?p=<id>` on `/communaute/independants` puts the card shown in a post at the top of the deck (the deck is ordered by pain score, then curated rank, so the visual's card was rarely first) | 2026-09-13 | **done** on branch `claude/deck-pinned-card` of `fix-it-karma` (tsc, eslint, prettier, build green); PR to open, then use `?c=<canal>&p=1` in the card-first posts |
+| Claude Code (`ouch-cto`) | `?p=<id>` on `/communaute/independants` puts the card shown in a post at the top of the deck (the deck is ordered by pain score, then curated rank, so the visual's card was rarely first) | 2026-09-13 | **done**, [PR #26](https://github.com/xeonfab/fix-it-karma/pull/26) open on `fix-it-karma` (tsc, eslint, prettier, build green); once merged, use `?c=<canal>&p=1` in the card-first posts |
 | Fabien | Re-paste the `fb-fef` and `amis` links without the typo; check `fb-fef` loads on a phone | 2026-09-14 | open |
 
 ## Related wiki pages

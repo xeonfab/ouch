@@ -102,7 +102,7 @@ Each channel gets its own link `https://…/communaute/independants?c=<canal>` s
 
 ### 3.6 bis Card-first post with a visual (Facebook, LinkedIn) — added 2026-09-13
 
-Fabien's variant, preferred for the Facebook feed: the post shows **one card** as an image (1080×1350, template `tools/card-visual/` in the `ouch` repo), the text opens with the card's sentence, the two verbs follow, the link goes in the first comment. The link carries `?c=<canal>&p=<id>` so the swipe opens on the card shown (`?p=` shipped 2026-09-13 on `fix-it-karma`, branch `claude/deck-pinned-card`; without it the deck is ordered by pain score and the shown card is rarely first). One post per group still; further cards only in replies or, with the admin's consent, one every two weeks. French copy on the Notion page, section 5.4 bis.
+Fabien's variant, preferred for the Facebook feed: the post shows **one card** as an image (1080×1350, template `tools/card-visual/` in the `ouch` repo), the text opens with the card's sentence, the two verbs follow, the link goes in the first comment. The link carries `?c=<canal>&p=<id>` so the swipe opens on the card shown (`?p=` shipped 2026-09-13 on `fix-it-karma`, [PR #26](https://github.com/xeonfab/fix-it-karma/pull/26); without it the deck is ordered by pain score and the shown card is rarely first). One post per group still; further cards only in replies or, with the admin's consent, one every two weeks. French copy on the Notion page, section 5.4 bis.
 
 ### 3.7 When someone tells their problem in a comment instead of depositing it
 

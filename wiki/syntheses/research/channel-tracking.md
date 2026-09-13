@@ -77,16 +77,17 @@ Top cards by 🔥 (all under 5 votes, so no ranking yet): 60 jours fin de mois (
 
 | # | Anomaly | Evidence | Owner / fix |
 |---|---|---|---|
-| 1 | **No deposit event lands.** One problem deposited (id 86) but zero `submit_started`, `submit_preview`, `submit_login_wall`, `submit_published` and zero `problem_submitted` in `events`. The login-wall rate and the deposit funnel are blind. | `select name, count(*) from events group by 1` | `ouch-cto` in `fix-it-karma`: check the four events and `problem_submitted` are emitted client-side with `props.utm`; allowed under D5-c |
+| 1 | ~~No deposit event lands~~ **Corrected 2026-09-13 after reading the app code**: the four `submit_*` events and `problem_submitted` are emitted (`submit-flow.tsx`, `engagement.tsx`). The single deposit (id 86, 00:27 UTC on 09-12) predates the first event row (02:14). Since then **nobody has started a deposit**: 12 voters, 0 `submit_started`. That is the product signal to watch, not a bug. | `select name, count(*) from events group by 1` | Fabien: watch `submit_started` after the card-first posts; if it stays at 0 with 50+ voters, the deposit call-to-action is invisible (it sits after the last card) |
 | 2 | Two typo'd links: `amis.` (a trailing dot, 2 visitors, 12 opt-ins, merged into `amis` by the view) and `fb-fefSi` (1 visitor, kept as `fb-fefsi`) | `channel_funnel` | Fabien: re-paste the links from the Notion channel table; the old ones keep working |
-| 3 | `fb-fef`: 4 visitors, 0 swipes | `channel_funnel` | Check on a phone that the deck loads from that link; otherwise the audience bounced |
-| 4 | `pct_login_wall` is null | no `submit_preview` events | same as 1 |
+| 3 | `fb-fef`: 4 visitors, 0 swipes | `community_visit` rows: a Mac, two iPhone hits and a Windows PC within two minutes on 09-13 09:08–09:10, then one Mac at 16:54 | Almost certainly Fabien's own devices testing the link; devices that already voted every card see an empty deck. Not an audience signal. Drop from the sheet once real traffic arrives |
+| 5 | `client_error` « Invalid supabaseUrl » ×15 on `/entite/urssaf-auto-entrepreneur` (channel `amis`, last 09-13 08:39) and one « reading 'component' » on `/dashboard` | `events` where `name = 'client_error'` | One device keeps hitting an entity page with a build that has no Supabase URL (stale cached bundle, or a preview deployment without env vars). Check which deployment that device uses before the week-7 entity-page share |
+| 4 | `pct_login_wall` is null | no `submit_preview` events yet | same as 1: no deposit attempted since instrumentation |
 
 ## 4. Weekly sheet (one row per Sunday, filled by the routine or by hand)
 
 | Week ending | Distinct voters | Δ | % right | % opt-in on right | Deposited | Validated | Login wall % | First channel by voters | Verdict |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-09-13 | 12 | — | 61.7 | 28.0 | 1 | 0 | n/a | `fb-fif` (8, trop tôt) | Nothing to rank yet. Fix anomaly 1 so that deposits become measurable before the LinkedIn wave. |
+| 2026-09-13 | 12 | — | 61.7 | 28.0 | 1 | 0 | n/a | `fb-fif` (8, trop tôt) | Nothing to rank yet. Zero deposit attempts since instrumentation: the card-first posts must make « dépose-la » visible. |
 
 Targets (end of Phase 2): 300 distinct voters, 30–60 % right, ≥10 % opt-in, ≥10 deposits, ≥3 validated cards.
 
@@ -109,7 +110,8 @@ Hard rules: never read or export emails; never invent a number; wiki in English,
 |---|---|---|---|
 | Claude Code (`ouch-cto`) | Views `channel_funnel`, `channel_weekly`, `channel_problems`, `launch_kpis` + `norm_channel()` on the live database | 2026-09-13 | **done** |
 | Fabien | Create the Sunday routine from the claude.ai Routines UI with the Supabase + Notion connectors (prompt above) | 2026-09-14 | open |
-| Fabien + `ouch-cto` | Anomaly 1: make the deposit events land (`submit_*`, `problem_submitted`) in `fix-it-karma` | 2026-09-20 | open |
+| Fabien + `ouch-cto` | ~~Anomaly 1: make the deposit events land~~ | — | **closed 2026-09-13**: events are emitted; zero deposit attempts is the finding |
+| Claude Code (`ouch-cto`) | `?p=<id>` on `/communaute/independants` puts the card shown in a post at the top of the deck (the deck is ordered by pain score, then curated rank, so the visual's card was rarely first) | 2026-09-13 | **done** on branch `claude/deck-pinned-card` of `fix-it-karma` (tsc, eslint, prettier, build green); PR to open, then use `?c=<canal>&p=1` in the card-first posts |
 | Fabien | Re-paste the `fb-fef` and `amis` links without the typo; check `fb-fef` loads on a phone | 2026-09-14 | open |
 
 ## Related wiki pages

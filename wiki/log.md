@@ -277,3 +277,11 @@
 - Source: Fabien's proposal to post one problem with a visual instead of the question post
 - Created: `tools/card-visual/carte-template.html` + README (1080×1350, Ouch! palette, rendered with headless Chromium); first visual generated for deck card 1 (F01 relances impayés)
 - Notion « Com freelances » §5.4 bis added: card-first post with the visual, link in the first comment, deck card 1 so the first swipe lands on the card shown; one post per group rule unchanged
+
+## [2026-09-13] build | `?p=<id>` pinned card on the community deck; anomaly 1 corrected; fb-fef identified
+
+- Source: Fabien's card-first post idea and his remark that the card shown was not the first card of the swipe; live read of `fix-it-karma` (cloned into the session)
+- Finding: `communityDeck()` orders by pain score, then `deck_rank`, then freshness, so the curated order only applies while scores tie; cards tagged `independants` without a rank can enter the top ten once voted
+- Shipped: `?p=<id>` on `/communaute/independants` (validated search, `?c=` kept), pins that card first; branch `claude/deck-pinned-card` of `fix-it-karma`, tsc/eslint/prettier/build green, PR not opened yet
+- Corrected: tracking anomaly 1 was wrong — the deposit events are emitted; the finding is zero deposit attempts since instrumentation. `fb-fef` zero-swipe visits are Fabien's own devices. New anomaly 5: `client_error` « Invalid supabaseUrl » ×15 on an entity page from one device
+- Updated: `channel-tracking.md`, channel map (fb-fef = facebook.com/groups/554243395276867), communication plan §3.6 bis; Notion §5.4 bis, §11.1, §12.6 aligned

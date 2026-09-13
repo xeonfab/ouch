@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-12
+last_reviewed: 2026-09-13
 ---
 
 # Freelance channel map — where French freelances actually gather (v1, to verify)
@@ -33,7 +33,7 @@ last_reviewed: 2026-09-12
 | Reddit | r/AutoEntrepreneur and similar French subs | not verifiable from the sandbox (reddit blocked to the search agent) | `rd` | existence, self-promotion rule |
 | Facebook group | « Freelance in France » | described as a pillar of the FB freelance community; daily life of the micro-entreprise, admin friction ([codeur.com](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-fif` | size, rules; wave-2 substitute if an admin refuses |
 | Facebook group | « Entrepreneurs & Freelances FR 🇫🇷 – Conseils et Réseautage » | admin, tools, pricing, peer support ([codeur.com](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-efr` | size, rules; wave 4 |
-| Facebook group | « Freelancers En France – Freelance / Portage Salarial » | large, includes portage ([codeur.com](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-fef` | size, rules; wave 4 |
+| Facebook group | « Freelancers En France – Freelance / Portage Salarial » | [group page](https://www.facebook.com/groups/554243395276867/) (confirmed by Fabien 2026-09-13); large, includes portage ([codeur.com](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-fef` | size, rules; **first card-first post planned 2026-09-13** |
 | Facebook group | « Entraide & réseau des auto-entrepreneurs » | [group page](https://www.facebook.com/groups/entraideautoentrepreneurs/) | `fb-era` | size, rules |
 | Facebook group | « Micro-entrepreneur », « Entrepreneurs Français – entraide & business » | named in 2026 roundups; the second is mixed founders/freelances, better kept for Cercle 2 | `fb-me`, `fb-efb` | existence, size |
 | Facebook group | « Artisans et Auto-entrepreneurs » (+ regional groups) | craftspeople, outside Cercle 1 | `fb-art` | not for this community |

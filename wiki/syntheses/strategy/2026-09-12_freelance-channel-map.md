@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-12
+last_reviewed: 2026-09-13
 ---
 
 # Freelance channel map — where French freelances actually gather (v0, to verify)
@@ -25,6 +25,7 @@ last_reviewed: 2026-09-12
 | Facebook group | « Auto-Entrepreneur : la communauté d'entraide » (Mon AutoEntreprise) | [group page](https://www.facebook.com/groups/MonAutoEntreprise/) | `fb-mae` | size, rules |
 | Facebook group | « Le Cercle des Indépendants » | positioned as an externalised works council for independents ([codeur.com roundup](https://www.codeur.com/blog/facebook-groupe-freelance/)) | `fb-cdi` | size, rules |
 | Facebook group | « Aide & Entraide Auto/Micro-entrepreneurs et Indépendants (Freelances) », « Le coin des travailleurs indépendants et freelances » | named in 2026 roundups ([tool-advisor](https://tool-advisor.fr/blog/groupe-facebook-entrepreneur/), [munci](https://www.munci.org/top-10-des-groupes-facebook-pour-freelances-en-2026/)) | `fb-aea`, `fb-coin` | existence, size |
+| Facebook group | « communauté finance » (share link `facebook.com/share/g/19qoQFPgcm`, name to identify) | chosen by Fabien on 2026-09-13 for the first group post; audience (finance professionals vs personal finance) and rules unknown → [post page](2026-09-13_facebook-finance-group-post.md) | `fb-finance` | name, audience, rules, admin contact |
 | Slack | « Freelance France » | 1 000+ freelances helping each other ([Slofile listing](https://slofile.com/slack/freelancefrance)) | `sl-ff` | join link, `#entraide`-type channel, self-promotion rule |
 | Slack | « FreelanceTalks » (FreelanceRepublik) | Slack with several discussion channels for freelances, run by a tech freelance platform ([freelancerepublik](https://talks.freelancerepublik.com/le-top-des-communautes-tech-en-ligne/)) | `sl-ft` | platform-hosted: ask first |
 | Community / coworking | « Ta Pote Freelance », « Social Declik » | mutual-support spaces, workshops, virtual coworking ([learnthings roundup](https://www.learnthings.fr/communautes-pour-mieux-se-former-au-freelancing/)) | `co-tpf`, `co-sd` | format (paid? events?) |
@@ -54,6 +55,7 @@ last_reviewed: 2026-09-12
 **Syntheses**
 
 - [2026-09-11 launch-plan-90-days](2026-09-11_launch-plan-90-days.md)
+- [2026-09-13 facebook-finance-group-post](2026-09-13_facebook-finance-group-post.md)
 
 **Other**
 

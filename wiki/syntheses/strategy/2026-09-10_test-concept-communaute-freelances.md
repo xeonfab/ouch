@@ -118,6 +118,7 @@ La refonte jumelle du parcours de création (connexion au moment de publier, ét
 **Syntheses**
 
 - [2026-09-11 depot-probleme-panel-decision](2026-09-11_depot-probleme-panel-decision.md)
+- [2026-09-13 facebook-finance-group-post](2026-09-13_facebook-finance-group-post.md)
 
 **Other**
 

@@ -262,3 +262,12 @@
 - Updated: `wiki/syntheses/strategy/2026-09-12_freelance-channel-map.md` — v1: +8 Facebook groups (Freelance in France, Entrepreneurs & Freelances FR, Freelancers En France, Entraide & réseau, Micro-entrepreneur, Entrepreneurs Français, Artisans), by-trade groups to find, +3 Slack, +3 Discord, +2 forums, 4 Reddit subs, Trustpilot as harvest source, 7 newsletters, Tribu Indé; new hard rule for channel selection (no community hosted by an entity named on a card, so the Malt Discord is excluded); wave 4 added
 - Notion « Com freelances » section 11 added: same list in French with `?c=` codes, priority per wave, a "verified" checkbox per row, attack order
 - Sizes and rules still unverified: Fabien's 2026-10-06 action unchanged
+
+## [2026-09-13] build | Channel tracking views on the live database, first snapshot, Sunday routine
+
+- Source: Fabien asked for a tracking of links and deposited problems per channel; live read of the `ouch` Supabase project
+- Applied: migration `channel_tracking_views` — `norm_channel()`, views `channel_funnel`, `channel_weekly`, `channel_problems`, `launch_kpis`; `anon` revoked, `authenticated`/`service_role` select
+- Created: `wiki/syntheses/research/channel-tracking.md` (definitions, SQL, snapshot 2026-09-13, anomalies, weekly sheet row 1, routine prompt); `wiki/index.md` and MOC updated
+- Findings: links already live in five channels (`fb-fif` 21 visitors / 8 voters, `amis`, `fb-cdi`, `fb-cae`, `fb-fef`); no `submit_*` or `problem_submitted` event lands although one problem was deposited (instrumentation gap, owner `ouch-cto`); two typo'd codes (`amis.`, `fb-fefSi`); opt-in 28 % is friends only
+- Routine: a Sunday 16:00 UTC Routine was created then deleted because this session cannot attach the Supabase/Notion connectors to it; Fabien creates it from the claude.ai Routines UI with the prompt stored on the page
+- Notion « Com freelances » section 12 « Tracking » added (French mirror of the snapshot and anomalies)

@@ -43,6 +43,7 @@ F20 and F22 were inserted unpublished on 2026-09-11 pending this sheet; publishe
 **Syntheses**
 
 - [2026-09-11 freelance-deck-v1](../projects/2026-09-11_freelance-deck-v1.md)
+- [channel-tracking](channel-tracking.md)
 
 **Other**
 

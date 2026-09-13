@@ -87,4 +87,5 @@ Thematic entry points — curated navigators across entities, concepts, synthese
 ### 🔬 Research (`research/`)
 | Page | Summary |
 |---|---|
+| [Channel tracking](syntheses/research/channel-tracking.md) | Four SQL views on the live database turning `?c=` into a per-channel funnel (visitors → voters → opt-ins → deposits), weekly sheet, first snapshot 2026-09-13, anomalies (deposit events not landing, typo'd links), Sunday routine prompt |
 | [Sourcing sheet — entity cards](syntheses/research/sourcing-sheet-entity-cards.md) | Private trace required by the legal grid: one public source per card naming an organisation (URSSAF ×3, impots.gouv, Qonto, Malt, Stripe), logged 2026-09-12 |

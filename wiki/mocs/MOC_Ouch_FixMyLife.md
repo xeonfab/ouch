@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-13
 ---
 
 # 🗺️ MOC: Ouch! / FixMyLife
@@ -21,6 +21,8 @@ last_reviewed: 2026-09-11
 - [Ouch!/FixMyLife — full project context](../syntheses/projects/2026-09-10_ouch-fixmylife-contexte-complet.md) — concept, business model, hard rules, data model, build status, next steps
 - [Test de concept — communauté freelances](../syntheses/strategy/2026-09-10_test-concept-communaute-freelances.md) — message + structure de landing page pour le test de validation publique, jamais exécuté jusqu'ici
 - [Dépôt d'un problème — décision du panel double-face](../syntheses/strategy/2026-09-11_depot-probleme-panel-decision.md) — refonte du flow de dépôt, scope resserré au partage social après découverte que le reste du brief était déjà construit
+
+- [Domain name shortlist](../syntheses/strategy/2026-09-13_domain-name-shortlist.md) — **domain**: buy `cacoince.fr` (alternates `aiemavie.fr`, `fixmavie.fr`); `ouch.*` all taken; a few euros per year on .fr
 
 ## 🧾 Freelance push — Cercle 1 workstreams (2026-09-11)
 - [Freelance deck v1](../syntheses/projects/2026-09-11_freelance-deck-v1.md) — **content**: card standard, 54 cards (8 existing kept/rewritten, 46 new), 10-card launch deck, insertion procedure

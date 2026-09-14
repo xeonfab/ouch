@@ -4,7 +4,7 @@ last_reviewed: 2026-09-14
 
 # Reddit harvest pipeline — complaint in a thread → card proposed → one-click publish and reply
 
-> One-line TL;DR: built 2026-09-14 in `fix-it-karma` ([PR #31](https://github.com/xeonfab/fix-it-karma/pull/31)): a Vercel cron reads the followed subreddits every six hours, puts new complaint posts in a private queue, the model rewrites each into a card (or recognises a duplicate of an existing card), and Fabien publishes the card and replies in the thread from `/admin/recolte`, one click each. The cron never publishes and never posts: that is the line between harvesting and spamming, and the plan's D6 rule.
+> One-line TL;DR: built 2026-09-14 in `fix-it-karma` ([PR #31](https://github.com/xeonfab/fix-it-karma/pull/31)): a Vercel cron reads the followed subreddits once a day, puts new complaint posts in a private queue, the model rewrites each into a card (or recognises a duplicate of an existing card), and Fabien publishes the card and replies in the thread from `/admin/recolte`, one click each. The cron never publishes and never posts: that is the line between harvesting and spamming, and the plan's D6 rule.
 
 | Field | Value |
 |---|---|
@@ -19,7 +19,7 @@ last_reviewed: 2026-09-14
 
 | Step | Who | How |
 |---|---|---|
-| 1. Read Reddit | cron `/api/recolte/cron`, every 6 h (`vercel.json`) | Subs read in full: `HARVEST_SUBREDDITS` (default `AutoEntrepreneur,freelance_fr`); generalist subs read by search on freelance vocabulary: `HARVEST_SEARCH_SUBREDDITS` (default `vosfinances,france`). Self posts only, ≥80 characters, ≤10 days, not removed. OAuth « script » account if `REDDIT_*` env vars are set, public JSON otherwise |
+| 1. Read Reddit | cron `/api/recolte/cron`, daily at 07:00 UTC (`vercel.json`; Vercel Hobby refuses anything more frequent and the deploy fails) | Subs read in full: `HARVEST_SUBREDDITS` (default `AutoEntrepreneur,freelance_fr`); generalist subs read by search on freelance vocabulary: `HARVEST_SEARCH_SUBREDDITS` (default `vosfinances,france`). Self posts only, ≥80 characters, ≤10 days, not removed. OAuth « script » account if `REDDIT_*` env vars are set, public JSON otherwise |
 | 2. Queue | cron | Table `harvest_candidates` (service role only, RLS, no public policy): raw title and body kept privately, URL, author, status `new` |
 | 3. Qualify | cron, ≤8 posts per run | `qualifyStory()` (same prompt and legal rules as a visitor deposit: first person, concrete element, no judgment, entity = organisation or none) then `findDuplicate()` (trigram + LLM judge, threshold 0.7). Result: status `qualified` with a draft, or `duplicate` with the existing card id |
 | 4. Decide | **Fabien**, `/admin/recolte` | Pick one of the 2–3 formulations, edit statement and title, **Publier la carte** (row in `problems`, `source = 'harvest'`, `channel = rd-<sub>`, `communities = ['independants']` when the sub is a freelance sub, entity candidate queued if any) or **Écarter** |

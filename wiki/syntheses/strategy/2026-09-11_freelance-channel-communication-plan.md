@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-13
+last_reviewed: 2026-09-14
 ---
 
 # Freelance channel communication plan — collect problems, convince freelances to submit
@@ -91,7 +91,7 @@ Each channel gets its own link `https://…/communaute/independants?c=<canal>` s
 - **Goal**: harvest first, votes second. French subs and forums for auto-entrepreneurs and freelances; exact list to verify (many ban self-promotion outright).
 - **Rule**: never post a raw link as a new thread. Reply inside an existing complaint thread with the *specific card* and its real counter once it exists: « Même galère listée ici, 32 freelances dessus 👉 [lien carte]. Vote-la si c'est la tienne. Et si tu en as une autre en tête, dépose-la là-bas, elle aura son compteur aussi. » Before counters exist, do not post at all; just harvest.
 - **Harvest**: one hour per week reading the newest complaint threads; each one that passes the standard becomes a card (section 4).
-- **Automated since 2026-09-14**: the [Reddit harvest pipeline](../projects/2026-09-14_reddit-harvest-pipeline.md) does the reading and the rewriting every six hours; Fabien keeps the two clicks (publish the card, reply in the thread) on `/admin/recolte`.
+- **Automated since 2026-09-14**: the [Reddit harvest pipeline](../projects/2026-09-14_reddit-harvest-pipeline.md) does the reading and the rewriting once a day; Fabien keeps the two clicks (publish the card, reply in the thread) on `/admin/recolte`.
 
 ### 3.5 X / Indie Hackers — continuous, low effort
 

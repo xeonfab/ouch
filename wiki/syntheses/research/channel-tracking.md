@@ -125,6 +125,10 @@ Hard rules: never read or export emails; never invent a number; wiki in English,
 <!-- BACKLINKS:START -->
 ## Referenced by
 
+**Syntheses**
+
+- [2026-09-14 reddit-harvest-pipeline](../projects/2026-09-14_reddit-harvest-pipeline.md)
+
 **Other**
 
 - [📇 Wiki Index](../../index.md)

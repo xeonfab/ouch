@@ -206,6 +206,7 @@ Status 2026-09-11: database side verified live (no placeholder slug left, all ha
 - [2026-09-11 freelance-deck-v1](2026-09-11_freelance-deck-v1.md)
 - [2026-09-11 freelance-deck-v1 expert-review](2026-09-11_freelance-deck-v1_expert-review.md)
 - [2026-09-11 team-skills-audit](../strategy/2026-09-11_team-skills-audit.md)
+- [2026-09-14 reddit-harvest-pipeline](2026-09-14_reddit-harvest-pipeline.md)
 
 **Other**
 

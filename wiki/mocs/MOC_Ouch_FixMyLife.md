@@ -1,5 +1,5 @@
 ---
-last_reviewed: 2026-09-13
+last_reviewed: 2026-09-14
 ---
 
 # 🗺️ MOC: Ouch! / FixMyLife
@@ -28,6 +28,7 @@ last_reviewed: 2026-09-13
 - [Problem structure & dedup spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md) — **platform**: community tag, real-entities-only registry (retire 18 placeholders), 3-layer dedup with canonical merge, presentation rules
 
 ## 🧑‍🤝‍🧑 Team
+- [Reddit harvest pipeline](../syntheses/projects/2026-09-14_reddit-harvest-pipeline.md) — **harvest**: complaint post → queued → card proposed by the model → one-click publish and one-click reply from `/admin/recolte`
 - [Channel tracking](../syntheses/research/channel-tracking.md) — **measurement**: `channel_funnel` / `channel_weekly` / `channel_problems` / `launch_kpis` views, weekly sheet, anomalies to fix before the LinkedIn wave
 - [Team skills audit & upgrade](../syntheses/strategy/2026-09-11_team-skills-audit.md) — twelve seats, who leads which workstream, what was fixed (auto-trigger defect, obsolete CTO/CEO context) and created (`ouch-expert-independants`, `ouch-editeur-cartes`, `ouch-data-analyst`)
 
@@ -68,6 +69,7 @@ last_reviewed: 2026-09-13
 - [2026-09-11 launch-plan-90-days](../syntheses/strategy/2026-09-11_launch-plan-90-days.md)
 - [2026-09-11 problem-structure-dedup-spec](../syntheses/projects/2026-09-11_problem-structure-dedup-spec.md)
 - [2026-09-11 team-skills-audit](../syntheses/strategy/2026-09-11_team-skills-audit.md)
+- [2026-09-14 reddit-harvest-pipeline](../syntheses/projects/2026-09-14_reddit-harvest-pipeline.md)
 - [channel-tracking](../syntheses/research/channel-tracking.md)
 
 **Other**

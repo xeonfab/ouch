@@ -78,6 +78,7 @@ The full table with `?c=` codes, priority per wave and a "verified" checkbox per
 **Syntheses**
 
 - [2026-09-11 launch-plan-90-days](2026-09-11_launch-plan-90-days.md)
+- [2026-09-14 reddit-harvest-pipeline](../projects/2026-09-14_reddit-harvest-pipeline.md)
 - [channel-tracking](../research/channel-tracking.md)
 
 **Other**

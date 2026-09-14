@@ -292,3 +292,10 @@
 - Applied: Facebook post cut to three lines (Notion §5.4 bis); visual v2 wording « les autres freelances diront “moi aussi” » (`tools/card-visual/carte-template.html`); `fix-it-karma` PR #30: share text with the two verbs on the success screen and the card page, « Déposer ma galère » and community-deck link on `/probleme/:id` (tsc, eslint, prettier, build green)
 - Updated: communication plan §3.6 bis (persona pass) and new §3.6 ter (share loop as built)
 - Kept for later: rewording « lues par des makers prêts à agir » on the community page (jargon for Léa); validation gauge on the Terminal card (Julien, Phase 3)
+
+## [2026-09-14] build | Reddit harvest pipeline (queue, model-proposed cards, one-click publish and reply)
+
+- Source: Fabien asked for an automatic process answering Reddit comments by creating the post's problem
+- Built in `fix-it-karma`, branch `claude/reddit-harvest`: cron `/api/recolte/cron` (6 h), table `harvest_candidates` (service role only), `harvest-reddit.server.ts` (Reddit OAuth or public JSON, filters, qualification via the shared `qualifyStory()`, duplicate check via `findDuplicate()`, reply texts), admin page `/admin/recolte`, enum value `harvest` on `problem_source`; qualification and duplicate logic extracted to `qualify.server.ts` / `duplicate.server.ts`; tsc, eslint, prettier, build green
+- Rule kept: the cron never publishes and never posts; both are a click per item, replies one at a time, in the existing thread, card first
+- Created: `wiki/syntheses/projects/2026-09-14_reddit-harvest-pipeline.md`; index, MOC and communication plan §3.4 updated

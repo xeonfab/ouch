@@ -108,7 +108,7 @@ Persona pass 2026-09-14 (`ouch-persona-victime` Léa, `ouch-persona-maker` Julie
 
 ### 3.6 ter The share loop, as built (2026-09-14)
 
-A deposited card has its own page `/probleme/<id>` with an Open Graph image, a « Moi aussi » button and share links; the success screen shares `/probleme/<id>?c=share`. Added on branch `claude/share-loop` of `fix-it-karma`: the shared text asks for both gestures (« moi aussi » in 20 seconds without an account, « dépose la tienne »), the card page offers « Déposer ma galère » (opens the submission modal with the card's community) and, for freelance cards, links to the community deck instead of the generic swipe. The croisière criterion reads on `channel_funnel`: visitors with channel `share` versus Fabien's own codes.
+A deposited card has its own page `/probleme/<id>` with an Open Graph image, a « Moi aussi » button and share links; the success screen shares `/probleme/<id>?c=share`. Added in [PR #30](https://github.com/xeonfab/fix-it-karma/pull/30) of `fix-it-karma`: the shared text asks for both gestures (« moi aussi » in 20 seconds without an account, « dépose la tienne »), the card page offers « Déposer ma galère » (opens the submission modal with the card's community) and, for freelance cards, links to the community deck instead of the generic swipe. The croisière criterion reads on `channel_funnel`: visitors with channel `share` versus Fabien's own codes.
 
 ### 3.7 When someone tells their problem in a comment instead of depositing it
 

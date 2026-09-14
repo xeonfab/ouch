@@ -289,6 +289,6 @@
 ## [2026-09-14] revise | Persona pass on the card-first post; share loop carries the two verbs
 
 - Source: Fabien asked what the persona skills think; Léa and Julien reacted to the visual, the post, the landing (screenshot), the deposit call and the share loop
-- Applied: Facebook post cut to three lines (Notion §5.4 bis); visual v2 wording « les autres freelances diront “moi aussi” » (`tools/card-visual/carte-template.html`); `fix-it-karma` branch `claude/share-loop`: share text with the two verbs on the success screen and the card page, « Déposer ma galère » and community-deck link on `/probleme/:id` (tsc, eslint, prettier, build green)
+- Applied: Facebook post cut to three lines (Notion §5.4 bis); visual v2 wording « les autres freelances diront “moi aussi” » (`tools/card-visual/carte-template.html`); `fix-it-karma` PR #30: share text with the two verbs on the success screen and the card page, « Déposer ma galère » and community-deck link on `/probleme/:id` (tsc, eslint, prettier, build green)
 - Updated: communication plan §3.6 bis (persona pass) and new §3.6 ter (share loop as built)
 - Kept for later: rewording « lues par des makers prêts à agir » on the community page (jargon for Léa); validation gauge on the Terminal card (Julien, Phase 3)

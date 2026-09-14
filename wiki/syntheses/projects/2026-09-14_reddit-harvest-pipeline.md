@@ -4,7 +4,7 @@ last_reviewed: 2026-09-14
 
 # Reddit harvest pipeline — complaint in a thread → card proposed → one-click publish and reply
 
-> One-line TL;DR: built 2026-09-14 in `fix-it-karma` (branch `claude/reddit-harvest`): a Vercel cron reads the followed subreddits every six hours, puts new complaint posts in a private queue, the model rewrites each into a card (or recognises a duplicate of an existing card), and Fabien publishes the card and replies in the thread from `/admin/recolte`, one click each. The cron never publishes and never posts: that is the line between harvesting and spamming, and the plan's D6 rule.
+> One-line TL;DR: built 2026-09-14 in `fix-it-karma` ([PR #31](https://github.com/xeonfab/fix-it-karma/pull/31)): a Vercel cron reads the followed subreddits every six hours, puts new complaint posts in a private queue, the model rewrites each into a card (or recognises a duplicate of an existing card), and Fabien publishes the card and replies in the thread from `/admin/recolte`, one click each. The cron never publishes and never posts: that is the line between harvesting and spamming, and the plan's D6 rule.
 
 | Field | Value |
 |---|---|
@@ -49,7 +49,7 @@ Cards published from the queue carry `channel = rd-<sub>` and `source = 'harvest
 
 | Owner | Action | Due | Status |
 |---|---|---|---|
-| Claude Code | Pipeline, queue, admin page, docs | 2026-09-14 | **done**, PR to merge |
+| Claude Code | Pipeline, queue, admin page, docs | 2026-09-14 | **done**, [PR #31](https://github.com/xeonfab/fix-it-karma/pull/31) to merge |
 | Fabien | Set `HARVEST_*` if the default subs are wrong; create a Reddit « script » app and set `REDDIT_*` in Vercel if he wants the « Poster dans le fil » button (otherwise copy and paste) | 2026-09-21 | open |
 | Fabien | First run from `/admin/recolte` (« Lancer une récolte maintenant »), read the proposed cards, publish the good ones; verify the subs exist (`r/AutoEntrepreneur`, `r/freelance_fr` were unverifiable from the sandbox) | 2026-09-21 | open |
 | Fabien | Reply rhythm: at most 3 replies per week per sub, none before the sub's rules are read | ongoing | open |

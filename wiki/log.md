@@ -296,6 +296,6 @@
 ## [2026-09-14] build | Reddit harvest pipeline (queue, model-proposed cards, one-click publish and reply)
 
 - Source: Fabien asked for an automatic process answering Reddit comments by creating the post's problem
-- Built in `fix-it-karma`, branch `claude/reddit-harvest`: cron `/api/recolte/cron` (6 h), table `harvest_candidates` (service role only), `harvest-reddit.server.ts` (Reddit OAuth or public JSON, filters, qualification via the shared `qualifyStory()`, duplicate check via `findDuplicate()`, reply texts), admin page `/admin/recolte`, enum value `harvest` on `problem_source`; qualification and duplicate logic extracted to `qualify.server.ts` / `duplicate.server.ts`; tsc, eslint, prettier, build green
+- Built in `fix-it-karma`, PR #31: cron `/api/recolte/cron` (6 h), table `harvest_candidates` (service role only), `harvest-reddit.server.ts` (Reddit OAuth or public JSON, filters, qualification via the shared `qualifyStory()`, duplicate check via `findDuplicate()`, reply texts), admin page `/admin/recolte`, enum value `harvest` on `problem_source`; qualification and duplicate logic extracted to `qualify.server.ts` / `duplicate.server.ts`; tsc, eslint, prettier, build green
 - Rule kept: the cron never publishes and never posts; both are a click per item, replies one at a time, in the existing thread, card first
 - Created: `wiki/syntheses/projects/2026-09-14_reddit-harvest-pipeline.md`; index, MOC and communication plan §3.4 updated

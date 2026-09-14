@@ -104,6 +104,12 @@ Each channel gets its own link `https://…/communaute/independants?c=<canal>` s
 
 Fabien's variant, preferred for the Facebook feed: the post shows **one card** as an image (1080×1350, template `tools/card-visual/` in the `ouch` repo), the text opens with the card's sentence, the two verbs follow, the link goes in the first comment. The link carries `?c=<canal>&p=<id>` so the swipe opens on the card shown (`?p=` shipped 2026-09-13 on `fix-it-karma`, [PR #26](https://github.com/xeonfab/fix-it-karma/pull/26); without it the deck is ordered by pain score and the shown card is rarely first). One post per group still; further cards only in replies or, with the admin's consent, one every two weeks. French copy on the Notion page, section 5.4 bis.
 
+Persona pass 2026-09-14 (`ouch-persona-victime` Léa, `ouch-persona-maker` Julien): Léa swipes the card but finds the post too long and « elle devient une carte » meaningless; Julien discounts any number driven by the `amis` channel and wants the validation threshold visible. Applied the same day: the post is cut to three lines (sentence, the two verbs, « lien en premier commentaire »), the visual says « les autres freelances diront “moi aussi” » instead of « elle devient une carte », and the share loop in the app carries the two verbs (see 3.6 ter).
+
+### 3.6 ter The share loop, as built (2026-09-14)
+
+A deposited card has its own page `/probleme/<id>` with an Open Graph image, a « Moi aussi » button and share links; the success screen shares `/probleme/<id>?c=share`. Added on branch `claude/share-loop` of `fix-it-karma`: the shared text asks for both gestures (« moi aussi » in 20 seconds without an account, « dépose la tienne »), the card page offers « Déposer ma galère » (opens the submission modal with the card's community) and, for freelance cards, links to the community deck instead of the generic swipe. The croisière criterion reads on `channel_funnel`: visitors with channel `share` versus Fabien's own codes.
+
 ### 3.7 When someone tells their problem in a comment instead of depositing it
 
 First reply, always, the redirect: « Ça mérite une carte. Dépose-la directement ici en deux phrases 👉 [lien] : c'est toi qui dois être compté dessus, pas moi. Et les autres pourront dire “moi aussi”. »

@@ -285,3 +285,10 @@
 - Shipped: `?p=<id>` on `/communaute/independants` (validated search, `?c=` kept), pins that card first; branch `claude/deck-pinned-card` of `fix-it-karma`, tsc/eslint/prettier/build green, PR #26 opened
 - Corrected: tracking anomaly 1 was wrong — the deposit events are emitted; the finding is zero deposit attempts since instrumentation. `fb-fef` zero-swipe visits are Fabien's own devices. New anomaly 5: `client_error` « Invalid supabaseUrl » ×15 on an entity page from one device
 - Updated: `channel-tracking.md`, channel map (fb-fef = facebook.com/groups/554243395276867), communication plan §3.6 bis; Notion §5.4 bis, §11.1, §12.6 aligned
+
+## [2026-09-14] revise | Persona pass on the card-first post; share loop carries the two verbs
+
+- Source: Fabien asked what the persona skills think; Léa and Julien reacted to the visual, the post, the landing (screenshot), the deposit call and the share loop
+- Applied: Facebook post cut to three lines (Notion §5.4 bis); visual v2 wording « les autres freelances diront “moi aussi” » (`tools/card-visual/carte-template.html`); `fix-it-karma` branch `claude/share-loop`: share text with the two verbs on the success screen and the card page, « Déposer ma galère » and community-deck link on `/probleme/:id` (tsc, eslint, prettier, build green)
+- Updated: communication plan §3.6 bis (persona pass) and new §3.6 ter (share loop as built)
+- Kept for later: rewording « lues par des makers prêts à agir » on the community page (jargon for Léa); validation gauge on the Terminal card (Julien, Phase 3)
